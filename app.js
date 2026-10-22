@@ -70,22 +70,25 @@ function renderMedia(doc, source, imageUrl, index) {
   media.append(fallback);
   if (!imageUrl) return media;
 
-  const img = el(doc, "img");
+  const img = el(doc, "img", "is-pending");
   img.alt = "";
-  img.hidden = true;
   img.decoding = "async";
+  // display:none (the hidden attribute) keeps lazy images from ever being
+  // fetched, so the load event never fires. Opacity leaves a real box.
   img.loading = index === 0 ? "eager" : "lazy";
   if (index === 0) img.setAttribute("fetchpriority", "high");
   img.setAttribute("referrerpolicy", "no-referrer");
-  img.addEventListener("load", () => {
+  const reveal = () => {
     fallback.remove();
-    img.hidden = false;
-  });
+    img.classList.remove("is-pending");
+  };
+  img.addEventListener("load", reveal);
   img.addEventListener("error", () => {
     img.remove();
   });
-  img.src = imageUrl;
   media.append(img);
+  img.src = imageUrl;
+  if (img.complete && img.naturalWidth > 0) reveal();
   return media;
 }
 

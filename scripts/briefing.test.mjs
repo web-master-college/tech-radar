@@ -221,8 +221,14 @@ test("page is Hebrew, RTL, and does not inject markup from data", async () => {
 
   const hrefs = [...document.querySelectorAll("#list a")].map((anchor) => anchor.getAttribute("href"));
   assert.ok(hrefs.every((href) => href.startsWith("https://")));
-  const imageSrcs = [...document.querySelectorAll("img")].map((img) => img.getAttribute("src"));
-  assert.ok(imageSrcs.every((src) => src.startsWith("https://")));
+  const images = [...document.querySelectorAll("#list img")];
+  assert.ok(images.length > 0);
+  for (const img of images) {
+    assert.ok(img.getAttribute("src").startsWith("https://"));
+    assert.equal(img.hidden, false);
+    assert.equal(img.hasAttribute("hidden"), false);
+    assert.equal(img.classList.contains("is-pending"), true);
+  }
 
   assert.match(document.querySelector("#dateline").textContent, /6 כתבות/);
   assert.match(document.querySelector("#dateline").textContent, /22 באוקטובר 2026 בשעה 08:30/);
