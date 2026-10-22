@@ -273,6 +273,10 @@ h1 {
   object-fit: cover;
 }
 
+.media img.is-pending {
+  opacity: 0;
+}
+
 .media-fallback {
   display: grid;
   place-items: center;
