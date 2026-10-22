@@ -2,7 +2,7 @@ import { readFileSync } from "node:fs";
 import { pathToFileURL } from "node:url";
 import Ajv from "ajv/dist/2020.js";
 import { isIsoDateTime, isPublicationDate } from "../format.js";
-import { normalizeLink, toHttpsUrl } from "../links.js";
+import { isSuitableImageLicense, normalizeLink, toHttpsUrl } from "../links.js";
 
 const schema = JSON.parse(
   readFileSync(new URL("../schema/articles.schema.json", import.meta.url), "utf8"),
@@ -35,6 +35,12 @@ function formatAjvError(error) {
   }
   if (error.keyword === "pattern" && (path.endsWith("url") || path.endsWith("image"))) {
     return `${path} must be an https URL`;
+  }
+  if (error.keyword === "enum") {
+    return `${path} must be one of: ${error.params.allowedValues.join(", ")}`;
+  }
+  if (error.keyword === "dependentRequired") {
+    return `${path} has "${error.params.property}" but is missing "${error.params.missingProperty}"`;
   }
   return `${path} ${error.message}`;
 }
@@ -83,6 +89,9 @@ export function validateBriefing(data) {
     }
     checkHttps(`${base}/url`, article.url, errors);
     if (Object.hasOwn(article, "image")) checkHttps(`${base}/image`, article.image, errors);
+    if (Object.hasOwn(article, "imageLicense") && !isSuitableImageLicense(article.imageLicense)) {
+      errors.push(`${base}/imageLicense is not a license that allows the image to be shown`);
+    }
 
     const normalized = normalizeLink(article.url);
     if (!normalized) return;

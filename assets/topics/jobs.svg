@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <style>
+    .bg { fill: #e7f1ef; }
+    .paper { fill: #fffaf3; stroke: #1c1612; }
+    .ink { fill: #1c1612; }
+    .teal { fill: #0e4f4c; }
+    .stamp { fill: #8e1e2c; }
+    .hair { stroke: #4a433a; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #243330; }
+      .paper { fill: #1c1916; stroke: #f6f0e6; }
+      .ink { fill: #f6f0e6; }
+      .teal { fill: #b7e3dc; }
+      .stamp { fill: #f0b4b8; }
+      .hair { stroke: #d2c4b2; }
+    }
+  </style>
+  <rect class="bg" width="320" height="200"/>
+  <path class="hair" d="M56 164h208" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+  <rect class="paper" x="78" y="104" width="40" height="60" rx="4" stroke-width="2.5"/>
+  <rect class="teal" x="140" y="72" width="40" height="92" rx="4"/>
+  <rect class="stamp" x="202" y="44" width="40" height="120" rx="4"/>
+  <path class="hair" d="M70 90l52-18 56 10 62-36" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle class="ink" cx="70" cy="90" r="4"/>
+  <circle class="ink" cx="122" cy="72" r="4"/>
+  <circle class="ink" cx="178" cy="82" r="4"/>
+  <circle class="ink" cx="240" cy="46" r="4"/>
+</svg>

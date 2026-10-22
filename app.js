@@ -1,4 +1,4 @@
-import { toHttpsUrl } from "./links.js";
+import { isSuitableImageLicense, toHttpsUrl } from "./links.js";
 import {
   articleCountLabel,
   formatIssueDate,
@@ -92,12 +92,26 @@ function renderMedia(doc, source, imageUrl, index) {
   return media;
 }
 
+function topicImage(category) {
+  const name = category === "ai" || category === "engineering" || category === "jobs"
+    ? category
+    : "neutral";
+  return new URL(`assets/topics/${name}.svg`, import.meta.url).href;
+}
+
+function cardImage(article) {
+  if (isSuitableImageLicense(article.imageLicense)) {
+    const licensed = toHttpsUrl(article.image);
+    if (licensed) return licensed;
+  }
+  return topicImage(article.category);
+}
+
 function renderCard(doc, article, index) {
   const card = el(doc, "article", index === 0 ? "card card-lead" : "card");
   const safeUrl = toHttpsUrl(article.url);
-  const imageUrl = typeof article.image === "string" ? toHttpsUrl(article.image) : null;
 
-  card.append(renderMedia(doc, article.source, imageUrl, index));
+  card.append(renderMedia(doc, article.source, cardImage(article), index));
 
   const body = el(doc, "div", "card-body");
   body.append(el(doc, "p", "source", article.source.trim()));

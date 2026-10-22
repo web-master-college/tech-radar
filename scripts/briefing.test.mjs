@@ -13,7 +13,7 @@ import {
   formatWhen,
   showEventDate,
 } from "../format.js";
-import { normalizeLink, toHttpsUrl } from "../links.js";
+import { isSuitableImageLicense, normalizeLink, toHttpsUrl } from "../links.js";
 import { resolvePublicPath } from "./serve.mjs";
 import { validateBriefing, validateJsonText } from "./validate-articles.mjs";
 
@@ -95,7 +95,10 @@ test("sample fixture passes and is labeled example data", () => {
   for (const article of data.articles) {
     assert.ok(article.title.startsWith("דוגמה"));
     assert.equal(new URL(article.url).hostname, "example.com");
-    if (article.image) assert.equal(new URL(article.image).hostname, "example.com");
+    if (article.image) {
+      assert.equal(new URL(article.image).hostname, "example.com");
+      assert.equal(isSuitableImageLicense(article.imageLicense), true);
+    }
   }
 });
 
@@ -116,7 +119,21 @@ test("validator rejects broken content", () => {
     }, /usable https URL/],
     ["http image", (data) => {
       data.articles[0].image = "http://example.com/a.jpg";
+      data.articles[0].imageLicense = "cc0";
     }, /image must be an https URL/],
+    ["image without license", (data) => {
+      data.articles[0].image = "https://example.com/a.jpg";
+    }, /missing "imageLicense"/],
+    ["license without image", (data) => {
+      data.articles[0].imageLicense = "cc0";
+    }, /missing "image"/],
+    ["unsuitable license", (data) => {
+      data.articles[0].image = "https://example.com/a.jpg";
+      data.articles[0].imageLicense = "all-rights-reserved";
+    }, /imageLicense/],
+    ["unknown category", (data) => {
+      data.articles[0].category = "news";
+    }, /category must be one of/],
     ["bad calendar date", (data) => {
       data.articles[0].publishedAt = "2026-02-31";
     }, /not a valid calendar date/],
@@ -146,8 +163,11 @@ test("validator rejects broken content", () => {
 
 test("shared images and reordered queries are allowed or rejected correctly", () => {
   const shared = sample();
-  shared.articles[1].image = shared.articles[0].image;
-  assert.equal(validateBriefing(shared).ok, true);
+  shared.articles[0].image = "https://example.com/shared.png";
+  shared.articles[0].imageLicense = "cc0";
+  shared.articles[1].image = "https://example.com/shared.png";
+  shared.articles[1].imageLicense = "cc-by";
+  assert.equal(validateBriefing(shared).ok, true, validateBriefing(shared).errors.join("\n"));
 
   const reordered = sample();
   reordered.articles[1].url = "https://example.com/sample/ai-coding-review?b=1&a=2";
@@ -191,6 +211,7 @@ test("page is Hebrew, RTL, and does not inject markup from data", async () => {
   assert.match(html, /lang="he"/);
   assert.match(html, /dir="rtl"/);
   assert.match(html, /script-src 'self'/);
+  assert.match(html, /img-src 'self'/);
   assert.doesNotMatch(html, /<script(?![^>]*\ssrc=)/);
 
   for (const file of ["app.js", "format.js", "links.js"]) {
@@ -211,7 +232,10 @@ test("page is Hebrew, RTL, and does not inject markup from data", async () => {
 
   const lead = document.querySelector(".card-lead");
   assert.equal(lead.querySelector("script"), null);
-  assert.equal(lead.querySelector("img"), null);
+  const leadImg = lead.querySelector("img");
+  assert.ok(leadImg);
+  assert.match(leadImg.getAttribute("src"), /\/assets\/topics\/ai\.svg$/);
+  assert.doesNotMatch(leadImg.getAttribute("src"), /evil/);
   assert.equal(lead.querySelector("a"), null);
   assert.match(lead.textContent, /<img src=x onerror="alert\(1\)">/);
   assert.match(lead.textContent, /<script>alert\(1\)<\/script>/);
@@ -224,15 +248,65 @@ test("page is Hebrew, RTL, and does not inject markup from data", async () => {
   const images = [...document.querySelectorAll("#list img")];
   assert.ok(images.length > 0);
   for (const img of images) {
-    assert.ok(img.getAttribute("src").startsWith("https://"));
+    const src = img.getAttribute("src");
+    assert.ok(src.startsWith("https://") || /\/assets\/topics\/[a-z]+\.svg$/.test(src), src);
+    assert.doesNotMatch(src, /^http:\/\//);
     assert.equal(img.hidden, false);
     assert.equal(img.hasAttribute("hidden"), false);
     assert.equal(img.classList.contains("is-pending"), true);
   }
+  assert.ok(images.some((img) => img.getAttribute("src").includes("/assets/topics/")));
+  assert.ok(images.some((img) => img.getAttribute("src").startsWith("https://")));
 
   assert.match(document.querySelector("#dateline").textContent, /6 כתבות/);
   assert.match(document.querySelector("#dateline").textContent, /22 באוקטובר 2026 בשעה 08:30/);
   assert.equal(document.querySelector("#status").hidden, true);
+});
+
+test("card art uses a licensed image and otherwise the topic illustration", async () => {
+  const base = {
+    title: "כותרת",
+    summary: "תקציר",
+    source: "מקור",
+    publishedAt: "2026-10-20",
+  };
+  const articles = [
+    { ...base, category: "ai", url: "https://example.com/ai" },
+    { ...base, category: "engineering", url: "https://example.com/eng" },
+    { ...base, category: "jobs", url: "https://example.com/jobs" },
+    { ...base, url: "https://example.com/plain" },
+    {
+      ...base,
+      category: "jobs",
+      image: "https://cdn.example/photo.jpg",
+      imageLicense: "cc0",
+      url: "https://example.com/licensed",
+    },
+    {
+      ...base,
+      category: "ai",
+      image: "https://cdn.example/blocked.jpg",
+      url: "https://example.com/unlicensed",
+    },
+  ];
+  const data = { updatedAt: "2026-10-22T08:30:00+03:00", articles };
+  const withoutBlocked = {
+    ...data,
+    articles: articles.filter((article) => !article.image || article.imageLicense),
+  };
+  assert.equal(validateBriefing(withoutBlocked).ok, true, validateBriefing(withoutBlocked).errors.join("\n"));
+  assert.equal(validateBriefing(data).ok, false);
+
+  const document = page();
+  await loadBriefing(document, async () => okResponse(data));
+  const srcs = [...document.querySelectorAll("#list img")].map((img) => img.getAttribute("src"));
+  assert.match(srcs[0], /\/assets\/topics\/ai\.svg$/);
+  assert.match(srcs[1], /\/assets\/topics\/engineering\.svg$/);
+  assert.match(srcs[2], /\/assets\/topics\/jobs\.svg$/);
+  assert.match(srcs[3], /\/assets\/topics\/neutral\.svg$/);
+  assert.equal(srcs[4], "https://cdn.example/photo.jpg");
+  assert.match(srcs[5], /\/assets\/topics\/ai\.svg$/);
+  assert.equal(srcs.some((src) => src.includes("blocked")), false);
 });
 
 test("empty list and fetch failure are visible", async () => {
@@ -290,6 +364,10 @@ test("stage copies the site and leaves the tooling behind", () => {
   assert.equal(existsSync(join(root, "_site/articles.json")), true);
   assert.equal(existsSync(join(root, "_site/app.js")), true);
   assert.equal(existsSync(join(root, "_site/fonts/heebo-hebrew.woff2")), true);
+  assert.equal(existsSync(join(root, "_site/assets/topics/ai.svg")), true);
+  assert.equal(existsSync(join(root, "_site/assets/topics/engineering.svg")), true);
+  assert.equal(existsSync(join(root, "_site/assets/topics/jobs.svg")), true);
+  assert.equal(existsSync(join(root, "_site/assets/topics/neutral.svg")), true);
   assert.equal(existsSync(join(root, "_site/README.md")), false);
   assert.equal(existsSync(join(root, "_site/schema/articles.schema.json")), false);
   assert.equal(existsSync(join(root, "_site/.github/workflows/deploy-pages.yml")), false);

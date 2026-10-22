@@ -7,7 +7,9 @@
       "source": "מעבדת דוגמה",
       "publishedAt": "2026-10-21T16:00:00+03:00",
       "eventAt": "2026-10-20",
+      "category": "ai",
       "image": "https://example.com/sample/images/ai-coding.jpg",
+      "imageLicense": "cc-by",
       "url": "https://example.com/sample/ai-coding-review"
     },
     {
@@ -22,7 +24,9 @@
       "summary": "ידיעת דוגמה על פחות משרות פתוחות, ועל מגייסים שמבקשים הסבר של פשרה במערכת ולא רק רשימת כלים.",
       "source": "מדור השוק לדוגמה",
       "publishedAt": "2026-10-17T09:30:00+03:00",
+      "category": "jobs",
       "image": "https://example.com/sample/images/job-market.jpg",
+      "imageLicense": "cc0",
       "url": "https://example.com/sample/software-job-market"
     },
     {
@@ -38,7 +42,9 @@
       "source": "הנדסת דוגמה",
       "publishedAt": "2026-10-15T11:00:00+03:00",
       "eventAt": "2026-10-14T18:00:00+03:00",
+      "category": "engineering",
       "image": "https://example.com/sample/images/queues.jpg",
+      "imageLicense": "cc-by-sa",
       "url": "https://example.com/sample/backend-queues"
     },
     {

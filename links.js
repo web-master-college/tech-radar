@@ -1,6 +1,14 @@
 // Shared link rules for the page and the validator.
 // A link is usable only as https, with a host and no embedded login.
 
+// An article image is shown only with one of these licenses.
+// Anything else, including a missing license, uses the topic illustration.
+const SUITABLE_IMAGE_LICENSES = new Set(["cc0", "cc-by", "cc-by-sa", "public-domain"]);
+
+export function isSuitableImageLicense(value) {
+  return typeof value === "string" && SUITABLE_IMAGE_LICENSES.has(value);
+}
+
 export function toHttpsUrl(value) {
   if (typeof value !== "string") return null;
   let url;
