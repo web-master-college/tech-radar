@@ -27,6 +27,10 @@ function sample() {
   return structuredClone(readJson("articles.json"));
 }
 
+function fixture() {
+  return structuredClone(readJson("scripts/fixtures/sample-articles.json"));
+}
+
 function page() {
   return parseHTML(readFileSync(join(root, "index.html"), "utf8")).document;
 }
@@ -79,8 +83,8 @@ test("link normalization collapses cosmetic differences only", () => {
   assert.equal(toHttpsUrl("https://user:pass@example.com/a"), null);
 });
 
-test("sample articles.json passes and is labeled example data", () => {
-  const data = sample();
+test("sample fixture passes and is labeled example data", () => {
+  const data = fixture();
   const result = validateBriefing(data);
   assert.deepEqual(result.errors, []);
   assert.equal(result.ok, true);
@@ -132,7 +136,7 @@ test("validator rejects broken content", () => {
   ];
 
   for (const [name, mutate, pattern] of cases) {
-    const data = sample();
+    const data = name === "duplicate link" ? fixture() : sample();
     mutate(data);
     const result = validateBriefing(data);
     assert.equal(result.ok, false, name);
@@ -194,7 +198,7 @@ test("page is Hebrew, RTL, and does not inject markup from data", async () => {
     assert.doesNotMatch(source, /innerHTML|insertAdjacentHTML|outerHTML|document\.write|eval\(/);
   }
 
-  const data = sample();
+  const data = fixture();
   data.articles[0].title = '<img src=x onerror="alert(1)">';
   data.articles[0].summary = "<script>alert(1)</script>";
   data.articles[0].source = "<b>מעבדת דוגמה</b>";
