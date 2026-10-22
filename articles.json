@@ -6,6 +6,7 @@
       "summary": "לפי מרכז העזרה של OpenAI, החברה מתכננת לסיים את אספקת המודלים ל־Cursor, עם תקופת מעבר מוצעת עד 12 בנובמבר 2026. החלופות: מפתח API אישי, תוסף Codex בתוך Cursor או AI gateway, אך הן חלות רק על Chat ו־Agent מקומיים ולא על Cloud Agents, Automations או ה־CLI.",
       "source": "OpenAI Help Center",
       "publishedAt": "2026-10-20",
+      "category": "ai",
       "url": "https://help.openai.com/en/articles/20001506-using-openai-models-in-cursor"
     },
     {
@@ -13,7 +14,7 @@
       "summary": "פרויקט Node.js שחרר את 22.23.4, 24.22.1 ו־26.12.1 עם תיקונים לפגיעויות בדרגת High ב־TLS, DNS ו־Brotli, וגם עדכוני OpenSSL, undici ו־c-ares.",
       "source": "Node.js",
       "publishedAt": "2026-10-21",
-      "image": "https://nodejs.org/en/next-data/og/vulnerability/Node.js%20%E2%80%94%20Wednesday,%20October%2021,%202026%20Security%20Releases",
+      "category": "engineering",
       "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
     },
     {
@@ -22,7 +23,7 @@
       "source": "Scouter",
       "publishedAt": "2026-10-19",
       "eventAt": "2026-10-18",
-      "image": "https://job-scouter.com/static/icons/og-card-1200x630.png?v=1788721197",
+      "category": "jobs",
       "url": "https://job-scouter.com/en/market/2026-W42"
     },
     {
@@ -30,7 +31,7 @@
       "summary": "הגרסה מתקנת רגרסיה מ־2.1.304 שבה כל הבקשות נכשלו מול Vertex, Bedrock ו־gateways שדוחים tool search. היא גם משנה את סינון שרתי MCP מנוהלים, כך ששרת stdio שלא הופיע ב־allowlist עלול להיטען אחרי העדכון.",
       "source": "GitHub – anthropics/claude-code",
       "publishedAt": "2026-10-20",
-      "image": "https://opengraph.githubassets.com/79fdcda20289413eb426b78042ede9f05bf82c27582a34f32ab82690c364ecf9/anthropics/claude-code/releases/tag/v2.1.305",
+      "category": "ai",
       "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305"
     },
     {
@@ -38,7 +39,7 @@
       "summary": "לפי נתוני Indeed Hiring Lab שמצוטטים בכתבה, מודעות הפיתוח בארה\"ב עלו בכ־15% מפברואר 2025, ו־71% מהעלייה בין מאי 2025 למאי 2026 הגיעו מתפקידים בכירים. הן עדיין נמוכות בכ־27.5% מרמתן לפני הקורונה.",
       "source": "CNBC",
       "publishedAt": "2026-10-11",
-      "image": "https://image.cnbcfm.com/api/v1/image/108366108-1790078284606-gettyimages-2200018679-mfz1_111.jpeg?v=1790086927&w=1920&h=1080",
+      "category": "jobs",
       "url": "https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html"
     },
     {
@@ -46,7 +47,7 @@
       "summary": "Copilot מקבל התראת code scanning, סורק את הקוד, מציע תיקון, מריץ את CodeQL שוב כדי לאמת אותו ופותח PR כטיוטה. השירות מיועד ללקוחות GitHub Enterprise Cloud עם Code Security, וכרוך בחיוב על AI Credits ועל דקות Actions.",
       "source": "GitHub Changelog",
       "publishedAt": "2026-10-15",
-      "image": "https://github.blog/wp-content/uploads/2026/10/Changelog_NewRelease_Unfurl_AgenticAutofixGA.jpg",
+      "category": "ai",
       "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/"
     },
     {
@@ -54,6 +55,7 @@
       "summary": "בסקר של רשות החדשנות וצבירן בקרב 210 חברות, הגיוסים במחצית הראשונה של 2026 עמדו על 8% מכוח האדם והפיטורים על 2.8%. בחברות התוכנה שיעור הפיטורים היה 6.6%, ותחזית הגיוס למחצית השנייה ירדה ל־5.9%.",
       "source": "Geektime",
       "publishedAt": "2026-08-11",
+      "category": "jobs",
       "url": "https://www.geektime.co.il/israeli-tech-hiring-trends-2026-split/"
     }
   ]

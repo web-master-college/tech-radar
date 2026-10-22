@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <style>
+    .bg { fill: #e7f1ef; }
+    .ring { fill: none; stroke: #1c1612; }
+    .ring-teal { fill: none; stroke: #0e4f4c; }
+    .stamp { fill: #8e1e2c; }
+    .hair { stroke: #4a433a; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #243330; }
+      .ring { stroke: #f6f0e6; }
+      .ring-teal { stroke: #b7e3dc; }
+      .stamp { fill: #f0b4b8; }
+      .hair { stroke: #d2c4b2; }
+    }
+  </style>
+  <rect class="bg" width="320" height="200"/>
+  <circle class="ring" cx="160" cy="100" r="62" stroke-width="2"/>
+  <circle class="ring-teal" cx="160" cy="100" r="36" stroke-width="2"/>
+  <circle class="stamp" cx="160" cy="100" r="7"/>
+  <path class="hair" d="M160 100l48-34" fill="none" stroke-width="2.5" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 200">
+  <style>
+    .bg { fill: #e7f1ef; }
+    .paper { fill: #fffaf3; stroke: #1c1612; }
+    .teal { fill: #0e4f4c; }
+    .hair { stroke: #4a433a; }
+    .stamp { fill: #8e1e2c; }
+    @media (prefers-color-scheme: dark) {
+      .bg { fill: #243330; }
+      .paper { fill: #1c1916; stroke: #f6f0e6; }
+      .teal { fill: #b7e3dc; }
+      .hair { stroke: #d2c4b2; }
+      .stamp { fill: #f0b4b8; }
+    }
+  </style>
+  <rect class="bg" width="320" height="200"/>
+  <path class="hair" d="M252 52v96" fill="none" stroke-width="2" stroke-linecap="round"/>
+  <rect class="paper" x="52" y="36" width="184" height="40" rx="6" stroke-width="2.5"/>
+  <rect class="paper" x="68" y="80" width="184" height="40" rx="6" stroke-width="2.5"/>
+  <rect class="paper" x="52" y="124" width="184" height="40" rx="6" stroke-width="2.5"/>
+  <circle class="stamp" cx="204" cy="56" r="5"/>
+  <circle class="teal" cx="220" cy="100" r="5"/>
+  <circle class="stamp" cx="204" cy="144" r="5"/>
+  <path class="hair" d="M80 56h72M96 100h72M80 144h72" fill="none" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -15,6 +15,7 @@ A fixed Hebrew (RTL) daily briefing. The page loads `articles.json` in the brows
 | `.github/workflows/validate.yml` | Runs the tests and the validator on pull requests. |
 | `.github/workflows/deploy-pages.yml` | On a push to `main`, validates again and then deploys with the official GitHub Pages actions. |
 | `fonts/` | Self-hosted Heebo and Frank Ruhl Libre (SIL Open Font License, see `fonts/OFL.txt`). |
+| `assets/topics/` | Original illustrations for the three topics, plus a neutral fallback. |
 
 ## Data format
 
@@ -27,7 +28,9 @@ A fixed Hebrew (RTL) daily briefing. The page loads `articles.json` in the brows
 | `title`, `summary`, `source` | yes | Card text. Blank strings are rejected. |
 | `publishedAt` | yes | `YYYY-MM-DD`, or a date-time with a timezone. A date-only value is shown without a clock time. |
 | `eventAt` | no | Same formats as `publishedAt`. Omit it when there is no separate event. |
-| `image` | no | `https` image URL. Omit it when there is no image. |
+| `category` | no | `ai`, `engineering`, or `jobs`. Chooses the default illustration. Omit it for the neutral illustration. |
+| `image` | no | `https` image URL. Omit it, together with `imageLicense`, to use the category illustration. |
+| `imageLicense` | no | Required with `image`, and only with `image`. One of `cc0`, `cc-by`, `cc-by-sa`, `public-domain`. |
 | `url` | yes | `https` link that opens the article. |
 
 Anything else is rejected, including personal fields such as read state, notes, or ratings. Put `null` nowhere: omit optional fields instead.
@@ -47,7 +50,9 @@ Link duplicates are compared after normalization:
 
 Dates must be real calendar dates. `2026-02-31` fails. A date-time without a timezone fails, so Jerusalem formatting is unambiguous.
 
-Sample items in the committed file are labeled example data: titles start with `דוגמה`, and links use `example.com`. Those images do not exist; each card falls back to a monogram. A daily update should replace the sample entries.
+A card shows `image` only when `imageLicense` is one of the licenses above. Otherwise it shows the illustration for `category` (`assets/topics/ai.svg`, `engineering.svg`, or `jobs.svg`). A missing category uses `neutral.svg`. If that file fails to load, the card shows the source monogram.
+
+The example fixture in `scripts/fixtures/sample-articles.json` is labeled example data: titles start with `דוגמה`, and links use `example.com`. The published briefing does not use those entries.
 
 ## Data-only update
 
@@ -79,6 +84,6 @@ The deploy workflow cannot switch this on by itself. Before the first publish:
 
 If workflows do not run, allow them under **Settings → Actions → General**.
 
-The deploy workflow uses `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages`, and the `github-pages` environment. It publishes only the staged site (`index.html`, styles, scripts, `articles.json`, the icon, and fonts), not the schema or the validator.
+The deploy workflow uses `actions/configure-pages`, `actions/upload-pages-artifact`, and `actions/deploy-pages`, and the `github-pages` environment. It publishes only the staged site (`index.html`, styles, scripts, `articles.json`, the icon, the topic illustrations, and fonts), not the schema or the validator.
 
 The workflow does not change the Pages source. Set **Source** to **GitHub Actions** once, by hand, before the first publish.

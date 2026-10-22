@@ -51,16 +51,30 @@
           "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,3})?(?:Z|[+-]\\d{2}:\\d{2}))?$",
           "description": "Optional event date, same formats as publishedAt. Omit the field when there is no separate event. The page shows it when the Jerusalem calendar day differs, or when both values include a time and those instants differ."
         },
+        "category": {
+          "type": "string",
+          "enum": ["ai", "engineering", "jobs"],
+          "description": "Optional topic for the default illustration. ai is AI for software development, engineering is software engineering, jobs is the job market. Omit it to use the neutral illustration."
+        },
         "image": {
           "type": "string",
           "pattern": "^https://\\S+$",
-          "description": "Optional https image URL. Omit the field when there is no image. A missing image, or one that fails to load, shows a text fallback. The URL must not include login information."
+          "description": "Optional https image URL. Shown only when imageLicense is also set. Omit both fields to use the category illustration. The URL must not include login information. A failed load shows the source monogram."
+        },
+        "imageLicense": {
+          "type": "string",
+          "enum": ["cc0", "cc-by", "cc-by-sa", "public-domain"],
+          "description": "License that allows showing image. Required when image is set, and forbidden without it. cc0 and public-domain need no credit line; cc-by and cc-by-sa allow reuse with attribution."
         },
         "url": {
           "type": "string",
           "pattern": "^https://\\S+$",
           "description": "https link that opens the article. Login information is rejected. Duplicates are rejected after normalization: lowercase host, fragment removed, default port 443 removed, trailing slash removed, query parameters sorted. Query parameters themselves are preserved."
         }
+      },
+      "dependentRequired": {
+        "image": ["imageLicense"],
+        "imageLicense": ["image"]
       }
     }
   }
