@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>רדאר טכנולוגי — תדריך יומי</title>
+    <meta name="description" content="תדריך יומי בעברית על כלי קידוד, שוק העבודה והנדסת תוכנה. הכתבות נטענות מקובץ articles.json.">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#f3ecdf" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#12110f" media="(prefers-color-scheme: dark)">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' https:; style-src 'self'; script-src 'self'; font-src 'self'; connect-src 'self'; base-uri 'self'; form-action 'none'; object-src 'none'">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+  </head>
+  <body>
+    <a class="skip" href="#main">דילוג לתוכן</a>
+    <div class="shell">
+      <header class="masthead">
+        <div class="masthead-top">
+          <p class="eyebrow">תדריך יומי</p>
+          <p class="issue" id="issue-date">גיליון</p>
+        </div>
+        <div class="rule-double" aria-hidden="true"></div>
+        <p class="nameplate" lang="en">Tech Radar</p>
+        <h1>רדאר טכנולוגי</h1>
+        <p class="deck">כלי פיתוח, שוק העבודה והנדסת צד־שרת — בקצרה, בלי רעש.</p>
+        <p class="dateline" id="dateline">טוען את מועד העדכון…</p>
+        <div class="rule" aria-hidden="true"></div>
+      </header>
+      <main id="main" tabindex="-1">
+        <p id="status" class="status" role="status">טוען את התדריך…</p>
+        <section id="list" class="list" aria-label="כתבות"></section>
+        <noscript>
+          <p class="status status-error">כדי להציג את הכתבות צריך לאפשר JavaScript. הן נטענות מקובץ הנתונים בדפדפן.</p>
+        </noscript>
+      </main>
+      <footer class="colophon">
+        <p>הכרטיסים נטענים מקובץ <span lang="en">articles.json</span> בלבד. כותרת שמתחילה במילה «דוגמה» מסמנת נתון הדגמה, לא ידיעה אמיתית.</p>
+      </footer>
+    </div>
+  </body>
+</html>
