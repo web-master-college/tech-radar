@@ -1,0 +1,67 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://example.com/schema/articles.schema.json",
+  "title": "Tech Radar briefing",
+  "description": "Content file for the daily briefing. The site renders this file at runtime and does not read any other content. Personal fields (read state, notes, ratings, bookmarks) are rejected. HTML in text fields is shown as text, never executed. $id is an identifier, not a hosted URL.",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["updatedAt", "articles"],
+  "properties": {
+    "updatedAt": {
+      "type": "string",
+      "pattern": "^\\d{4}-\\d{2}-\\d{2}T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,3})?(?:Z|[+-]\\d{2}:\\d{2})$",
+      "description": "When the briefing content last changed. RFC 3339 date-time with a timezone (Z or ±hh:mm). The page formats it in Hebrew for Asia/Jerusalem. Impossible calendar dates are rejected by the validator."
+    },
+    "articles": {
+      "type": "array",
+      "description": "Cards in reading order. The first item is the lead story. An empty array is valid and the page shows an empty state.",
+      "items": {
+        "$ref": "#/$defs/article"
+      }
+    }
+  },
+  "$defs": {
+    "article": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["title", "summary", "source", "publishedAt", "url"],
+      "properties": {
+        "title": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Headline. Rendered as text."
+        },
+        "summary": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Short summary. Rendered as text. Keep it to a sentence or two; the card shows the full string."
+        },
+        "source": {
+          "type": "string",
+          "minLength": 1,
+          "description": "Outlet or publication name. Rendered as text."
+        },
+        "publishedAt": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,3})?(?:Z|[+-]\\d{2}:\\d{2}))?$",
+          "description": "Publication date. Either a calendar date (YYYY-MM-DD) or an RFC 3339 date-time with a timezone. A date-only value is shown without a clock time."
+        },
+        "eventAt": {
+          "type": "string",
+          "pattern": "^\\d{4}-\\d{2}-\\d{2}(?:T\\d{2}:\\d{2}:\\d{2}(?:\\.\\d{1,3})?(?:Z|[+-]\\d{2}:\\d{2}))?$",
+          "description": "Optional event date, same formats as publishedAt. Omit the field when there is no separate event. The page shows it when the Jerusalem calendar day differs, or when both values include a time and those instants differ."
+        },
+        "image": {
+          "type": "string",
+          "pattern": "^https://\\S+$",
+          "description": "Optional https image URL. Omit the field when there is no image. A missing image, or one that fails to load, shows a text fallback. The URL must not include login information."
+        },
+        "url": {
+          "type": "string",
+          "pattern": "^https://\\S+$",
+          "description": "https link that opens the article. Login information is rejected. Duplicates are rejected after normalization: lowercase host, fragment removed, default port 443 removed, trailing slash removed, query parameters sorted. Query parameters themselves are preserved."
+        }
+      }
+    }
+  }
+}

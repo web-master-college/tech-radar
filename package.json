@@ -1,0 +1,19 @@
+{
+  "name": "tech-radar",
+  "private": true,
+  "type": "module",
+  "description": "Hebrew daily briefing rendered from articles.json.",
+  "scripts": {
+    "start": "node scripts/serve.mjs",
+    "validate": "node scripts/validate-articles.mjs articles.json",
+    "test": "node --test scripts/briefing.test.mjs",
+    "stage": "node scripts/stage-site.mjs"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "devDependencies": {
+    "ajv": "^8.17.1",
+    "linkedom": "^0.18.12"
+  }
+}
