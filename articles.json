@@ -1,52 +1,60 @@
 {
-  "updatedAt": "2026-10-22T08:30:00+03:00",
+  "updatedAt": "2026-10-22T09:25:23+03:00",
   "articles": [
     {
-      "title": "דוגמה: עוזרי קידוד נכנסים לסקירת בקשות משיכה",
-      "summary": "ידיעת דוגמה על צוות שמשלב עוזר קידוד בהערות על בקשות משיכה, ומשאיר למפתחים את ההחלטה מה באמת מוכן למיזוג.",
-      "source": "מעבדת דוגמה",
-      "publishedAt": "2026-10-21T16:00:00+03:00",
-      "eventAt": "2026-10-20",
-      "image": "https://example.com/sample/images/ai-coding.jpg",
-      "url": "https://example.com/sample/ai-coding-review"
+      "title": "OpenAI מודיעה על סיום החוזה לאספקת מודלים ל־Cursor",
+      "summary": "לפי מרכז העזרה של OpenAI, החברה מתכננת לסיים את אספקת המודלים ל־Cursor, עם תקופת מעבר מוצעת עד 12 בנובמבר 2026. החלופות: מפתח API אישי, תוסף Codex בתוך Cursor או AI gateway, אך הן חלות רק על Chat ו־Agent מקומיים ולא על Cloud Agents, Automations או ה־CLI.",
+      "source": "OpenAI Help Center",
+      "publishedAt": "2026-10-20",
+      "url": "https://help.openai.com/en/articles/20001506-using-openai-models-in-cursor"
     },
     {
-      "title": "דוגמה: איך בודקים אם כלי קידוד באמת חוסך זמן",
-      "summary": "ידיעת דוגמה על שלושה מדדים פשוטים — זמן עד מיזוג, היקף תיקונים חוזרים, ותקלות אחרי פריסה — במקום להסתמך על תחושה.",
-      "source": "יומן הכלים לדוגמה",
-      "publishedAt": "2026-10-18",
-      "url": "https://example.com/sample/measuring-coding-tools"
+      "title": "Node.js: עדכוני אבטחה ל־22, 24 ו־26 עם פגיעויות בדרגת High",
+      "summary": "פרויקט Node.js שחרר את 22.23.4, 24.22.1 ו־26.12.1 עם תיקונים לפגיעויות בדרגת High ב־TLS, DNS ו־Brotli, וגם עדכוני OpenSSL, undici ו־c-ares.",
+      "source": "Node.js",
+      "publishedAt": "2026-10-21",
+      "image": "https://nodejs.org/en/next-data/og/vulnerability/Node.js%20%E2%80%94%20Wednesday,%20October%2021,%202026%20Security%20Releases",
+      "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
     },
     {
-      "title": "דוגמה: שוק המשרות למפתחים מתקרר, והדרישות מתחדדות",
-      "summary": "ידיעת דוגמה על פחות משרות פתוחות, ועל מגייסים שמבקשים הסבר של פשרה במערכת ולא רק רשימת כלים.",
-      "source": "מדור השוק לדוגמה",
-      "publishedAt": "2026-10-17T09:30:00+03:00",
-      "image": "https://example.com/sample/images/job-market.jpg",
-      "url": "https://example.com/sample/software-job-market"
+      "title": "מדד המשרות השבועי בהייטק הישראלי: 9,132 משרות פתוחות",
+      "summary": "Scouter ספר 3,478 מודעות חדשות בשבוע 12–18 באוקטובר ו־9,132 משרות פתוחות ב־18 באוקטובר, מהן 2,657 בפיתוח תוכנה. מדובר במשרות מפורסמות, לא בגיוסים בפועל.",
+      "source": "Scouter",
+      "publishedAt": "2026-10-19",
+      "eventAt": "2026-10-18",
+      "image": "https://job-scouter.com/static/icons/og-card-1200x630.png?v=1788721197",
+      "url": "https://job-scouter.com/en/market/2026-W42"
     },
     {
-      "title": "דוגמה: מה מגייסים שואלים היום על ניסיון מעשי",
-      "summary": "ידיעת דוגמה על ראיונות שעברו מחידה קצרה לדיון בבעיה אמיתית: מה נשבר, מה נדחה, ומה כדאי לשנות עכשיו.",
-      "source": "שולחן הגיוס לדוגמה",
-      "publishedAt": "2026-10-12",
-      "url": "https://example.com/sample/hiring-loops"
+      "title": "Claude Code v2.1.305: תיקון רגרסיה מול Bedrock ו־Vertex ושינוי ב־allowlist של MCP",
+      "summary": "הגרסה מתקנת רגרסיה מ־2.1.304 שבה כל הבקשות נכשלו מול Vertex, Bedrock ו־gateways שדוחים tool search. היא גם משנה את סינון שרתי MCP מנוהלים, כך ששרת stdio שלא הופיע ב־allowlist עלול להיטען אחרי העדכון.",
+      "source": "GitHub – anthropics/claude-code",
+      "publishedAt": "2026-10-20",
+      "image": "https://opengraph.githubassets.com/79fdcda20289413eb426b78042ede9f05bf82c27582a34f32ab82690c364ecf9/anthropics/claude-code/releases/tag/v2.1.305",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305"
     },
     {
-      "title": "דוגמה: תור במקום קריאה מסונכרנת כשהשירות עמוס",
-      "summary": "ידיעת דוגמה על צוות צד־שרת שהעביר עיבוד כבד לתור, ועל הסימנים שכדאי לנטר כדי שהפער בין בקשה לתוצאה לא יישאר שקט.",
-      "source": "הנדסת דוגמה",
-      "publishedAt": "2026-10-15T11:00:00+03:00",
-      "eventAt": "2026-10-14T18:00:00+03:00",
-      "image": "https://example.com/sample/images/queues.jpg",
-      "url": "https://example.com/sample/backend-queues"
+      "title": "CNBC: מודעות הדרושים לפיתוח תוכנה בארה\"ב עולות, בעיקר בתפקידים בכירים",
+      "summary": "לפי נתוני Indeed Hiring Lab שמצוטטים בכתבה, מודעות הפיתוח בארה\"ב עלו בכ־15% מפברואר 2025, ו־71% מהעלייה בין מאי 2025 למאי 2026 הגיעו מתפקידים בכירים. הן עדיין נמוכות בכ־27.5% מרמתן לפני הקורונה.",
+      "source": "CNBC",
+      "publishedAt": "2026-10-11",
+      "image": "https://image.cnbcfm.com/api/v1/image/108366108-1790078284606-gettyimages-2200018679-mfz1_111.jpeg?v=1790086927&w=1920&h=1080",
+      "url": "https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html"
     },
     {
-      "title": "דוגמה: חוזה API יציב כשכמה צוותים חולקים שירות",
-      "summary": "ידיעת דוגמה על גרסאות, על שדות שלא נעלמים בלי אזהרה, ועל תיאום שינוי כדי ששירות אחד לא ישבור את מי שתלוי בו.",
-      "source": "חוזי הדוגמה",
-      "publishedAt": "2026-10-09T08:00:00+03:00",
-      "url": "https://example.com/sample/api-contracts"
+      "title": "GitHub: תיקון אוטומטי של התראות CodeQL באמצעות agent זמין לכלל הלקוחות",
+      "summary": "Copilot מקבל התראת code scanning, סורק את הקוד, מציע תיקון, מריץ את CodeQL שוב כדי לאמת אותו ופותח PR כטיוטה. השירות מיועד ללקוחות GitHub Enterprise Cloud עם Code Security, וכרוך בחיוב על AI Credits ועל דקות Actions.",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-10-15",
+      "image": "https://github.blog/wp-content/uploads/2026/10/Changelog_NewRelease_Unfurl_AgenticAutofixGA.jpg",
+      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/"
+    },
+    {
+      "title": "סקר רשות החדשנות: שיעור הפיטורים בחברות התוכנה 6.6%, בחומרה 1.1%",
+      "summary": "בסקר של רשות החדשנות וצבירן בקרב 210 חברות, הגיוסים במחצית הראשונה של 2026 עמדו על 8% מכוח האדם והפיטורים על 2.8%. בחברות התוכנה שיעור הפיטורים היה 6.6%, ותחזית הגיוס למחצית השנייה ירדה ל־5.9%.",
+      "source": "Geektime",
+      "publishedAt": "2026-08-11",
+      "url": "https://www.geektime.co.il/israeli-tech-hiring-trends-2026-split/"
     }
   ]
 }
