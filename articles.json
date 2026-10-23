@@ -1,62 +1,61 @@
 {
-  "updatedAt": "2026-10-22T09:25:23+03:00",
+  "updatedAt": "2026-10-23T08:42:05+03:00",
   "articles": [
     {
-      "title": "OpenAI מודיעה על סיום החוזה לאספקת מודלים ל־Cursor",
-      "summary": "לפי מרכז העזרה של OpenAI, החברה מתכננת לסיים את אספקת המודלים ל־Cursor, עם תקופת מעבר מוצעת עד 12 בנובמבר 2026. החלופות: מפתח API אישי, תוסף Codex בתוך Cursor או AI gateway, אך הן חלות רק על Chat ו־Agent מקומיים ולא על Cloud Agents, Automations או ה־CLI.",
-      "source": "OpenAI Help Center",
-      "publishedAt": "2026-10-20",
-      "category": "ai",
-      "url": "https://help.openai.com/en/articles/20001506-using-openai-models-in-cursor"
-    },
-    {
-      "title": "Node.js: עדכוני אבטחה ל־22, 24 ו־26 עם פגיעויות בדרגת High",
-      "summary": "פרויקט Node.js שחרר את 22.23.4, 24.22.1 ו־26.12.1 עם תיקונים לפגיעויות בדרגת High ב־TLS, DNS ו־Brotli, וגם עדכוני OpenSSL, undici ו־c-ares.",
-      "source": "Node.js",
+      "title": "LiteLLM 1.107.0 נפרצה: גרסה זדונית ב־PyPI ובתמונות Docker גנבה אישורי גישה",
+      "summary": "לפי LiteLLM, צינור השחרור שלה נפרץ ב־21 באוקטובר, והגרסה 1.107.0 פורסמה ב־PyPI (בערך 11:39–13:23 UTC) ובתגיות Docker/GHCR, כולל latest, עם נוזקה שגונבת אישורי גישה ומריצה קוד מרחוק. התוקף השתמש בטוקני OAuth של GitHub CLI שדלפו מלוגים של פריסת LiteLLM פנימית. החברה ממליצה לנעוץ את הגרסה ל־1.106.2, לבנות סביבות מחדש ולהחליף את כל הסודות שהמכונה יכלה לגשת אליהם.",
+      "source": "LiteLLM",
       "publishedAt": "2026-10-21",
       "category": "engineering",
-      "url": "https://nodejs.org/en/blog/vulnerability/october-2026-security-releases"
+      "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026"
     },
     {
-      "title": "מדד המשרות השבועי בהייטק הישראלי: 9,132 משרות פתוחות",
-      "summary": "Scouter ספר 3,478 מודעות חדשות בשבוע 12–18 באוקטובר ו־9,132 משרות פתוחות ב־18 באוקטובר, מהן 2,657 בפיתוח תוכנה. מדובר במשרות מפורסמות, לא בגיוסים בפועל.",
-      "source": "Scouter",
-      "publishedAt": "2026-10-19",
-      "eventAt": "2026-10-18",
+      "title": "Anthropic משחררת גרסת API חדשה 2026-10-21 ו־SDK ל־TypeScript בגרסה 1.0.0 עם שינויים שוברים",
+      "summary": "גרסאות ה־SDK החדשות (TypeScript 1.0.0, Python 2.0.0 ועוד) שולחות כברירת מחדל את גרסת ה־API החדשה, שבה temperature, top_p ו־top_k מחזירים שגיאת 400. ב־TypeScript, MessageParam הופך ל־union לפי תפקיד, ומפתח ה־API נשלח בכותרת Authorization: Bearer במקום X-Api-Key. רישיון ה־SDK עובר מ־MIT ל־Apache 2.0.",
+      "source": "Claude Platform Docs",
+      "publishedAt": "2026-10-21",
+      "category": "ai",
+      "url": "https://platform.claude.com/docs/en/api/migration-2026-10-21"
+    },
+    {
+      "title": "שירות התעסוקה: מספר דורשי העבודה בטכנולוגיית המידע עלה ב־59.3% בתוך שלוש שנים",
+      "summary": "לפי דוח \"דופק שוק העבודה\" של שירות התעסוקה לספטמבר 2026, מספר דורשי העבודה בתחום ה־ICT עלה ב־59.3% לעומת ספטמבר 2023, אף שהמספר הכולל (כ־162 אלף) חזר לרמה שלפני המלחמה. השירות מציין שהשינוי בהרכב הפונים החל כבר ב־2022 ושאין עדות לקשר ישיר לבינה מלאכותית.",
+      "source": "ישראל היום",
+      "publishedAt": "2026-10-18",
       "category": "jobs",
-      "url": "https://job-scouter.com/en/market/2026-W42"
+      "url": "https://www.israelhayom.co.il/business/article/21645863"
     },
     {
-      "title": "Claude Code v2.1.305: תיקון רגרסיה מול Bedrock ו־Vertex ושינוי ב־allowlist של MCP",
-      "summary": "הגרסה מתקנת רגרסיה מ־2.1.304 שבה כל הבקשות נכשלו מול Vertex, Bedrock ו־gateways שדוחים tool search. היא גם משנה את סינון שרתי MCP מנוהלים, כך ששרת stdio שלא הופיע ב־allowlist עלול להיטען אחרי העדכון.",
-      "source": "GitHub – anthropics/claude-code",
+      "title": "Railway: גורם לא מורשה אולי ניגש למשתני סביבה של לקוחות, וחלקם פוענחו",
+      "summary": "Railway דיווחה ב־21 באוקטובר על פעילות חריגה במערכות ששומרות משתני סביבה של לקוחות. לפי החברה, ייתכן שגורם לא מורשה ניגש למשתנים מוצפנים, ובחלק מהמקרים השיג את תוכנם המפוענח. החברה ממליצה לכל המשתמשים להחליף את כל משתני הסביבה, מפתחות ה־API ופרטי הגישה ל־registry, והשהתה פריסות בזמן החקירה.",
+      "source": "Railway",
+      "publishedAt": "2026-10-21",
+      "category": "engineering",
+      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st"
+    },
+    {
+      "title": "Anthropic מעבירה את תקן Agent Skills ל־Agentic AI Foundation של קרן Linux",
+      "summary": "Anthropic תרמה את תקן Agent Skills ל־AAIF תחת קרן Linux, אותה קרן שאליה נתרם גם MCP. לפי החברה, יותר מ־70 פלטפורמות שילבו את התקן מאז פרסומו בדצמבר 2025, ובהן ChatGPT, Cursor, Copilot ו־VS Code. מפת הדרכים כוללת גרסאות ממוספרות, תהליך הצעות והנחיות אבטחה.",
+      "source": "Anthropic",
+      "publishedAt": "2026-10-22",
+      "category": "ai",
+      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+    },
+    {
+      "title": "TypeScript 7.1 Beta: יעד es2026, API יציב חדש ושיפורי ביצועים",
+      "summary": "Microsoft פרסמה את TypeScript 7.1 Beta עם `--target es2026`, תמיכה ב־source phase imports ו־API יציב חדש לכלים. לפי הבלוג, בפרויקטים שנבדקו נמדד שיפור ביצועים של פי 1.2 עד 1.9, וצריכת הזיכרון ירדה עד 49.6%. יש גם שינוי שובר: בדיקות מחמירות יותר על type parameters דיסטריבוטיביים, וגרסת RC צפויה בעוד כחודש.",
+      "source": "Microsoft TypeScript Blog",
       "publishedAt": "2026-10-20",
-      "category": "ai",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.305"
+      "category": "engineering",
+      "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/"
     },
     {
-      "title": "CNBC: מודעות הדרושים לפיתוח תוכנה בארה\"ב עולות, בעיקר בתפקידים בכירים",
-      "summary": "לפי נתוני Indeed Hiring Lab שמצוטטים בכתבה, מודעות הפיתוח בארה\"ב עלו בכ־15% מפברואר 2025, ו־71% מהעלייה בין מאי 2025 למאי 2026 הגיעו מתפקידים בכירים. הן עדיין נמוכות בכ־27.5% מרמתן לפני הקורונה.",
+      "title": "Barclays תקצץ כ־5,000 משרות, בין השאר בגלל התייעלות בפיתוח בעזרת AI",
+      "summary": "לפי CNBC, Barclays תקצץ כ־5,000 משרות, כ־5% מכוח האדם, וכ־60% מהקיצוצים יהיו בפונקציות תמיכה, \"כולל מפתחים\". הבנק מייחס חלק מהצעד ל\"התייעלות בשינויי טכנולוגיה המונעת על ידי AI\". זו הודעת קיצוץ מתוכננת בבריטניה ובעולם, לא נתון על פיטורים שבוצעו בפועל.",
       "source": "CNBC",
-      "publishedAt": "2026-10-11",
+      "publishedAt": "2026-10-22",
       "category": "jobs",
-      "url": "https://www.cnbc.com/2026/10/11/ai-software-developer-jobs.html"
-    },
-    {
-      "title": "GitHub: תיקון אוטומטי של התראות CodeQL באמצעות agent זמין לכלל הלקוחות",
-      "summary": "Copilot מקבל התראת code scanning, סורק את הקוד, מציע תיקון, מריץ את CodeQL שוב כדי לאמת אותו ופותח PR כטיוטה. השירות מיועד ללקוחות GitHub Enterprise Cloud עם Code Security, וכרוך בחיוב על AI Credits ועל דקות Actions.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-10-15",
-      "category": "ai",
-      "url": "https://github.blog/changelog/2026-10-15-agentic-autofix-for-code-scanning-alerts-general-availability/"
-    },
-    {
-      "title": "סקר רשות החדשנות: שיעור הפיטורים בחברות התוכנה 6.6%, בחומרה 1.1%",
-      "summary": "בסקר של רשות החדשנות וצבירן בקרב 210 חברות, הגיוסים במחצית הראשונה של 2026 עמדו על 8% מכוח האדם והפיטורים על 2.8%. בחברות התוכנה שיעור הפיטורים היה 6.6%, ותחזית הגיוס למחצית השנייה ירדה ל־5.9%.",
-      "source": "Geektime",
-      "publishedAt": "2026-08-11",
-      "category": "jobs",
-      "url": "https://www.geektime.co.il/israeli-tech-hiring-trends-2026-split/"
+      "url": "https://www.cnbc.com/2026/10/22/barclays-ai-jobs-cuts.html"
     }
   ]
 }
