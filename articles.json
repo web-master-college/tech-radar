@@ -1,61 +1,37 @@
 {
-  "updatedAt": "2026-10-23T08:42:05+03:00",
+  "updatedAt": "2026-10-24T08:42:01+03:00",
   "articles": [
     {
-      "title": "LiteLLM 1.107.0 נפרצה: גרסה זדונית ב־PyPI ובתמונות Docker גנבה אישורי גישה",
-      "summary": "לפי LiteLLM, צינור השחרור שלה נפרץ ב־21 באוקטובר, והגרסה 1.107.0 פורסמה ב־PyPI (בערך 11:39–13:23 UTC) ובתגיות Docker/GHCR, כולל latest, עם נוזקה שגונבת אישורי גישה ומריצה קוד מרחוק. התוקף השתמש בטוקני OAuth של GitHub CLI שדלפו מלוגים של פריסת LiteLLM פנימית. החברה ממליצה לנעוץ את הגרסה ל־1.106.2, לבנות סביבות מחדש ולהחליף את כל הסודות שהמכונה יכלה לגשת אליהם.",
-      "source": "LiteLLM",
-      "publishedAt": "2026-10-21",
-      "category": "engineering",
-      "url": "https://docs.litellm.ai/blog/security-incident-oct-21-2026"
-    },
-    {
-      "title": "Anthropic משחררת גרסת API חדשה 2026-10-21 ו־SDK ל־TypeScript בגרסה 1.0.0 עם שינויים שוברים",
-      "summary": "גרסאות ה־SDK החדשות (TypeScript 1.0.0, Python 2.0.0 ועוד) שולחות כברירת מחדל את גרסת ה־API החדשה, שבה temperature, top_p ו־top_k מחזירים שגיאת 400. ב־TypeScript, MessageParam הופך ל־union לפי תפקיד, ומפתח ה־API נשלח בכותרת Authorization: Bearer במקום X-Api-Key. רישיון ה־SDK עובר מ־MIT ל־Apache 2.0.",
-      "source": "Claude Platform Docs",
-      "publishedAt": "2026-10-21",
+      "title": "Cursor: הסוכן המקומי ב־IDE יכול עכשיו לשלוט במחשב ולהפעיל אפליקציות דסקטופ",
+      "summary": "Cursor הודיעה ב־23 באוקטובר שהסוכנים שלה יכולים לשלוט במחשב ולהפעיל אפליקציות דסקטופ, למשל iOS Simulator, כדי לבדוק פיצ'רים שהם בנו. לפי AlphaSignal, מפעילים את היכולת עם @Computer Use בפרומפט או שהסוכן בוחר בה לבד, והיא דורשת עדכון של אפליקציית הדסקטופ. עד עכשיו שליטה כזו הייתה זמינה רק בסוכני ענן ובעובדים בהקמה עצמית.",
+      "source": "Cursor (X)",
+      "publishedAt": "2026-10-23",
       "category": "ai",
-      "url": "https://platform.claude.com/docs/en/api/migration-2026-10-21"
+      "url": "https://x.com/cursor_ai/status/2113661506634305834"
     },
     {
-      "title": "שירות התעסוקה: מספר דורשי העבודה בטכנולוגיית המידע עלה ב־59.3% בתוך שלוש שנים",
-      "summary": "לפי דוח \"דופק שוק העבודה\" של שירות התעסוקה לספטמבר 2026, מספר דורשי העבודה בתחום ה־ICT עלה ב־59.3% לעומת ספטמבר 2023, אף שהמספר הכולל (כ־162 אלף) חזר לרמה שלפני המלחמה. השירות מציין שהשינוי בהרכב הפונים החל כבר ב־2022 ושאין עדות לקשר ישיר לבינה מלאכותית.",
-      "source": "ישראל היום",
-      "publishedAt": "2026-10-18",
-      "category": "jobs",
-      "url": "https://www.israelhayom.co.il/business/article/21645863"
-    },
-    {
-      "title": "Railway: גורם לא מורשה אולי ניגש למשתני סביבה של לקוחות, וחלקם פוענחו",
-      "summary": "Railway דיווחה ב־21 באוקטובר על פעילות חריגה במערכות ששומרות משתני סביבה של לקוחות. לפי החברה, ייתכן שגורם לא מורשה ניגש למשתנים מוצפנים, ובחלק מהמקרים השיג את תוכנם המפוענח. החברה ממליצה לכל המשתמשים להחליף את כל משתני הסביבה, מפתחות ה־API ופרטי הגישה ל־registry, והשהתה פריסות בזמן החקירה.",
-      "source": "Railway",
-      "publishedAt": "2026-10-21",
-      "category": "engineering",
-      "url": "https://blog.railway.com/p/security-disclosure-wednesday-october-21st"
-    },
-    {
-      "title": "Anthropic מעבירה את תקן Agent Skills ל־Agentic AI Foundation של קרן Linux",
-      "summary": "Anthropic תרמה את תקן Agent Skills ל־AAIF תחת קרן Linux, אותה קרן שאליה נתרם גם MCP. לפי החברה, יותר מ־70 פלטפורמות שילבו את התקן מאז פרסומו בדצמבר 2025, ובהן ChatGPT, Cursor, Copilot ו־VS Code. מפת הדרכים כוללת גרסאות ממוספרות, תהליך הצעות והנחיות אבטחה.",
-      "source": "Anthropic",
+      "title": "OpenAI משיקה את Decisions API בזמינות כללית: עד 400 שאלות לבקשה ובלי חיוב על טוקני פלט",
+      "summary": "ה־API החדש (POST /v1/decisions) עובד רק עם המודל gpt-6-luna ומיועד להחלטות וסיווגים מובנים. לפי OpenAI, המחיר הוא 0.10 דולר למיליון טוקני קלט (0.01 דולר בקלט שמור במטמון) בלי חיוב על פלט, וכל בקשה יכולה לכלול עד 400 שאלות. יש גם קלט JSON מובנה, prompt caching, עיבוד אזורי בארה\"ב ובאירופה, וזכאות ל־ZDR ול־HIPAA.",
+      "source": "OpenAI",
       "publishedAt": "2026-10-22",
       "category": "ai",
-      "url": "https://www.anthropic.com/news/donating-agent-skills-to-the-agentic-ai-foundation"
+      "url": "https://openai.com/index/decisions-api/"
     },
     {
-      "title": "TypeScript 7.1 Beta: יעד es2026, API יציב חדש ושיפורי ביצועים",
-      "summary": "Microsoft פרסמה את TypeScript 7.1 Beta עם `--target es2026`, תמיכה ב־source phase imports ו־API יציב חדש לכלים. לפי הבלוג, בפרויקטים שנבדקו נמדד שיפור ביצועים של פי 1.2 עד 1.9, וצריכת הזיכרון ירדה עד 49.6%. יש גם שינוי שובר: בדיקות מחמירות יותר על type parameters דיסטריבוטיביים, וגרסת RC צפויה בעוד כחודש.",
-      "source": "Microsoft TypeScript Blog",
-      "publishedAt": "2026-10-20",
-      "category": "engineering",
-      "url": "https://devblogs.microsoft.com/typescript/announcing-typescript-7-1-beta/"
+      "title": "Codex CLI 0.164.0: פריסטים, אימות MCP לארגונים והקשחת sandbox",
+      "summary": "הגרסה מוסיפה עשרה סלוטים של /presets, שינוי מודל והרשאות ישירות מהשורה, אימות MCP לארגונים כולל OAuth עם confidential clients, והסתרת אישורי גישה ב־snapshots של Bash/Zsh מרוחקים. היא גם מתקנת מצב שבו compaction שנכשל השאיר סיכום חלקי, ומשחזרת הגדרות thread בהמשך סשן. ה־sandbox ב־macOS הוקשח מול נתיבי metadata עם אותיות שונות ו־symlinks.",
+      "source": "OpenAI Codex (GitHub)",
+      "publishedAt": "2026-10-23",
+      "category": "ai",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0"
     },
     {
-      "title": "Barclays תקצץ כ־5,000 משרות, בין השאר בגלל התייעלות בפיתוח בעזרת AI",
-      "summary": "לפי CNBC, Barclays תקצץ כ־5,000 משרות, כ־5% מכוח האדם, וכ־60% מהקיצוצים יהיו בפונקציות תמיכה, \"כולל מפתחים\". הבנק מייחס חלק מהצעד ל\"התייעלות בשינויי טכנולוגיה המונעת על ידי AI\". זו הודעת קיצוץ מתוכננת בבריטניה ובעולם, לא נתון על פיטורים שבוצעו בפועל.",
-      "source": "CNBC",
-      "publishedAt": "2026-10-22",
-      "category": "jobs",
-      "url": "https://www.cnbc.com/2026/10/22/barclays-ai-jobs-cuts.html"
+      "title": "GitHub: API מדדי השימוש של Copilot מציג עכשיו שימוש מכלים חיצוניים כמו Claude Code ו־Codex",
+      "summary": "מערך totals_by_client החדש בדוחות של יום ו־28 יום מפרט בקשות, סשנים וטוקנים לפי כלי, כולל OpenCode, Claude Code, Codex, Zed, Copilot CLI, VS Code ו־JetBrains, ולפי מודל. לפי GitHub, הספירה נעשית בשרת, כך שהיא תופסת גם כלים שלא שולחים טלמטריה של עורך. השינוי תוסף בלבד, וזיהוי הכלי הוא קיבוץ בהערכה ולא זהות מאומתת.",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-10-23",
+      "category": "ai",
+      "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode/"
     }
   ]
 }
