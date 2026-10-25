@@ -1,37 +1,46 @@
 {
-  "updatedAt": "2026-10-24T08:42:01+03:00",
+  "updatedAt": "2026-10-25T08:35:40+02:00",
   "articles": [
     {
-      "title": "Cursor: הסוכן המקומי ב־IDE יכול עכשיו לשלוט במחשב ולהפעיל אפליקציות דסקטופ",
-      "summary": "Cursor הודיעה ב־23 באוקטובר שהסוכנים שלה יכולים לשלוט במחשב ולהפעיל אפליקציות דסקטופ, למשל iOS Simulator, כדי לבדוק פיצ'רים שהם בנו. לפי AlphaSignal, מפעילים את היכולת עם @Computer Use בפרומפט או שהסוכן בוחר בה לבד, והיא דורשת עדכון של אפליקציית הדסקטופ. עד עכשיו שליטה כזו הייתה זמינה רק בסוכני ענן ובעובדים בהקמה עצמית.",
-      "source": "Cursor (X)",
+      "title": "פרצת Brotli (CVE-2026-111497): הודגמה הרצת קוד על Node 24 דרך fetch ו-Express",
+      "summary": "כתיבה מחוץ לגבולות במפענח Brotli (גרסאות 1.0.3–1.2.0). לפי OpenAI ו-Imperva הודגמה הרצת קוד על Node 24.22.0 לא מתוקן (Linux ARM64), דרך תגובת fetch או גוף בקשה ב-Express. הקוד לניצול לא פורסם. אין דיווח על ניצול בפועל. תוקן ב-Node 22.23.4 / 24.22.1 / 26.12.1, ב-Bun 1.4.4, ב-Envoy, ב-Istio וב-Python Brotli 1.2.1. ל-Node 20 (סוף תמיכה) לא יהיה תיקון.",
+      "source": "OpenAI (Patch the Planet)",
       "publishedAt": "2026-10-23",
-      "category": "ai",
-      "url": "https://x.com/cursor_ai/status/2113661506634305834"
+      "eventAt": "2026-10-21",
+      "category": "engineering",
+      "url": "https://patchtheplanet.org/brotli"
     },
     {
-      "title": "OpenAI משיקה את Decisions API בזמינות כללית: עד 400 שאלות לבקשה ובלי חיוב על טוקני פלט",
-      "summary": "ה־API החדש (POST /v1/decisions) עובד רק עם המודל gpt-6-luna ומיועד להחלטות וסיווגים מובנים. לפי OpenAI, המחיר הוא 0.10 דולר למיליון טוקני קלט (0.01 דולר בקלט שמור במטמון) בלי חיוב על פלט, וכל בקשה יכולה לכלול עד 400 שאלות. יש גם קלט JSON מובנה, prompt caching, עיבוד אזורי בארה\"ב ובאירופה, וזכאות ל־ZDR ול־HIPAA.",
-      "source": "OpenAI",
+      "title": "Claude Code תומך ב-MCP Tasks וב-Elicitations: משימות ארוכות ושאלות למשתמש באמצע ריצה",
+      "summary": "Anthropic הוסיפה ל-Claude Code CLI (מגרסה 2.1.304, בטא ציבורית) תמיכה במשימות MCP ארוכות שמדווחות בסיום. נוספה גם האפשרות שהשרת יבקש מהמשתמש קלט באמצע משימה. התמיכה דורשת שרת שתומך בגרסת הפרוטוקול 2026-07-28. היא זמינה גם ב-Agent SDK וב-GitHub Actions, אבל לא בתוסף VS Code, לא באפליקציית הדסקטופ ולא דרך ספקי צד שלישי כמו Bedrock.",
+      "source": "Claude Code Docs",
+      "publishedAt": "2026-10-23",
+      "category": "ai",
+      "url": "https://code.claude.com/docs/en/mcp"
+    },
+    {
+      "title": "Artificial Analysis משיקה את Coding Agent Index v2.0: הציונים ירדו, Claude Code עם Opus 5.5 בראש",
+      "summary": "המדד הבלתי תלוי משקלל בשווה שלושה מבחנים: FrontierCode v1.1 של Cognition (האם מתחזק היה ממזג את השינוי), Terminal-Bench 4.0 ו-SWE-Atlas-QnA-AA, סך הכול 290 משימות. Claude Code עם Opus 5.5 מוביל עם 61.7. אחריו Sonnet 5.5 עם 59.3, ו-GPT-6.1 Sol עם 54.1 בעלות של 1.50$ למשימה (לעומת 11.42$ ל-Opus). הציונים אינם ברי השוואה לגרסה 1.5: הממוצע של 21 תצורות ירד מ-54.8 ל-47.4.",
+      "source": "Artificial Analysis",
+      "publishedAt": "2026-10-23",
+      "category": "ai",
+      "url": "https://artificialanalysis.ai/agents/coding-agents"
+    },
+    {
+      "title": "Fireblocks מפטרת 60–70 עובדים, עשרות מהם בישראל",
+      "summary": "לפי Bizportal מדובר בכ-7% מכ-900 עובדי החברה. זה סבב הפיטורים השלישי, והוא מוצג כשינוי מבני. הדיווח הגיע יום אחרי פרסום על מגעים לרכישה בידי Visa בשווי של כ-2.5 מיליארד דולר (לעומת שווי של 8 מיליארד ב-2022), דיווח שהחברה מכחישה. זהו אירוע פיטורים בחברה אחת ולא נתון על השוק כולו.",
+      "source": "Bizportal",
+      "publishedAt": "2026-10-24",
+      "category": "jobs",
+      "url": "https://www.bizportal.co.il/BizTech/news/article/20046052"
+    },
+    {
+      "title": "Indeed Hiring Lab: מודעות הדרושים בארה\"ב עולות, אבל מוקדי הטק נשארים החלשים ביותר",
+      "summary": "מדד המודעות של Indeed הגיע ל-103.8 ב-16 באוקטובר, 2.8% יותר משנה קודם. לעומת זאת, מדד המודעות החדשות (עד 7 ימים) תקוע על 99.2. בסיאטל המדד עומד על 67 ובסן פרנסיסקו על 72, מהנמוכים בארה\"ב, בגלל הנסיגה בגיוסי טק. השכר המוצע ב-IT systems & solutions עלה ב-4.7%. הנתונים נשענים על מודעות ב-Indeed, בממוצע נע של 7 ימים, ולא על גיוסים בפועל.",
+      "source": "Indeed Hiring Lab",
       "publishedAt": "2026-10-22",
-      "category": "ai",
-      "url": "https://openai.com/index/decisions-api/"
-    },
-    {
-      "title": "Codex CLI 0.164.0: פריסטים, אימות MCP לארגונים והקשחת sandbox",
-      "summary": "הגרסה מוסיפה עשרה סלוטים של /presets, שינוי מודל והרשאות ישירות מהשורה, אימות MCP לארגונים כולל OAuth עם confidential clients, והסתרת אישורי גישה ב־snapshots של Bash/Zsh מרוחקים. היא גם מתקנת מצב שבו compaction שנכשל השאיר סיכום חלקי, ומשחזרת הגדרות thread בהמשך סשן. ה־sandbox ב־macOS הוקשח מול נתיבי metadata עם אותיות שונות ו־symlinks.",
-      "source": "OpenAI Codex (GitHub)",
-      "publishedAt": "2026-10-23",
-      "category": "ai",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.164.0"
-    },
-    {
-      "title": "GitHub: API מדדי השימוש של Copilot מציג עכשיו שימוש מכלים חיצוניים כמו Claude Code ו־Codex",
-      "summary": "מערך totals_by_client החדש בדוחות של יום ו־28 יום מפרט בקשות, סשנים וטוקנים לפי כלי, כולל OpenCode, Claude Code, Codex, Zed, Copilot CLI, VS Code ו־JetBrains, ולפי מודל. לפי GitHub, הספירה נעשית בשרת, כך שהיא תופסת גם כלים שלא שולחים טלמטריה של עורך. השינוי תוסף בלבד, וזיהוי הכלי הוא קיבוץ בהערכה ולא זהות מאומתת.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-10-23",
-      "category": "ai",
-      "url": "https://github.blog/changelog/2026-10-23-usage-metrics-api-adds-usage-from-tools-like-opencode/"
+      "category": "jobs",
+      "url": "https://hiringlab.indeed.com/2026/10/22/us-labor-market-snapshot-october-2026/"
     }
   ]
 }
