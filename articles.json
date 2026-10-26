@@ -1,46 +1,47 @@
 {
-  "updatedAt": "2026-10-25T08:35:40+02:00",
+  "updatedAt": "2026-10-26T08:39:48+02:00",
   "articles": [
     {
-      "title": "פרצת Brotli (CVE-2026-111497): הודגמה הרצת קוד על Node 24 דרך fetch ו-Express",
-      "summary": "כתיבה מחוץ לגבולות במפענח Brotli (גרסאות 1.0.3–1.2.0). לפי OpenAI ו-Imperva הודגמה הרצת קוד על Node 24.22.0 לא מתוקן (Linux ARM64), דרך תגובת fetch או גוף בקשה ב-Express. הקוד לניצול לא פורסם. אין דיווח על ניצול בפועל. תוקן ב-Node 22.23.4 / 24.22.1 / 26.12.1, ב-Bun 1.4.4, ב-Envoy, ב-Istio וב-Python Brotli 1.2.1. ל-Node 20 (סוף תמיכה) לא יהיה תיקון.",
-      "source": "OpenAI (Patch the Planet)",
-      "publishedAt": "2026-10-23",
-      "eventAt": "2026-10-21",
-      "category": "engineering",
-      "url": "https://patchtheplanet.org/brotli"
-    },
-    {
-      "title": "Claude Code תומך ב-MCP Tasks וב-Elicitations: משימות ארוכות ושאלות למשתמש באמצע ריצה",
-      "summary": "Anthropic הוסיפה ל-Claude Code CLI (מגרסה 2.1.304, בטא ציבורית) תמיכה במשימות MCP ארוכות שמדווחות בסיום. נוספה גם האפשרות שהשרת יבקש מהמשתמש קלט באמצע משימה. התמיכה דורשת שרת שתומך בגרסת הפרוטוקול 2026-07-28. היא זמינה גם ב-Agent SDK וב-GitHub Actions, אבל לא בתוסף VS Code, לא באפליקציית הדסקטופ ולא דרך ספקי צד שלישי כמו Bedrock.",
-      "source": "Claude Code Docs",
-      "publishedAt": "2026-10-23",
+      "title": "קובץ AGENTS.md שהושתל בתיקיית ההורדות גרם לסוכן קוד להתקין חבילת npm זדונית",
+      "summary": "חוקרי Forever Security מצאו אצל לקוח קובץ AGENTS.md זדוני ב-~/Downloads, שגרם לסוכן קוד לנסות להתקין את חבילת ה-npm הזדונית function-color. הם שחזרו את המתקפה על Codex (הצלחה ביותר מ-90% מהניסיונות, כולל שינוי ~/.codex/config.toml שמשפיע על כל הסשנים) והדגימו טכניקה דומה עם CLAUDE.md שמפנה את Claude Code לשרת שלהם ומדליפה את טוקן ה-OAuth (כ-50% מהניסיונות). לפי החוקרים, דף אינטרנט יכול להוריד קובץ כזה לתיקיית ההורדות בלי אישור, ואין כאן באג שהספקים יכולים לתקן.",
+      "source": "BleepingComputer",
+      "publishedAt": "2026-10-25",
+      "eventAt": "2026-10-22",
       "category": "ai",
-      "url": "https://code.claude.com/docs/en/mcp"
+      "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"
     },
     {
-      "title": "Artificial Analysis משיקה את Coding Agent Index v2.0: הציונים ירדו, Claude Code עם Opus 5.5 בראש",
-      "summary": "המדד הבלתי תלוי משקלל בשווה שלושה מבחנים: FrontierCode v1.1 של Cognition (האם מתחזק היה ממזג את השינוי), Terminal-Bench 4.0 ו-SWE-Atlas-QnA-AA, סך הכול 290 משימות. Claude Code עם Opus 5.5 מוביל עם 61.7. אחריו Sonnet 5.5 עם 59.3, ו-GPT-6.1 Sol עם 54.1 בעלות של 1.50$ למשימה (לעומת 11.42$ ל-Opus). הציונים אינם ברי השוואה לגרסה 1.5: הממוצע של 21 תצורות ירד מ-54.8 ל-47.4.",
-      "source": "Artificial Analysis",
-      "publishedAt": "2026-10-23",
-      "category": "ai",
-      "url": "https://artificialanalysis.ai/agents/coding-agents"
-    },
-    {
-      "title": "Fireblocks מפטרת 60–70 עובדים, עשרות מהם בישראל",
-      "summary": "לפי Bizportal מדובר בכ-7% מכ-900 עובדי החברה. זה סבב הפיטורים השלישי, והוא מוצג כשינוי מבני. הדיווח הגיע יום אחרי פרסום על מגעים לרכישה בידי Visa בשווי של כ-2.5 מיליארד דולר (לעומת שווי של 8 מיליארד ב-2022), דיווח שהחברה מכחישה. זהו אירוע פיטורים בחברה אחת ולא נתון על השוק כולו.",
-      "source": "Bizportal",
-      "publishedAt": "2026-10-24",
+      "title": "Scouter שבוע 43: 10,036 משרות הייטק פתוחות בישראל, עלייה של 9.9% בשבוע",
+      "summary": "לפי Scouter, בשבוע 19–25 באוקטובר פורסמו 2,450 מודעות הייטק ו-AI חדשות בישראל, ונמדדו 10,036 משרות פתוחות אצל 1,727 מעסיקים. משרות Software Engineer עלו ב-302 ל-1,737, ו-Full Stack Developer עלו ב-61 ל-470. בתחום פיתוח התוכנה נספרו 3,070 משרות פתוחות וב-AI ו-ML 1,218. אלה מודעות דרושים מלוחות משרות ומאתרי חברות בחלון מתגלגל של 30 יום, ולא גיוסים בפועל.",
+      "source": "Scouter (job-scouter.com)",
+      "publishedAt": "2026-10-26",
       "category": "jobs",
-      "url": "https://www.bizportal.co.il/BizTech/news/article/20046052"
+      "url": "https://job-scouter.com/en/market/2026-W43"
     },
     {
-      "title": "Indeed Hiring Lab: מודעות הדרושים בארה\"ב עולות, אבל מוקדי הטק נשארים החלשים ביותר",
-      "summary": "מדד המודעות של Indeed הגיע ל-103.8 ב-16 באוקטובר, 2.8% יותר משנה קודם. לעומת זאת, מדד המודעות החדשות (עד 7 ימים) תקוע על 99.2. בסיאטל המדד עומד על 67 ובסן פרנסיסקו על 72, מהנמוכים בארה\"ב, בגלל הנסיגה בגיוסי טק. השכר המוצע ב-IT systems & solutions עלה ב-4.7%. הנתונים נשענים על מודעות ב-Indeed, בממוצע נע של 7 ימים, ולא על גיוסים בפועל.",
-      "source": "Indeed Hiring Lab",
+      "title": "Anthropic ממליצה לאחד סאב-אייג'נטים לתוך לולאת סוכן אחת עם skills וכלים",
+      "summary": "צוות ה-Applied AI של Anthropic מדווח שבכמה פריסות ארגוניות, סוכן יחיד שטוען skills וכלים לפי הצורך הצליח לעיתים קרובות יותר גם מפרומפט אחד ענק וגם מארכיטקטורת סאב-אייג'נטים, ולעיתים בעלות ובזמן תגובה נמוכים יותר. בחברה מזהירים מ'סאב-אייג'נטים כמבנה ארגוני', מציינים שבחירת הכלים נפגעת מעבר ל-30–50 הגדרות כלים, וממליצים לשמור סאב-אייג'נטים רק לעומס הקשר מדיד, לעבודה מקבילית או לבעיית בחירת כלים. פורסם גם migration kit ב-GitHub.",
+      "source": "Claude by Anthropic",
       "publishedAt": "2026-10-22",
-      "category": "jobs",
-      "url": "https://hiringlab.indeed.com/2026/10/22/us-labor-market-snapshot-october-2026/"
+      "category": "ai",
+      "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
+    },
+    {
+      "title": "דיווח: OpenAI מושכת לקוחות קוד מ-Anthropic בהנחות גבוהות",
+      "summary": "לפי The Information (דרך The Decoder), Replit העבירה את רוב הוצאות ה-AI שלה ל-OpenAI אחרי הנחה של יותר מ-30% בחוזה של מעל 100 מיליון דולר בשנה. מנכ\"ל Rippling אמר שחלק OpenAI בעבודת הקוד בחברה עלה מ-16% ל-52%, וחלק Anthropic ירד מ-57% ל-18%. ל-DataCamp דווח על הנחה של 40% בתנאי שימוש ב-Codex. החברות לא אישרו את הנתונים.",
+      "source": "The Decoder (על פי The Information)",
+      "publishedAt": "2026-10-25",
+      "eventAt": "2026-10-24",
+      "category": "ai",
+      "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/"
+    },
+    {
+      "title": "Microsoft Research פתחה את Agensh: הרתמה שהריצה עד 1,024 סוכני קוד בלי מתזמר מרכזי",
+      "summary": "ב-Agensh כל סוכן לוקח לעצמו תת-משימה, משתף ממצאים וממזג למאגר Git משותף (Gitea, ערוץ Mattermost ולוח הקשר משותף), בלי סוכן מוביל. במבחן על 5 המשימות הקשות של ProgramBench, ממוצע אחוז הבדיקות שעברו עלה מ-19.31% עם סוכן אחד ל-28.78% עם 128 סוכנים (GPT-5.6-sol). הקוד ברישיון MIT ורץ עם Docker Compose. עלות הטוקנים לא פורסמה.",
+      "source": "Microsoft (GitHub)",
+      "publishedAt": "2026-10-23",
+      "category": "ai",
+      "url": "https://github.com/microsoft/Agensh"
     }
   ]
 }
