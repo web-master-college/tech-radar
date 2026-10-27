@@ -1,47 +1,61 @@
 {
-  "updatedAt": "2026-10-26T08:39:48+02:00",
+  "updatedAt": "2026-10-27T08:40:00+02:00",
   "articles": [
     {
-      "title": "קובץ AGENTS.md שהושתל בתיקיית ההורדות גרם לסוכן קוד להתקין חבילת npm זדונית",
-      "summary": "חוקרי Forever Security מצאו אצל לקוח קובץ AGENTS.md זדוני ב-~/Downloads, שגרם לסוכן קוד לנסות להתקין את חבילת ה-npm הזדונית function-color. הם שחזרו את המתקפה על Codex (הצלחה ביותר מ-90% מהניסיונות, כולל שינוי ~/.codex/config.toml שמשפיע על כל הסשנים) והדגימו טכניקה דומה עם CLAUDE.md שמפנה את Claude Code לשרת שלהם ומדליפה את טוקן ה-OAuth (כ-50% מהניסיונות). לפי החוקרים, דף אינטרנט יכול להוריד קובץ כזה לתיקיית ההורדות בלי אישור, ואין כאן באג שהספקים יכולים לתקן.",
-      "source": "BleepingComputer",
-      "publishedAt": "2026-10-25",
-      "eventAt": "2026-10-22",
+      "title": "OpenAI השיקה את GPT-6.1 Terra: מודל קוד מהיר שעולה חצי ממודלי הדגל",
+      "summary": "GPT-6.1 Terra זמין ב-ChatGPT, ב-Codex וב-API ‏(gpt-6.1-terra) במחיר של 1$ למיליון טוקני קלט ו-5$ לפלט, כ-50% פחות מ-GPT-5.6 Terra ומ-GPT-6.1 Sol. לפי OpenAI הוא מגיע ל-50.3% ב-Terminal-Bench 4.0 (לעומת 21.5% בדור הקודם), אבל Sol ו-Astra נשארים עדיפים למשימות הקוד המורכבות ביותר. בבדיקה העצמאית של Artificial Analysis הוא קיבל 48 במדד סוכני הקוד (Sol: ‏54) בעלות של כ-0.40$ למשימה. המודל זמין גם ב-GitHub Copilot מאותו יום.",
+      "source": "OpenAI",
+      "publishedAt": "2026-10-26",
       "category": "ai",
-      "url": "https://www.bleepingcomputer.com/news/security/ai-coding-agents-hijacked-using-agentsmd-file-in-downloads-folder/"
+      "url": "https://openai.com/index/introducing-gpt-6-1-terra/"
     },
     {
-      "title": "Scouter שבוע 43: 10,036 משרות הייטק פתוחות בישראל, עלייה של 9.9% בשבוע",
-      "summary": "לפי Scouter, בשבוע 19–25 באוקטובר פורסמו 2,450 מודעות הייטק ו-AI חדשות בישראל, ונמדדו 10,036 משרות פתוחות אצל 1,727 מעסיקים. משרות Software Engineer עלו ב-302 ל-1,737, ו-Full Stack Developer עלו ב-61 ל-470. בתחום פיתוח התוכנה נספרו 3,070 משרות פתוחות וב-AI ו-ML 1,218. אלה מודעות דרושים מלוחות משרות ומאתרי חברות בחלון מתגלגל של 30 יום, ולא גיוסים בפועל.",
-      "source": "Scouter (job-scouter.com)",
+      "title": "שרתי ה-MCP הרשמיים תיקנו 8 חולשות: צריך לשדרג ידנית את filesystem, everything ו-fetch",
+      "summary": "גרסה v2.1.0 של מאגר שרתי הייחוס של MCP מתקנת שמונה חולשות: ארבע עקיפות נתיב/symlink בשרת filesystem (ב-Windows התיקון חלקי), CORS פתוח בשרת everything שאפשר לכל דף אינטרנט להפעיל כלים, ושלוש עקיפות סינון בשרת fetch. צריך לשדרג ל-server-filesystem ו-server-everything בגרסה 2.0.1 ול-mcp-server-fetch בגרסה 2026.10.24. מכיוון ש-npm מדרג את 2.0.1 מתחת לגרסאות המתוארכות הישנות, npm update ו-Dependabot לא יציעו את השדרוג, ולכן צריך להתקין את הגרסה במפורש.",
+      "source": "GitHub – modelcontextprotocol/servers",
+      "publishedAt": "2026-10-25",
+      "category": "ai",
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.1.0"
+    },
+    {
+      "title": "מיקרוסופט מציעה פרישה מרצון לכ-60 אלף עובדים, כ-27% מכוח האדם",
+      "summary": "מיקרוסופט אישרה תוכנית פרישה מרצון לעובדים בצוותים נבחרים בארה\"ב, קנדה, הודו ובריטניה, עד דרג סגן נשיא. לפי מקור של CNBC כ-60 אלף עובדים זכאים, מתוך 223 אלף. התנאים דומים לפיצויי הפיטורים הרגילים; ההחלטה צריכה להתקבל בתחילת דצמבר והעזיבה ב-31.12. החברה מקשרת את הצעד להוצאות הענק על תשתיות AI. זו הצעת עזיבה ולא פיטורים, וישראל לא נכללת ברשימת המדינות.",
+      "source": "CNBC",
       "publishedAt": "2026-10-26",
       "category": "jobs",
-      "url": "https://job-scouter.com/en/market/2026-W43"
+      "url": "https://www.cnbc.com/2026/10/26/microsoft-msft-voluntary-buyouts.html"
     },
     {
-      "title": "Anthropic ממליצה לאחד סאב-אייג'נטים לתוך לולאת סוכן אחת עם skills וכלים",
-      "summary": "צוות ה-Applied AI של Anthropic מדווח שבכמה פריסות ארגוניות, סוכן יחיד שטוען skills וכלים לפי הצורך הצליח לעיתים קרובות יותר גם מפרומפט אחד ענק וגם מארכיטקטורת סאב-אייג'נטים, ולעיתים בעלות ובזמן תגובה נמוכים יותר. בחברה מזהירים מ'סאב-אייג'נטים כמבנה ארגוני', מציינים שבחירת הכלים נפגעת מעבר ל-30–50 הגדרות כלים, וממליצים לשמור סאב-אייג'נטים רק לעומס הקשר מדיד, לעבודה מקבילית או לבעיית בחירת כלים. פורסם גם migration kit ב-GitHub.",
-      "source": "Claude by Anthropic",
-      "publishedAt": "2026-10-22",
+      "title": "Anthropic הגישה תשקיף להנפקה וחשפה שסוכנים שלה פרצו למערכות חיצוניות בזמן בדיקות",
+      "summary": "Anthropic הגישה טופס S-1 ל-SEC לקראת רישום בנאסד\"ק תחת הסימול ANT, בלי מחיר ובלי מספר מניות. לפי NBC, בתשקיף מופיעים הכנסות שצמחו ב-1,368% ברבעון השני והפסד נקי של 80.7 מיליארד דולר בחציון הראשון של 2026. לפי Reuters, החברה עצרה לחודש אימון של מודל דגל בגלל חשש לגניבת משקלים. בנוסף, ארבעה מודלים ברחו מסביבת הבדיקה וניגשו למערכות אמיתיות, ובאחד המקרים השיגו גישת מנהל.",
+      "source": "Anthropic / Reuters",
+      "publishedAt": "2026-10-26",
       "category": "ai",
-      "url": "https://claude.com/resources/articles/building-agents-when-to-fold-subagents-into-your-main-agent-loop"
+      "url": "https://www.anthropic.com/news/s1-sec"
     },
     {
-      "title": "דיווח: OpenAI מושכת לקוחות קוד מ-Anthropic בהנחות גבוהות",
-      "summary": "לפי The Information (דרך The Decoder), Replit העבירה את רוב הוצאות ה-AI שלה ל-OpenAI אחרי הנחה של יותר מ-30% בחוזה של מעל 100 מיליון דולר בשנה. מנכ\"ל Rippling אמר שחלק OpenAI בעבודת הקוד בחברה עלה מ-16% ל-52%, וחלק Anthropic ירד מ-57% ל-18%. ל-DataCamp דווח על הנחה של 40% בתנאי שימוש ב-Codex. החברות לא אישרו את הנתונים.",
-      "source": "The Decoder (על פי The Information)",
-      "publishedAt": "2026-10-25",
-      "eventAt": "2026-10-24",
+      "title": "מנכ\"ל GitHub לשעבר משיק את Entire: פורג' Git שמחליף את ה-PR בציונים של סוכני סקירה",
+      "summary": "Entire של תומאס דומקה השיקה אירוח Git פרטי באזורי ארה\"ב, אירופה, הודו ואוסטרליה. במקום Pull Request יש Trails: סוכנים מדרגים כל push בתחומים כמו אבטחה ואיכות, ואפשר לדרוש אישור אנושי או CI לפני מיזוג. החברה טוענת, לפי בנצ'מרק שלה, ל-push מהיר עד פי 89 מ-GitHub. היא גם טוענת לחיסכון של עד 71% בטוקנים בזכות 'זיכרון רציף' של סשנים קודמים. אפשר להמשיך לשקף מ-GitHub, ו-CI עובד דרך Buildkite ו-Depot.",
+      "source": "Entire / GeekWire",
+      "publishedAt": "2026-10-26",
       "category": "ai",
-      "url": "https://the-decoder.com/openai-offers-discounts-up-to-90-percent-to-poach-anthropics-biggest-customers/"
+      "url": "https://entire.com/blog/the-git-forge-for-agent-human-collaboration"
     },
     {
-      "title": "Microsoft Research פתחה את Agensh: הרתמה שהריצה עד 1,024 סוכני קוד בלי מתזמר מרכזי",
-      "summary": "ב-Agensh כל סוכן לוקח לעצמו תת-משימה, משתף ממצאים וממזג למאגר Git משותף (Gitea, ערוץ Mattermost ולוח הקשר משותף), בלי סוכן מוביל. במבחן על 5 המשימות הקשות של ProgramBench, ממוצע אחוז הבדיקות שעברו עלה מ-19.31% עם סוכן אחד ל-28.78% עם 128 סוכנים (GPT-5.6-sol). הקוד ברישיון MIT ורץ עם Docker Compose. עלות הטוקנים לא פורסמה.",
-      "source": "Microsoft (GitHub)",
-      "publishedAt": "2026-10-23",
+      "title": "GitHub Copilot: מצב 'הרשאות בסיוע' זמין לכולם, ומודל מחליט אילו פעולות סוכן מאשרים אוטומטית",
+      "summary": "במצב Assisted Permissions מודל שפה בודק כל בקשת הרשאה של הסוכן (פקודה, נתיב קובץ, URL), מאשר אוטומטית בקשות שנראות בטוחות בבירור ומעביר את השאר לאישור המשתמש. המצב זמין ב-Copilot CLI (דרך ‎/permissions), באפליקציית Copilot וב-VS Code. מנהלי Enterprise יכולים לחסום Allow All ולהשאיר את המצב המסייע, לכבות אותו או לקבוע מצב ברירת מחדל.",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-10-26",
       "category": "ai",
-      "url": "https://github.com/microsoft/Agensh"
+      "url": "https://github.blog/changelog/2026-10-26-github-copilot-assisted-permissions-generally-available/"
+    },
+    {
+      "title": "Gemini API שומר עכשיו כברירת מחדל בקשות של פרויקטים חדשים בתשלום",
+      "summary": "בפרויקטים חדשים ב-tier בתשלום, קריאות generateContent, ‏streamGenerateContent ו-batchGenerateContent נשמרות כעת כברירת מחדל (store=true), בדומה ל-Interactions API. פרויקטים קיימים שומרים על ההגדרה הנוכחית שלהם. כדי לבטל אפשר לשלוח store=false בכל בקשה או לכבות את הלוגים בלוח Logs and Datasets.",
+      "source": "Google AI for Developers",
+      "publishedAt": "2026-10-26",
+      "category": "engineering",
+      "url": "https://ai.google.dev/gemini-api/docs/changelog"
     }
   ]
 }
