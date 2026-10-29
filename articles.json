@@ -1,54 +1,54 @@
 {
-  "updatedAt": "2026-10-28T08:40:00+02:00",
+  "updatedAt": "2026-10-29T08:37:30+02:00",
   "articles": [
     {
-      "title": "תולעת testmetest: 42 ריפוזיטוריז ב־GitHub נחטפו עם hooks לעוזרי קוד AI",
-      "summary": "JFrog מצאה 42 ריפוזיטוריז חמושים של 11 בעלים לגיטימיים. התוקפים שתלו hooks ב־.claude/settings.json, ב־.gemini/settings.json, ב־.cursor/mcp.json וב־.vscode/tasks.json, כך שפתיחת סוכן AI בריפו מריצה קוד זדוני. המטען שוקל כ־13MB ולכן נעלם מהחיפוש של GitHub. הקמפיין כולל גם 25 חבילות npm, ו־workflow מזויף של CodeQL שהדליף NPM_TOKEN. הנוזקה מוחקת נתונים כשמבטלים טוקנים, ולכן צריך להסיר קודם את ה־persistence ורק אחר כך לבטל אותם.",
-      "source": "JFrog Security Research",
-      "publishedAt": "2026-10-26",
-      "category": "ai",
-      "url": "https://research.jfrog.com/post/beyond-testmetest-42-hijacked-github-repos/"
-    },
-    {
-      "title": "Anthropic: מודל פנימי בנה 5 שרשראות ניצול, כולל 62 CVEs ב־Chrome ו־RCE ב־Linux",
-      "summary": "צוות ה־Frontier Red Team של Anthropic הפעיל מודל מחקר פנימי שלא שוחרר, ומצא איתו חולשות קריטיות שהפכו לשרשראות ניצול עובדות. ב־Chrome הוקצו ותוקנו עד גרסה 156 ‏62 CVEs, מהם 13 בריחות מ־sandbox. ב־Windows נמצאה מניעת שירות מרחוק ב־QUIC בקרנל (CVE-2026-33096), וב־Linux נמצא RCE עם root בלי אינטראקציה דרך multipath TCP (CVE-2026-98432), שכבר תוקן בקרנלים היציבים. החברה ממליצה לסרוק כבר בזמן PR, ופרסמה plugin אבטחה ל־Claude Code.",
-      "source": "Anthropic",
-      "publishedAt": "2026-10-27",
-      "category": "ai",
-      "url": "https://www.anthropic.com/research/discovering-vulnerabilities-with-claude"
-    },
-    {
-      "title": "Tailscale v1.104.4 מתקנת הסלמת הרשאות ב־Tailscale SSH (\"Tailworm\")",
-      "summary": "בעקבות דוח \"Tailworm\" מ־24.10, Tailscale מאשרת שסשן SSH מאומת יכול היה לחרוג מהרשאות המשתמש המקומי, כולל דרך SSH forwarding. כדי לנצל את החולשה צריך כבר להחזיק מכשיר מורשה ב־tailnet, ולכן לא מדובר בתולעת שמתפשטת לבד. הגרסה מתקנת גם 3 באגים ב־Serve/Funnel. ההמלצה היא לעדכן את כל הצמתים, לצמצם את מדיניות ה־SSH ולהפעיל check mode בשרתים רגישים.",
-      "source": "Tailscale",
+      "title": "CISA: תוקפים כבר מנצלים את Node2Shell, חולשת ה־Brotli שתוקנה ב־Node.js",
+      "summary": "CISA הוסיפה ביום שלישי את CVE-2026-111497 לקטלוג החולשות המנוצלות בפועל (KEV) והורתה לסוכנויות הפדרליות לתקן עד 10 בנובמבר. מדובר בכתיבה מחוץ לגבולות במפענח Brotli: זרם דחוס זדוני יכול לגרום לקריסה, לדליפת זיכרון ובמקרים מסוימים להרצת קוד מרחוק. החולשה זוהתה לראשונה ב־Node.js, אבל היא נוגעת גם לשרתים ולקליינטים אחרים שמשתמשים ב־Brotli. מיקרוסופט פרסמה עדכון חירום ל־.NET. אחרי עדכון צריך גם להפעיל מחדש תהליכים ולבנות מחדש אימג'ים של קונטיינרים.",
+      "source": "BleepingComputer",
       "publishedAt": "2026-10-28",
+      "eventAt": "2026-10-27",
       "category": "engineering",
-      "url": "https://tailscale.com/blog/tailscale-ssh-findings-fixes"
+      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/"
     },
     {
-      "title": "Cloudflare: דליפת KV cache בין לקוחות במודל GLM-5.3 על Workers AI",
-      "summary": "בין 27.8 ל־9.9 החזירו 155 תשובות של המודל נתונים מבקשות של לקוחות אחרים. כולן היו לפרומפטים ארוכים מ־681,280 טוקנים. הסיבה הייתה pool KV קטן מחלון ההקשר, יחד עם באג ב־SGLang במצב disaggregated: בקשה שנדחתה עברה ל־decode על דפי cache ישנים והחזירה HTTP 200. לא נמצאו ראיות לניצול מכוון. התיקון נמצא ב־SGLang v0.5.22 ומעלה.",
-      "source": "Cloudflare Blog",
-      "publishedAt": "2026-10-26",
-      "eventAt": "2026-09-09",
-      "category": "engineering",
-      "url": "https://blog.cloudflare.com/kv-cache-exposure-remediation/"
-    },
-    {
-      "title": "GitHub Copilot תומך באימות server-to-server (public preview)",
-      "summary": "GitHub App עם הרשאת ארגון \"Copilot Requests\" לקריאה בלבד יכולה עכשיו להשתמש ב־installation token קצר־טווח, כדי להפעיל את Copilot SDK בשם הארגון בלי טוקן של משתמש אנושי. החיוב הוא על הארגון, ומדיניות המודלים והתקציבים חלה גם על השימוש הזה. ה־app_client_id מופיע בדוח השימוש ב־AI.",
+      "title": "GitHub Copilot Fusion זמין לכולם: ניתוב בין מודלים, קרוב ל־Opus 5.5 בחצי מהעלות",
+      "summary": "ב־GitHub Universe הוכרז ש־Copilot Fusion זמין בכל תוכניות Copilot ב־VS Code, ב־Copilot CLI, באפליקציית Copilot וב־JetBrains. במקום לבחור מודל, בוחרים רמת מאמץ (Standard, High, Max), והמערכת מנתבת כל משימה למודל אחד או מתזמרת כמה מודלים (Cascade, Critique). במבחן עצמאי של Artificial Analysis קיבל Fusion Max ציון 60, לעומת כ־62 ל־Claude Code עם Opus 5.5 Max, בעלות ממוצעת של 5.59 דולר למשימה לעומת 11.42 דולר. החיוב הוא לפי כל מודל שנקרא, ויש הנחה זמנית של 30%.",
       "source": "GitHub Changelog",
-      "publishedAt": "2026-10-27",
+      "publishedAt": "2026-10-28",
       "category": "ai",
-      "url": "https://github.blog/changelog/2026-10-27-github-copilot-supports-server-to-server-authentication/"
+      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/"
     },
     {
-      "title": "Codex CLI 0.165.0: ספק Vertex AI מובנה, memory v2 ותיקון אבטחה",
-      "summary": "הגרסה מוסיפה ספק Google Vertex AI מובנה ואת GPT-6.1 Terra לקטלוג. memory v2 מופעל כברירת מחדל בפרופילים חדשים, ואפשר לייבא אליו זיכרונות מסוכנים אחרים. היא גם סוגרת פער בבדיקת כתובות marketplace שאפשר ל־Git להתחבר ל־host אחר מזה שנבדק.",
-      "source": "OpenAI Codex (GitHub)",
+      "title": "Jellyfish: סוכני AI מעורבים ב־28% מה־PRs, אבל כוח האדם ההנדסי כמעט לא ירד",
+      "summary": "Jellyfish ניתחה 100 מיליון pull requests מספטמבר, של 276 אלף מפתחים ביותר מ־1,300 ארגונים. אצל החברה החציונית סוכני AI היו מעורבים ב־28% מה־PRs שמוזגו, אבל רק 0.5% מוזגו עם סקירת AI בלבד. Claude Code הוא הכלי הנפוץ ביותר במיזוג PRs (31%), ואחריו GitHub Copilot (23%). החברה החציונית סיימה את הרבעון השלישי עם 98% מכוח האדם שלה ברבעון הראשון, והוציאה פי 3.8 על AI לכל מהנדס. העלות למיזוג PR ירדה מ־1,202 ל־820 דולר בשנה.",
+      "source": "DevOps.com",
       "publishedAt": "2026-10-27",
+      "category": "jobs",
+      "url": "https://devops.com/report-claude-code-exceeds-github-copilot-for-merging-pull-requests"
+    },
+    {
+      "title": "GitHub Agentic Workflows זמין לכולם: אוטומציות של סוכני קוד בתוך GitHub Actions",
+      "summary": "GitHub Agentic Workflows, פרויקט קוד פתוח של GitHub Next, יצא לזמינות כללית ב־GitHub Free, Team ו־Enterprise. כותבים את האוטומציה בקובץ Markdown בשפה טבעית, והכלי מקמפל אותה ל־YAML רגיל של Actions, עם Copilot או סוכן קוד אחר. הסוכנים רצים כברירת מחדל בהרשאות קריאה בלבד, בקונטיינר מבודד מאחורי firewall, וכל שינוי מוצע עובר סריקת איומים לפני שהוא מוחל. בגרסה החדשה נוספו תמיכה ב־runners של ARC, ניתוב מודלים ותחזית תקציב עם gh aw forecast. הפעלה עם מנוע Copilot CLI דורשת רישיון Copilot.",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-10-28",
       "category": "ai",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.165.0"
+      "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/"
+    },
+    {
+      "title": "Google הכריזה על Gemini 4 Carbon, אבל בינתיים רק לצוותי הגנת סייבר",
+      "summary": "Google DeepMind הציגה את Gemini 4 Carbon, שבועיים אחרי Gemini 4 Argon. לפי Google הוא במקום הראשון במדד Artificial Analysis Intelligence Index v5.0 (ציון 59), עם 88.2% ב־SEC-bench Pro ו־71.0% ב־CWE-bench. בשלב ראשון המודל ייפתח רק לקבוצה של מגיני סייבר דרך תוכנית Fairwind, ולמפתחים הוא יגיע בהמשך. המחיר ההתחלתי הוא 2 דולר למיליון טוקנים בקלט ו־10 דולר בפלט, ואחר כך 4 ו־20 דולר.",
+      "source": "Google Blog",
+      "publishedAt": "2026-10-28",
+      "category": "ai",
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
+    },
+    {
+      "title": "מדד Scouter: 12,292 משרות הייטק ו־AI פתוחות בישראל, 3,377 מהן בפיתוח תוכנה",
+      "summary": "נכון ל־29.10, Scouter סופרת 12,292 משרות הייטק ו־AI פתוחות אצל 1,925 מעסיקים בישראל, בחלון מתגלגל של 30 יום. 3,377 מהן בפיתוח תוכנה, 1,403 ב־DevOps ותשתיות ו־1,364 ב־AI ולמידת מכונה. מבין המשרות שמציינות ניסיון, 68.9% מבקשות 3–5 שנים. המעסיקים המובילים הם אלביט (518), Speechify (500) ו־Matrix (433). לפי Scouter הביקוש עלה ב־104.8% ב־30 הימים האחרונים. אלה משרות מפורסמות, לא גיוסים בפועל.",
+      "source": "Scouter",
+      "publishedAt": "2026-10-29",
+      "category": "jobs",
+      "url": "https://job-scouter.com/en/market"
     }
   ]
 }
