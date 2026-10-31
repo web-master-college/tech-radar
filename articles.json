@@ -1,54 +1,69 @@
 {
-  "updatedAt": "2026-10-29T08:37:30+02:00",
+  "updatedAt": "2026-10-31T08:35:36+02:00",
   "articles": [
     {
-      "title": "CISA: תוקפים כבר מנצלים את Node2Shell, חולשת ה־Brotli שתוקנה ב־Node.js",
-      "summary": "CISA הוסיפה ביום שלישי את CVE-2026-111497 לקטלוג החולשות המנוצלות בפועל (KEV) והורתה לסוכנויות הפדרליות לתקן עד 10 בנובמבר. מדובר בכתיבה מחוץ לגבולות במפענח Brotli: זרם דחוס זדוני יכול לגרום לקריסה, לדליפת זיכרון ובמקרים מסוימים להרצת קוד מרחוק. החולשה זוהתה לראשונה ב־Node.js, אבל היא נוגעת גם לשרתים ולקליינטים אחרים שמשתמשים ב־Brotli. מיקרוסופט פרסמה עדכון חירום ל־.NET. אחרי עדכון צריך גם להפעיל מחדש תהליכים ולבנות מחדש אימג'ים של קונטיינרים.",
-      "source": "BleepingComputer",
-      "publishedAt": "2026-10-28",
-      "eventAt": "2026-10-27",
+      "title": "קוד זדוני בתוסף Claude Code שהופץ ב־Marketplace של Cursor: כ־5,000 התקנות אפשריות",
+      "summary": "ב־29.10 הופיעו במשך כ־11 שעות בחנות התוספים של Cursor גרסאות מזויפות 2.1.312–2.1.313 של תוסף Claude Code, שניסו להוסיף מפתח SSH של התוקף (svc-telemetry), להקים מנהרת SSH הפוכה ולשלוח פרטי מחשב. Cursor הסירה אותן, בנתה מחדש את החנות ופרסמה סקריפט בדיקה וניקוי; לפי WIRED עד 5,000 משתמשים התקינו, ו־Anthropic מדגישה שהמערכות שלה לא נפרצו.",
+      "source": "Cursor",
+      "publishedAt": "2026-10-29",
+      "category": "ai",
+      "url": "https://cursor.com/blog/claude-code-extension-security-notice"
+    },
+    {
+      "title": "Postgres.js 4.0: שכתוב מלא עם שינויים שוברים ושני תיקוני אבטחה",
+      "summary": "הגרסה משכתבת את ה־pool, החיבור והפרוטוקול, דורשת Node.js 20 ומעלה ועוברת ל־ES module בלבד; השרת קובע עכשיו את סוג הפרמטרים, sql.array() הוסר, ו־COMMIT שהשרת החזיר כ־ROLLBACK נדחה במקום להיחשב הצלחה. נסגרו גם הזרקת פרמטרים דרך תו NUL במחרוזת החיבור ובעיית עמודה בשם __proto__, שתוקנו גם בענף 3.",
+      "source": "porsager/postgres (GitHub Releases)",
+      "publishedAt": "2026-10-29",
       "category": "engineering",
-      "url": "https://www.bleepingcomputer.com/news/security/cisa-warns-of-hackers-now-exploiting-critical-node2shell-flaw/"
+      "url": "https://github.com/porsager/postgres/releases/tag/v4.0.0"
     },
     {
-      "title": "GitHub Copilot Fusion זמין לכולם: ניתוב בין מודלים, קרוב ל־Opus 5.5 בחצי מהעלות",
-      "summary": "ב־GitHub Universe הוכרז ש־Copilot Fusion זמין בכל תוכניות Copilot ב־VS Code, ב־Copilot CLI, באפליקציית Copilot וב־JetBrains. במקום לבחור מודל, בוחרים רמת מאמץ (Standard, High, Max), והמערכת מנתבת כל משימה למודל אחד או מתזמרת כמה מודלים (Cascade, Critique). במבחן עצמאי של Artificial Analysis קיבל Fusion Max ציון 60, לעומת כ־62 ל־Claude Code עם Opus 5.5 Max, בעלות ממוצעת של 5.59 דולר למשימה לעומת 11.42 דולר. החיוב הוא לפי כל מודל שנקרא, ויש הנחה זמנית של 30%.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-10-28",
-      "category": "ai",
-      "url": "https://github.blog/changelog/2026-10-28-route-and-orchestrate-models-with-github-copilot-fusion/"
-    },
-    {
-      "title": "Jellyfish: סוכני AI מעורבים ב־28% מה־PRs, אבל כוח האדם ההנדסי כמעט לא ירד",
-      "summary": "Jellyfish ניתחה 100 מיליון pull requests מספטמבר, של 276 אלף מפתחים ביותר מ־1,300 ארגונים. אצל החברה החציונית סוכני AI היו מעורבים ב־28% מה־PRs שמוזגו, אבל רק 0.5% מוזגו עם סקירת AI בלבד. Claude Code הוא הכלי הנפוץ ביותר במיזוג PRs (31%), ואחריו GitHub Copilot (23%). החברה החציונית סיימה את הרבעון השלישי עם 98% מכוח האדם שלה ברבעון הראשון, והוציאה פי 3.8 על AI לכל מהנדס. העלות למיזוג PR ירדה מ־1,202 ל־820 דולר בשנה.",
-      "source": "DevOps.com",
-      "publishedAt": "2026-10-27",
-      "category": "jobs",
-      "url": "https://devops.com/report-claude-code-exceeds-github-copilot-for-merging-pull-requests"
-    },
-    {
-      "title": "GitHub Agentic Workflows זמין לכולם: אוטומציות של סוכני קוד בתוך GitHub Actions",
-      "summary": "GitHub Agentic Workflows, פרויקט קוד פתוח של GitHub Next, יצא לזמינות כללית ב־GitHub Free, Team ו־Enterprise. כותבים את האוטומציה בקובץ Markdown בשפה טבעית, והכלי מקמפל אותה ל־YAML רגיל של Actions, עם Copilot או סוכן קוד אחר. הסוכנים רצים כברירת מחדל בהרשאות קריאה בלבד, בקונטיינר מבודד מאחורי firewall, וכל שינוי מוצע עובר סריקת איומים לפני שהוא מוחל. בגרסה החדשה נוספו תמיכה ב־runners של ARC, ניתוב מודלים ותחזית תקציב עם gh aw forecast. הפעלה עם מנוע Copilot CLI דורשת רישיון Copilot.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-10-28",
-      "category": "ai",
-      "url": "https://github.blog/changelog/2026-10-28-github-agentic-workflows-generally-available/"
-    },
-    {
-      "title": "Google הכריזה על Gemini 4 Carbon, אבל בינתיים רק לצוותי הגנת סייבר",
-      "summary": "Google DeepMind הציגה את Gemini 4 Carbon, שבועיים אחרי Gemini 4 Argon. לפי Google הוא במקום הראשון במדד Artificial Analysis Intelligence Index v5.0 (ציון 59), עם 88.2% ב־SEC-bench Pro ו־71.0% ב־CWE-bench. בשלב ראשון המודל ייפתח רק לקבוצה של מגיני סייבר דרך תוכנית Fairwind, ולמפתחים הוא יגיע בהמשך. המחיר ההתחלתי הוא 2 דולר למיליון טוקנים בקלט ו־10 דולר בפלט, ואחר כך 4 ו־20 דולר.",
-      "source": "Google Blog",
-      "publishedAt": "2026-10-28",
-      "category": "ai",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-carbon/"
-    },
-    {
-      "title": "מדד Scouter: 12,292 משרות הייטק ו־AI פתוחות בישראל, 3,377 מהן בפיתוח תוכנה",
-      "summary": "נכון ל־29.10, Scouter סופרת 12,292 משרות הייטק ו־AI פתוחות אצל 1,925 מעסיקים בישראל, בחלון מתגלגל של 30 יום. 3,377 מהן בפיתוח תוכנה, 1,403 ב־DevOps ותשתיות ו־1,364 ב־AI ולמידת מכונה. מבין המשרות שמציינות ניסיון, 68.9% מבקשות 3–5 שנים. המעסיקים המובילים הם אלביט (518), Speechify (500) ו־Matrix (433). לפי Scouter הביקוש עלה ב־104.8% ב־30 הימים האחרונים. אלה משרות מפורסמות, לא גיוסים בפועל.",
-      "source": "Scouter",
+      "title": "Randstad: בנקים וחברות בריאות משלמים למהנדסי תוכנה יותר מחברות טק",
+      "summary": "לפי הדוח, בנקאות משלמת למהנדסי תוכנה פרמיה חציונית של 13% ובריאות ומדעי החיים עד 17% לעומת חברות טכנולוגיה, ומודעות שדורשות יכולות AI גדלו פי חמישה בשנה. הסקר: 1,100 מקבלי החלטות ב־11 מדינות באוגוסט 2026 (ישראל לא נכללה), לצד 20 מיליון מודעות דרושים.",
+      "source": "Randstad",
       "publishedAt": "2026-10-29",
       "category": "jobs",
-      "url": "https://job-scouter.com/en/market"
+      "url": "https://www.randstad.com/press/2026/randstad-tech-talent-report-2026/"
+    },
+    {
+      "title": "Copilot code review: אישור של Copilot נספר עכשיו כאישור נדרש ל־PR",
+      "summary": "GitHub הפכה את אישורי Copilot לזמינים לכולם: כשהאדמין מפעיל אותם, אישור של Copilot נספר במניין האישורים הנדרשים, ונמחק כשנדחפים קומיטים חדשים. נוספה גם רמת Max ב־preview, שמריצה כמה סוכני סקירה על מודלים מספקים שונים ומאחדת את הממצאים, במחיר זמן וקרדיטים גבוהים יותר.",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-10-28",
+      "category": "ai",
+      "url": "https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals/"
+    },
+    {
+      "title": "Factory Droid 1.0: הסוכן כותב תוכנית JavaScript שמריצה מאות קריאות לכלים",
+      "summary": "ב־Droid 1.0 ברירת המחדל היא programmatic tool calling: המודל כותב סקריפט שרץ ב־sandbox ומבצע קריאות רבות לכלים בבקשה אחת, וכך רק הפלט המודפס נכנס להקשר. לפי Factory, ב־Terminal-Bench 4 הוא עקף את Claude Code, Codex ו־Cursor באותם מודלים בעלות נמוכה יותר; אלה מדידות של החברה עצמה.",
+      "source": "Factory",
+      "publishedAt": "2026-10-29",
+      "category": "ai",
+      "url": "https://factory.com/news/frontier-harness"
+    },
+    {
+      "title": "XM Cyber פיטרה כ־250 מתוך כ־300 עובדיה בישראל אחרי עסקת CrowdStrike",
+      "summary": "CrowdStrike קנתה את הטכנולוגיה, קוד המקור והפטנטים של XM Cyber בכ־600 מיליון דולר, אבל לא את הלקוחות, ולכן רוב העובדים לא עברו. לפי דיווחי כלכליסט ו־ynet, כ־50 עובדים נשארים בישראל כדי לשרת לקוחות קיימים.",
+      "source": "Techwire",
+      "publishedAt": "2026-10-29",
+      "category": "jobs",
+      "url": "https://www.techwire.co.il/en/article/xm-cyber-lays-off-most-israel-staff-crowdstrike"
+    },
+    {
+      "title": "Octoverse 2026: סוכנים פותחים כבר יותר מ־40% מה־PRs ב־GitHub",
+      "summary": "לפי GitHub, בספטמבר יותר מ־40% מה־pull requests התחילו מטיוטה של סוכן, לעומת 17% במרץ, ו־90% מה־PRs של סוכנים מוזגו תוך שבועיים. GitHub מציינת שזה רף תחתון ושמיזוג אינו מדד לאיכות הקוד.",
+      "source": "GitHub Blog",
+      "publishedAt": "2026-10-28",
+      "category": "ai",
+      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
+    },
+    {
+      "title": "Claude Code 2.1.314: אפשר לחסום כתיבה מחוץ לתיקיות העבודה בכל מצב הרשאות",
+      "summary": "ההגדרה permissions.blockWritesOutsideWorkingDirectories גורמת ל־Write, Edit ו־NotebookEdit לסרב לנתיבים מחוץ לתיקיות העבודה. בנוסף, claude -p מחזיר עכשיו קוד יציאה 1 כשההפעלה נכשלת, במקום 0 בלי פלט, וזה חשוב לסקריפטים ול־CI.",
+      "source": "Anthropic (GitHub Releases)",
+      "publishedAt": "2026-10-30",
+      "category": "ai",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314"
     }
   ]
 }
