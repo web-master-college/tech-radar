@@ -1,69 +1,46 @@
 {
-  "updatedAt": "2026-10-31T08:35:36+02:00",
+  "updatedAt": "2026-11-01T08:39:35+02:00",
   "articles": [
     {
-      "title": "קוד זדוני בתוסף Claude Code שהופץ ב־Marketplace של Cursor: כ־5,000 התקנות אפשריות",
-      "summary": "ב־29.10 הופיעו במשך כ־11 שעות בחנות התוספים של Cursor גרסאות מזויפות 2.1.312–2.1.313 של תוסף Claude Code, שניסו להוסיף מפתח SSH של התוקף (svc-telemetry), להקים מנהרת SSH הפוכה ולשלוח פרטי מחשב. Cursor הסירה אותן, בנתה מחדש את החנות ופרסמה סקריפט בדיקה וניקוי; לפי WIRED עד 5,000 משתמשים התקינו, ו־Anthropic מדגישה שהמערכות שלה לא נפרצו.",
-      "source": "Cursor",
-      "publishedAt": "2026-10-29",
-      "category": "ai",
-      "url": "https://cursor.com/blog/claude-code-extension-security-notice"
-    },
-    {
-      "title": "Postgres.js 4.0: שכתוב מלא עם שינויים שוברים ושני תיקוני אבטחה",
-      "summary": "הגרסה משכתבת את ה־pool, החיבור והפרוטוקול, דורשת Node.js 20 ומעלה ועוברת ל־ES module בלבד; השרת קובע עכשיו את סוג הפרמטרים, sql.array() הוסר, ו־COMMIT שהשרת החזיר כ־ROLLBACK נדחה במקום להיחשב הצלחה. נסגרו גם הזרקת פרמטרים דרך תו NUL במחרוזת החיבור ובעיית עמודה בשם __proto__, שתוקנו גם בענף 3.",
-      "source": "porsager/postgres (GitHub Releases)",
-      "publishedAt": "2026-10-29",
+      "title": "Express: עדכוני אבטחה ל־body-parser ול־multer נגד קריסת שרת מבקשה אחת",
+      "summary": "צוות Express שחרר את body-parser 2.4.0 ו־1.20.9 ואת multer 2.5.0, שמתקנים שתי חולשות DoS בדירוג High: גוף בקשה דחוס עם בתים עודפים, או ביטול בקשה בזמן ש־fileFilter אסינכרוני עדיין רץ, גורמים לחריגה לא מטופלת שמפילה את התהליך, בלי צורך באימות. הצוות ממליץ גם לעדכן את Node.js בגלל חולשת ה־Brotli (CVE-2026-111497), כי ה־body parsers של Express מפענחים כברירת מחדל גוף בקידוד br.",
+      "source": "Express.js Blog",
+      "publishedAt": "2026-10-31",
       "category": "engineering",
-      "url": "https://github.com/porsager/postgres/releases/tag/v4.0.0"
+      "url": "https://expressjs.com/en/blog/2026-10-31-security-releases/"
     },
     {
-      "title": "Randstad: בנקים וחברות בריאות משלמים למהנדסי תוכנה יותר מחברות טק",
-      "summary": "לפי הדוח, בנקאות משלמת למהנדסי תוכנה פרמיה חציונית של 13% ובריאות ומדעי החיים עד 17% לעומת חברות טכנולוגיה, ומודעות שדורשות יכולות AI גדלו פי חמישה בשנה. הסקר: 1,100 מקבלי החלטות ב־11 מדינות באוגוסט 2026 (ישראל לא נכללה), לצד 20 מיליון מודעות דרושים.",
-      "source": "Randstad",
-      "publishedAt": "2026-10-29",
+      "title": "גיוסי ההון של סטארטאפים ישראליים באוקטובר: השפל הנמוך מאז אוקטובר 2023",
+      "summary": "לפי סיכום של גיקטיים, באוקטובר דווחו רק 13 גיוסי הון של סטארטאפים ישראליים בסך 453 מיליון דולר, וכמחצית מהסכום הגיעה משתי חברות (Capitolis ו־Upwind). באותו חודש נרשמו 10 עסקאות רכישה, בהן Classiq לאינטל בכ־2.3 מיליארד דולר. אלה נתוני גיוסי הון ולא נתוני גיוס עובדים.",
+      "source": "Geektime",
+      "publishedAt": "2026-10-30",
       "category": "jobs",
-      "url": "https://www.randstad.com/press/2026/randstad-tech-talent-report-2026/"
+      "url": "https://www.geektime.co.il/october-2026-monthly-funding-roundup/"
     },
     {
-      "title": "Copilot code review: אישור של Copilot נספר עכשיו כאישור נדרש ל־PR",
-      "summary": "GitHub הפכה את אישורי Copilot לזמינים לכולם: כשהאדמין מפעיל אותם, אישור של Copilot נספר במניין האישורים הנדרשים, ונמחק כשנדחפים קומיטים חדשים. נוספה גם רמת Max ב־preview, שמריצה כמה סוכני סקירה על מודלים מספקים שונים ומאחדת את הממצאים, במחיר זמן וקרדיטים גבוהים יותר.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-10-28",
-      "category": "ai",
-      "url": "https://github.blog/changelog/2026-10-28-copilot-code-review-merge-with-confidence-with-max-and-approvals/"
-    },
-    {
-      "title": "Factory Droid 1.0: הסוכן כותב תוכנית JavaScript שמריצה מאות קריאות לכלים",
-      "summary": "ב־Droid 1.0 ברירת המחדל היא programmatic tool calling: המודל כותב סקריפט שרץ ב־sandbox ומבצע קריאות רבות לכלים בבקשה אחת, וכך רק הפלט המודפס נכנס להקשר. לפי Factory, ב־Terminal-Bench 4 הוא עקף את Claude Code, Codex ו־Cursor באותם מודלים בעלות נמוכה יותר; אלה מדידות של החברה עצמה.",
-      "source": "Factory",
-      "publishedAt": "2026-10-29",
-      "category": "ai",
-      "url": "https://factory.com/news/frontier-harness"
-    },
-    {
-      "title": "XM Cyber פיטרה כ־250 מתוך כ־300 עובדיה בישראל אחרי עסקת CrowdStrike",
-      "summary": "CrowdStrike קנתה את הטכנולוגיה, קוד המקור והפטנטים של XM Cyber בכ־600 מיליון דולר, אבל לא את הלקוחות, ולכן רוב העובדים לא עברו. לפי דיווחי כלכליסט ו־ynet, כ־50 עובדים נשארים בישראל כדי לשרת לקוחות קיימים.",
-      "source": "Techwire",
-      "publishedAt": "2026-10-29",
-      "category": "jobs",
-      "url": "https://www.techwire.co.il/en/article/xm-cyber-lays-off-most-israel-staff-crowdstrike"
-    },
-    {
-      "title": "Octoverse 2026: סוכנים פותחים כבר יותר מ־40% מה־PRs ב־GitHub",
-      "summary": "לפי GitHub, בספטמבר יותר מ־40% מה־pull requests התחילו מטיוטה של סוכן, לעומת 17% במרץ, ו־90% מה־PRs של סוכנים מוזגו תוך שבועיים. GitHub מציינת שזה רף תחתון ושמיזוג אינו מדד לאיכות הקוד.",
-      "source": "GitHub Blog",
-      "publishedAt": "2026-10-28",
-      "category": "ai",
-      "url": "https://github.blog/news-insights/octoverse/octoverse-commits-pushes-reach-new-highs-in-2026-as-developers-build-with-agents/"
-    },
-    {
-      "title": "Claude Code 2.1.314: אפשר לחסום כתיבה מחוץ לתיקיות העבודה בכל מצב הרשאות",
-      "summary": "ההגדרה permissions.blockWritesOutsideWorkingDirectories גורמת ל־Write, Edit ו־NotebookEdit לסרב לנתיבים מחוץ לתיקיות העבודה. בנוסף, claude -p מחזיר עכשיו קוד יציאה 1 כשההפעלה נכשלת, במקום 0 בלי פלט, וזה חשוב לסקריפטים ול־CI.",
-      "source": "Anthropic (GitHub Releases)",
+      "title": "Gemini API: הכלי Computer Use זמין לכולם (GA)",
+      "summary": "Google העבירה את Computer Use לזמינות כללית ב־Interactions API וב־GenerateContent API. הכלי מאפשר לבנות סוכנים שמפעילים דפדפן, מובייל או דסקטופ לפי צילומי מסך, עם כוונה מנומקת לכל פעולה, מדיניות בטיחות שניתנת להגדרה ופעולות שדורשות אישור משתמש; הקוד של המפתח הוא שמבצע את הפעולות בפועל.",
+      "source": "Google AI for Developers",
       "publishedAt": "2026-10-30",
       "category": "ai",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.314"
+      "url": "https://ai.google.dev/gemini-api/docs/computer-use"
+    },
+    {
+      "title": "Dropbox מצמצמת כ־200 משרות, כ־9% מהעובדים, כולל בהנדסה",
+      "summary": "Dropbox הודיעה על ביטול כ־200 תפקידים בצוותי Engineering, Product, Design ו־G&A, כ־9% מכוח האדם העולמי, למרות שלדבריה העסק רווחי. החברה מסבירה את הצעד בריכוז משאבים בתחומים בעלי ההשפעה הגבוהה ביותר, ובמקביל הודיעה על עזיבת בכיר טכנולוגי, עלי דסדן.",
+      "source": "Dropbox Blog",
+      "publishedAt": "2026-10-28",
+      "category": "jobs",
+      "url": "https://blog.dropbox.com/topics/company/an-update-on-organizational-changes-2026"
+    },
+    {
+      "title": "OpenAI Agents API: בדיקה אוטומטית של פקודות לפני הרצה ודחיסת הקשר ברקע",
+      "summary": "לפי פוסט של צוות Agents API ש־OpenAI Developers שיתפו, ה־API המנוהל לסוכנים קיבל auto-review בסגנון Codex שבודק פקודות לפני הרצה, דחיסת הקשר אסינכרונית, הגדרה ניסיונית של מודעות לזמן והחלפת כלים בסשן פעיל. שני PRs שמוזגו ב־SDKs של OpenAI ל־Go ול־Java מאשרים את הגדרות הסקירה, החלפת הכלים ו־time_awareness.",
+      "source": "Automater (על בסיס OpenAI Developers ו־GitHub)",
+      "publishedAt": "2026-10-31",
+      "eventAt": "2026-10-30",
+      "category": "ai",
+      "url": "https://automater.ai/news/openai-agents-api-auto-review-async-compaction-tool-updates/"
     }
   ]
 }
