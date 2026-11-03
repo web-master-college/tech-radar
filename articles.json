@@ -1,38 +1,37 @@
 {
-  "updatedAt": "2026-11-02T08:38:25+02:00",
+  "updatedAt": "2026-11-03T08:34:56+02:00",
   "articles": [
     {
-      "title": "OpenAI: מדצמבר מכסת השימוש של ChatGPT ושל Codex תהיה משותפת ותימדד בטוקנים",
-      "summary": "לפי מרכז העזרה של OpenAI, החל מדצמבר מכסת השימוש בתוכניות Plus, Pro ו־Business תחולק בין ChatGPT ל־Codex ותימדד בטוקנים, כך שמודלים מתקדמים ומשימות מורכבות יצרכו יותר מהמכסה. צ'אט Instant לא ייספר במכסה, והיתרה המשותפת וזמני האיפוס יוצגו ב־Settings → Usage. OpenAI לא פרסמה תאריך מדויק או גודל מכסה, ומשתמשים בפורום הקהילה מבקשים השוואה מספרית לפני ואחרי.",
-      "source": "OpenAI Help Center",
-      "publishedAt": "2026-11-01",
+      "title": "DeepSeek פרסמה בקוד פתוח את dsh-superagent: סוכן קוד שעובד לבד מול ריפו ב־GitHub",
+      "summary": "צוות Harness של DeepSeek פרסם ברישיון MIT אב־טיפוס מחקרי של סוכן קוד שמאזין לריפו אחד ב־GitHub, ואופציונלית גם ל־Feishu. כל בקשה מאושרת מקבלת סשן ותיקייה נפרדים, והתשובה חוזרת לשיחה המקורית, למשל כ־pull request. מצב ברירת המחדל לעבודה יזומה הוא observe, שרק רושם מה הסוכן היה לוקח. DeepSeek מדגישה שזה לא מוצר רשמי ולא מוכן לייצור, ושהוא רץ עם הרשאות מלאות של משתמש מערכת ההפעלה ולכן צריך לבודד אותו.",
+      "source": "DeepSeek (GitHub)",
+      "publishedAt": "2026-10-31",
       "category": "ai",
-      "url": "https://help.openai.com/en/articles/20001625-understanding-chatgpt-and-codex-usage-limits"
+      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
     },
     {
-      "title": "Anthropic: תוכנית Max 20x הפכה ל־Ultra, ובחשבונות מאומתים אין יותר מגבלת 5 שעות",
-      "summary": "Anthropic שינתה את שמות תוכניות המנוי: Max 5x נקראת עכשיו Max (100 דולר לחודש) ו־Max 20x נקראת Ultra (200 דולר לחודש), בלי שינוי מחיר. ב־Ultra מאומת אין מגבלת חלון של 5 שעות, אבל נשארת מגבלה שבועית של פי 10 משימוש Pro, וחשבונות שעדיין לא אומתו מקבלים מגבלה זמנית. המנוי כולל גם את Claude Code וקרדיטים חודשיים ל־API.",
-      "source": "Claude Help Center",
-      "publishedAt": "2026-10-30",
-      "category": "ai",
-      "url": "https://support.claude.com/en/articles/17728952-what-is-the-ultra-plan"
+      "title": "SUSE מקצצת כ־10% מהעובדים ומציינת אוטומציה ו־AI, ו־Squarespace מקצצת כ־19%",
+      "summary": "לפי מזכר שהגיע ל־The Register, מנכ\"ל SUSE הודיע ב־2 בנובמבר על צמצום של כ־10% מכוח האדם העולמי, כ־1,900 עובדים, וכתב שהדרישה לחלק מהתפקידים \"פחתה מאוד\" בגלל אוטומציה ו־AI. התפקידים שייפגעו לא פורטו. באותו יום אישרה Squarespace ל־TechCrunch צמצום של כ־19%, כ־300 עובדים, בלי לציין את AI כסיבה.",
+      "source": "The Register",
+      "publishedAt": "2026-11-02",
+      "category": "jobs",
+      "url": "https://www.theregister.com/software/2026/11/02/suse-to-cut-one-in-ten-employees-because-of-ai/5306950"
     },
     {
-      "title": "AWS: גרסה 1.0 של AgentCore CLI זמינה, עם תבניות TypeScript לסוכני AI",
-      "summary": "AWS הכריזה על זמינות כללית של Amazon Bedrock AgentCore CLI בגרסה 1.0 (@aws/agentcore 1.0.0), כלי שורת פקודה ליצירה, פיתוח, פריסה ותפעול של סוכני AI. הגרסה נבנתה מחדש עם הפעלה מהירה יותר ומבנה פקודות אחיד, ומאפשרת לעבוד ישירות מול runtimes, memory, identity ו־gateways. פרויקטים קיימים מועברים עם agentcore migrate, ולפי התיעוד יש תבניות TypeScript (Strands ו־Vercel AI) על Node 22.",
-      "source": "AWS What's New",
+      "title": "GitHub Actions: קובצי lockfile לתלויות של workflows זמינים לכולם",
+      "summary": "GitHub הודיעה ב־28 באוקטובר על זמינות כללית של lockfiles ל־Actions בתוכניות Free, ‏Team ו־Enterprise Cloud. התוסף gh actions-lock יוצר את הקובץ .github/workflows/actions.lock, שמצמיד כל action ותלויותיו לקומיט מדויק, ו־Dependabot מעדכן אותו באותו PR. מנהלים יכולים לחייב שימוש בו, ו־GitHub מזכירה שהנעילה לא בודקת אם התלות עצמה בטוחה.",
+      "source": "GitHub Changelog",
       "publishedAt": "2026-10-28",
       "category": "engineering",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/10/amazon-bedrock-agentcore-cli-version-1-0-available/"
+      "url": "https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available"
     },
     {
-      "title": "OpenAI: ב־30 בנובמבר נסגרים Evals, ‏Agent Builder ו־API הפרומפטים",
-      "summary": "לפי דף ההוצאה משימוש של OpenAI (הודעה מיוני 2026), פלטפורמת Evals עברה למצב קריאה בלבד ב־31 באוקטובר, והדשבורד וה־API שלה ייסגרו ב־30 בנובמבר 2026, עם Promptfoo כמסלול המעבר. באותו תאריך ייסגרו גם ה־API של reusable prompts ‏(v1/prompts) ו־Agent Builder. זו תזכורת לדדליין של הודעה ישנה, לא הכרזה חדשה.",
-      "source": "OpenAI API Docs",
-      "publishedAt": "2026-06-03",
-      "eventAt": "2026-11-30",
-      "category": "ai",
-      "url": "https://developers.openai.com/api/docs/deprecations"
+      "title": "אטרה הישראלית מפטרת כ־10% מעובדיה",
+      "summary": "לפי גלובס, חברת התוכנה אטרה (Atera), שמפתחת פלטפורמה לניהול IT עם סוכני AI, מפטרת כ־10% מעובדיה במסגרת התייעלות ושינוי ארגוני. החברה מסרה שהיא ממשיכה להשקיע בפלטפורמה וב־Robin, טכנולוגיית ה־IT האוטונומי שלה. גלובס מדווח על כ־350 עובדים, ואילו אייס מדווח על כ־450 עובדים ועל כ־45 מפוטרים.",
+      "source": "גלובס",
+      "publishedAt": "2026-11-02",
+      "category": "jobs",
+      "url": "https://www.globes.co.il/news/article.aspx?did=1001561649"
     }
   ]
 }
