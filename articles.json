@@ -1,37 +1,54 @@
 {
-  "updatedAt": "2026-11-03T08:34:56+02:00",
+  "updatedAt": "2026-11-04T08:34:28+02:00",
   "articles": [
     {
-      "title": "DeepSeek פרסמה בקוד פתוח את dsh-superagent: סוכן קוד שעובד לבד מול ריפו ב־GitHub",
-      "summary": "צוות Harness של DeepSeek פרסם ברישיון MIT אב־טיפוס מחקרי של סוכן קוד שמאזין לריפו אחד ב־GitHub, ואופציונלית גם ל־Feishu. כל בקשה מאושרת מקבלת סשן ותיקייה נפרדים, והתשובה חוזרת לשיחה המקורית, למשל כ־pull request. מצב ברירת המחדל לעבודה יזומה הוא observe, שרק רושם מה הסוכן היה לוקח. DeepSeek מדגישה שזה לא מוצר רשמי ולא מוכן לייצור, ושהוא רץ עם הרשאות מלאות של משתמש מערכת ההפעלה ולכן צריך לבודד אותו.",
-      "source": "DeepSeek (GitHub)",
-      "publishedAt": "2026-10-31",
-      "category": "ai",
-      "url": "https://github.com/deepseek-ai/dsh-superagent-prototype"
-    },
-    {
-      "title": "SUSE מקצצת כ־10% מהעובדים ומציינת אוטומציה ו־AI, ו־Squarespace מקצצת כ־19%",
-      "summary": "לפי מזכר שהגיע ל־The Register, מנכ\"ל SUSE הודיע ב־2 בנובמבר על צמצום של כ־10% מכוח האדם העולמי, כ־1,900 עובדים, וכתב שהדרישה לחלק מהתפקידים \"פחתה מאוד\" בגלל אוטומציה ו־AI. התפקידים שייפגעו לא פורטו. באותו יום אישרה Squarespace ל־TechCrunch צמצום של כ־19%, כ־300 עובדים, בלי לציין את AI כסיבה.",
-      "source": "The Register",
+      "title": "Anthropic השיקה message threads: סוכן שולח את השיחה פעם אחת, ואחר כך רק את מה שחדש",
+      "summary": "פיצ'ר חדש בבטא ציבורית ב־Messages API: הבקשה הראשונה פותחת thread עם כל השיחה, והבקשות הבאות שולחות רק הודעות חדשות ואת מזהה התשובה הקודמת. לפי Anthropic, הפיצ'ר כבר פעיל כברירת מחדל לרוב משתמשי Claude Code, ובבקשות של 500 אלף עד מיליון טוקנים זמן התגובה הראשונה (TTFT) ירד בכ־35% בחציון. המחיר ומגבלות הקצב לא משתנים, כי Claude עדיין קורא את כל השיחה בכל תור. thread פג 5 דקות אחרי הבקשה האחרונה, כך שהלקוח צריך לשמור עותק משלו של השיחה.",
+      "source": "Anthropic (Claude)",
       "publishedAt": "2026-11-02",
-      "category": "jobs",
-      "url": "https://www.theregister.com/software/2026/11/02/suse-to-cut-one-in-ten-employees-because-of-ai/5306950"
+      "category": "ai",
+      "url": "https://claude.com/resources/articles/message-threads"
     },
     {
-      "title": "GitHub Actions: קובצי lockfile לתלויות של workflows זמינים לכולם",
-      "summary": "GitHub הודיעה ב־28 באוקטובר על זמינות כללית של lockfiles ל־Actions בתוכניות Free, ‏Team ו־Enterprise Cloud. התוסף gh actions-lock יוצר את הקובץ .github/workflows/actions.lock, שמצמיד כל action ותלויותיו לקומיט מדויק, ו־Dependabot מעדכן אותו באותו PR. מנהלים יכולים לחייב שימוש בו, ו־GitHub מזכירה שהנעילה לא בודקת אם התלות עצמה בטוחה.",
+      "title": "נייס מפטרת כ־500 עובדים, כ־5% מכוח האדם העולמי, על רקע המעבר ל־AI",
+      "summary": "לפי גלובס, נייס מרעננה תצמצם כ־5% מכוח האדם, כ־500 עובדים ברחבי העולם, יום לפני פרסום דוחות הרבעון השלישי. החברה מסרה שהשינוי נועד להתאים את המבנה הארגוני ללקוחות שמטמיעים פתרונות AI לשירות לקוחות. לא נמסר כמה מהמפוטרים בישראל. ביולי אמר המנכ\"ל סקוט ראסל לגלובס שאין כוונה לפטר בישראל, שם הועסקו אז כ־900 אנשי מו\"פ.",
+      "source": "גלובס",
+      "publishedAt": "2026-11-03",
+      "category": "jobs",
+      "url": "https://www.globes.co.il/news/article.aspx?did=1001561807"
+    },
+    {
+      "title": "Gemini API: ‏gemini-2.5-pro ו־gemini-2.5-flash הוצאו משימוש, ומ־1 בדצמבר יופנו אוטומטית למודלים חדשים",
+      "summary": "לפי יומן השינויים של Gemini API מ־2 בנובמבר, החל מ־1 בדצמבר 2026 כל קריאה ל־gemini-2.5-pro תנותב ל־gemini-3.8-flash, וכל קריאה ל־gemini-2.5-flash תנותב ל־gemini-3.5-flash-lite, ותחויב לפי התעריף של המודל החדש. Google מציינת שינויים שוברים במעבר: אימות function calling ו־thought_signature, ‏thinking_level במקום thinking_budget, והסרת פרמטרי sampling ו־prefill של תור המודל.",
+      "source": "Google AI for Developers",
+      "publishedAt": "2026-11-02",
+      "eventAt": "2026-12-01",
+      "category": "ai",
+      "url": "https://ai.google.dev/gemini-api/docs/deprecations"
+    },
+    {
+      "title": "Claude Code 2.1.317: הוקים של Agent SDK שנכשלים חוסמים את הפעולה, ודוח עלויות לאדמינים",
+      "summary": "הגרסה פורסמה ב־3 בנובמבר. היא מוסיפה onFailure: \"block\" ל־hook callbacks של Agent SDK, כך שכשל ב־callback עוצר את הפעולה במקום לתת לה לרוץ. נוסף גם endpoint של דוח עלויות לפי מפתח, יום או קבוצת IdP ב־gateway, אזהרה ב־/schedule כשמשימה מתוזמנת מקבלת connectors שלא ביקשת, ובדיקה לפני שקריאת web או shell שולחת את כתובת המייל של החשבון החוצה. תוקנו גם שרתי MCP שהתנתקו אחרי התור הראשון בחלק מסשנים בדסקטופ.",
+      "source": "Anthropic (GitHub)",
+      "publishedAt": "2026-11-03",
+      "category": "ai",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317"
+    },
+    {
+      "title": "GitHub Copilot זמין עכשיו ב־JetBrains Air, כולל משימות בענן על מנוי Copilot",
+      "summary": "GitHub הודיעה ב־3 בנובמבר שאפשר לבחור ב־Copilot כסוכן בתוך JetBrains Air, דרך Agent Client Protocol (ACP). אפשר להריץ כמה סשנים במקביל ולסקור שינויים ליד הקוד, וגם להריץ משימות בענן דרך Air Teams. משימות הענן משתמשות במנוי Copilot ולא בקרדיטים של JetBrains AI, ורצות בקונטיינר Docker על מכונה חדשה, עם proxy לכל התעבורה ובלי מצב שנשמר בין משימות.",
       "source": "GitHub Changelog",
+      "publishedAt": "2026-11-03",
+      "category": "ai",
+      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/"
+    },
+    {
+      "title": "Node.js 26 עבר ל־Active LTS בשם Lithium, עם תמיכה עד סוף אפריל 2029",
+      "summary": "גרסה 26.13.0 מ־28 באוקטובר מסמנת את המעבר של קו 26.x ל־LTS. מלבד מטא־דאטה אין בה שינויי קוד לעומת 26.12.1, שכבר כוללת את תיקוני האבטחה של אוקטובר. מי שעובר מ־Node 24 או 22 צריך לשים לב שמאז Node 25 הבינאריים הרשמיים ללינוקס מקושרים ל־libatomic, שבחלק מההפצות צריך להתקין בנפרד.",
+      "source": "Node.js",
       "publishedAt": "2026-10-28",
       "category": "engineering",
-      "url": "https://github.blog/changelog/2026-10-28-github-actions-workflow-lockfiles-are-generally-available"
-    },
-    {
-      "title": "אטרה הישראלית מפטרת כ־10% מעובדיה",
-      "summary": "לפי גלובס, חברת התוכנה אטרה (Atera), שמפתחת פלטפורמה לניהול IT עם סוכני AI, מפטרת כ־10% מעובדיה במסגרת התייעלות ושינוי ארגוני. החברה מסרה שהיא ממשיכה להשקיע בפלטפורמה וב־Robin, טכנולוגיית ה־IT האוטונומי שלה. גלובס מדווח על כ־350 עובדים, ואילו אייס מדווח על כ־450 עובדים ועל כ־45 מפוטרים.",
-      "source": "גלובס",
-      "publishedAt": "2026-11-02",
-      "category": "jobs",
-      "url": "https://www.globes.co.il/news/article.aspx?did=1001561649"
+      "url": "https://nodejs.org/en/blog/release/v26.13.0"
     }
   ]
 }
