@@ -1,54 +1,63 @@
 {
-  "updatedAt": "2026-11-04T08:34:28+02:00",
+  "updatedAt": "2026-11-05T08:37:00+02:00",
   "articles": [
     {
-      "title": "Anthropic השיקה message threads: סוכן שולח את השיחה פעם אחת, ואחר כך רק את מה שחדש",
-      "summary": "פיצ'ר חדש בבטא ציבורית ב־Messages API: הבקשה הראשונה פותחת thread עם כל השיחה, והבקשות הבאות שולחות רק הודעות חדשות ואת מזהה התשובה הקודמת. לפי Anthropic, הפיצ'ר כבר פעיל כברירת מחדל לרוב משתמשי Claude Code, ובבקשות של 500 אלף עד מיליון טוקנים זמן התגובה הראשונה (TTFT) ירד בכ־35% בחציון. המחיר ומגבלות הקצב לא משתנים, כי Claude עדיין קורא את כל השיחה בכל תור. thread פג 5 דקות אחרי הבקשה האחרונה, כך שהלקוח צריך לשמור עותק משלו של השיחה.",
-      "source": "Anthropic (Claude)",
-      "publishedAt": "2026-11-02",
-      "category": "ai",
-      "url": "https://claude.com/resources/articles/message-threads"
+      "title": "Node.js תפרסם ב־11 בנובמבר עדכוני אבטחה בחומרה גבוהה לגרסאות 22, 24 ו־26",
+      "summary": "פרויקט Node.js הודיע מראש שגרסאות חדשות לקווים 26.x, ‏24.x ו־22.x ייצאו ב־11 בנובמבר 2026 או מעט אחריו, והבעיה החמורה ביותר בכל קו מדורגת HIGH. ההודעה לא מפרטת כמה פגיעויות יתוקנו, באילו רכיבים, ולא מציעה עקיפה. גרסאות שהגיעו לסוף חיים, כמו Node 20 ו־25, תמיד מושפעות ולא יקבלו תיקון.",
+      "source": "Node.js",
+      "publishedAt": "2026-11-03T23:00:00Z",
+      "eventAt": "2026-11-11",
+      "category": "engineering",
+      "url": "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
     },
     {
-      "title": "נייס מפטרת כ־500 עובדים, כ־5% מכוח האדם העולמי, על רקע המעבר ל־AI",
-      "summary": "לפי גלובס, נייס מרעננה תצמצם כ־5% מכוח האדם, כ־500 עובדים ברחבי העולם, יום לפני פרסום דוחות הרבעון השלישי. החברה מסרה שהשינוי נועד להתאים את המבנה הארגוני ללקוחות שמטמיעים פתרונות AI לשירות לקוחות. לא נמסר כמה מהמפוטרים בישראל. ביולי אמר המנכ\"ל סקוט ראסל לגלובס שאין כוונה לפטר בישראל, שם הועסקו אז כ־900 אנשי מו\"פ.",
-      "source": "גלובס",
+      "title": "OpenAI רוכשת את Pierre, החברה שמאחורי Code Storage והספריות Trees ו־Diffs שכבר רצות ב־Codex",
+      "summary": "OpenAI הודיעה ב־4 בנובמבר על הסכם לרכישת Pierre Computer Company, שמפתחת את Code Storage, שירות לאחסון קוד והיסטוריה על בסיס Git, ואת ספריות הקוד הפתוח Trees, ‏Diffs ו־Highlights. לפי OpenAI, המטרה היא לבנות סביב Codex תהליכי Git שמותאמים לעבודה מקבילית של סוכנים, מהענף הראשון ועד הפריסה. הפרויקטים יישארו בקוד פתוח, לקוחות Code Storage ימשיכו לקבל שירות, והעסקה עדיין כפופה לאישורים רגולטוריים. המחיר לא פורסם.",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-04",
+      "category": "ai",
+      "url": "https://openai.com/index/openai-to-acquire-pierre/"
+    },
+    {
+      "title": "Dice: מודעות הדרושים בטכנולוגיה בארה\"ב עלו ב־4% באוקטובר וב־20% בשנה, ומשרות AI/ML כמעט הוכפלו",
+      "summary": "לפי דוח אוקטובר של Dice, שמבוסס על נתוני מודעות דרושים של Lightcast בארה\"ב (נשלפו ב־3 בנובמבר), מספר המודעות בטכנולוגיה עלה ב־4% לעומת ספטמבר וב־20% לעומת אוקטובר 2025. מודעות AI ולמידת מכונה עלו ב־91% בשנה. בין התפקידים בצמיחה בולטים Lead Infrastructure, ‏Staff ו־Distinguished Engineer, ו־Claude AI ו־GitHub Copilot מופיעים יותר כדרישות במודעות, לצד Technical Debt ו־Design Reviews.",
+      "source": "Dice",
       "publishedAt": "2026-11-03",
       "category": "jobs",
-      "url": "https://www.globes.co.il/news/article.aspx?did=1001561807"
+      "url": "https://www.dice.com/hiring/recruitment/reports/dice-tech-job-report"
     },
     {
-      "title": "Gemini API: ‏gemini-2.5-pro ו־gemini-2.5-flash הוצאו משימוש, ומ־1 בדצמבר יופנו אוטומטית למודלים חדשים",
-      "summary": "לפי יומן השינויים של Gemini API מ־2 בנובמבר, החל מ־1 בדצמבר 2026 כל קריאה ל־gemini-2.5-pro תנותב ל־gemini-3.8-flash, וכל קריאה ל־gemini-2.5-flash תנותב ל־gemini-3.5-flash-lite, ותחויב לפי התעריף של המודל החדש. Google מציינת שינויים שוברים במעבר: אימות function calling ו־thought_signature, ‏thinking_level במקום thinking_budget, והסרת פרמטרי sampling ו־prefill של תור המודל.",
-      "source": "Google AI for Developers",
-      "publishedAt": "2026-11-02",
-      "eventAt": "2026-12-01",
-      "category": "ai",
-      "url": "https://ai.google.dev/gemini-api/docs/deprecations"
-    },
-    {
-      "title": "Claude Code 2.1.317: הוקים של Agent SDK שנכשלים חוסמים את הפעולה, ודוח עלויות לאדמינים",
-      "summary": "הגרסה פורסמה ב־3 בנובמבר. היא מוסיפה onFailure: \"block\" ל־hook callbacks של Agent SDK, כך שכשל ב־callback עוצר את הפעולה במקום לתת לה לרוץ. נוסף גם endpoint של דוח עלויות לפי מפתח, יום או קבוצת IdP ב־gateway, אזהרה ב־/schedule כשמשימה מתוזמנת מקבלת connectors שלא ביקשת, ובדיקה לפני שקריאת web או shell שולחת את כתובת המייל של החשבון החוצה. תוקנו גם שרתי MCP שהתנתקו אחרי התור הראשון בחלק מסשנים בדסקטופ.",
-      "source": "Anthropic (GitHub)",
-      "publishedAt": "2026-11-03",
-      "category": "ai",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.317"
-    },
-    {
-      "title": "GitHub Copilot זמין עכשיו ב־JetBrains Air, כולל משימות בענן על מנוי Copilot",
-      "summary": "GitHub הודיעה ב־3 בנובמבר שאפשר לבחור ב־Copilot כסוכן בתוך JetBrains Air, דרך Agent Client Protocol (ACP). אפשר להריץ כמה סשנים במקביל ולסקור שינויים ליד הקוד, וגם להריץ משימות בענן דרך Air Teams. משימות הענן משתמשות במנוי Copilot ולא בקרדיטים של JetBrains AI, ורצות בקונטיינר Docker על מכונה חדשה, עם proxy לכל התעבורה ובלי מצב שנשמר בין משימות.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-11-03",
-      "category": "ai",
-      "url": "https://github.blog/changelog/2026-11-03-github-copilot-is-now-available-in-jetbrains-air/"
-    },
-    {
-      "title": "Node.js 26 עבר ל־Active LTS בשם Lithium, עם תמיכה עד סוף אפריל 2029",
-      "summary": "גרסה 26.13.0 מ־28 באוקטובר מסמנת את המעבר של קו 26.x ל־LTS. מלבד מטא־דאטה אין בה שינויי קוד לעומת 26.12.1, שכבר כוללת את תיקוני האבטחה של אוקטובר. מי שעובר מ־Node 24 או 22 צריך לשים לב שמאז Node 25 הבינאריים הרשמיים ללינוקס מקושרים ל־libatomic, שבחלק מההפצות צריך להתקין בנפרד.",
-      "source": "Node.js",
-      "publishedAt": "2026-10-28",
+      "title": "Next.js 16.4.5 ו־15.5.29: תיקוני אבטחה לדליפת cache בין דיירים ב־use cache ולחשיפת cookies בנתיבי Edge",
+      "summary": "Vercel פרסמה ב־3 בנובמבר עדכוני אבטחה ל־Next.js, כולל פגיעות בחומרה גבוהה שבה שילוב של unstable_cache ו־use cache עלול להחזיר תוכן שנשמר במטמון של דייר אחר. תוקנו גם הרעלת shell משותף באפליקציות self-hosted, הזרקת תגובות בין לקוחות מאחורי proxy מסוים, וחשיפת ערכי cookie דרך header פנימי בנתיבי Edge. ההמלצה הרשמית היא לעדכן ל־16.4.5 או ל־15.5.29.",
+      "source": "Next.js (Vercel)",
+      "publishedAt": "2026-11-03T18:00:00Z",
       "category": "engineering",
-      "url": "https://nodejs.org/en/blog/release/v26.13.0"
+      "url": "https://nextjs.org/blog/november-2026-security-release"
+    },
+    {
+      "title": "Meta רכשה את Conductor, כלי להרצת כמה סוכני קוד במקביל; שירות הענן ייסגר ב־20 בנובמבר",
+      "summary": "לפי TechCrunch, ‏Meta אישרה שרכשה את Conductor, סטארט־אפ שמאפשר להריץ כמה סוכני קוד (של Anthropic ו־OpenAI) במקביל בסביבות עבודה נפרדות. המייסד צ'רלי הולץ כתב שהיכולות הקיימות ימשיכו לעבוד עד תחילת השנה הבאה, חוץ משירות הענן שייסגר ב־20 בנובמבר, ואחרי זה יתחילו למחוק נתוני ענן של משתמשים. פרטי העסקה לא פורסמו.",
+      "source": "TechCrunch",
+      "publishedAt": "2026-11-04T21:10:56Z",
+      "eventAt": "2026-11-20",
+      "category": "ai",
+      "url": "https://techcrunch.com/2026/11/04/meta-acquires-ai-coding-startup-conductor/"
+    },
+    {
+      "title": "Cognition השיקה את SWE-2 Flash: מודל קוד זול ומהיר יותר ל־Devin, בחינם עד סוף נובמבר",
+      "summary": "Cognition הציגה את SWE-2 Flash, מודל קוד שמבוסס על Inkling-Small של Thinking Machines, וזמין ב־Devin Desktop וב־CLI. לפי החברה הוא מהיר פי 3 ועולה חמישית מ־SWE-2, ומיועד למשימות שגרתיות של סוכנים כמו code review, אוטומציות ועדכון תיעוד. לפי Unite.AI השימוש בו חינמי עד 30 בנובמבר. המשקלות לא פורסמו לציבור, וכל תוצאות ה־benchmark הן של החברה עצמה.",
+      "source": "Cognition",
+      "publishedAt": "2026-11-04T10:00:00-08:00",
+      "category": "ai",
+      "url": "https://cognition.com/blog/swe-2-flash"
+    },
+    {
+      "title": "VS Code 1.145: סוכנים שונים באותו session, אוטומציות מקומיות עם cron ותצוגה מקדימה מסוכן מרוחק",
+      "summary": "בגרסה 1.145 של VS Code (4 בנובמבר) אפשר, בתצוגה מקדימה, להריץ באותו session שיחות משנה עם harness שונה, למשל לבקש מ־Claude לבדוק תוכנית ש־Copilot כתב. אוטומציות מקומיות של סוכנים תומכות עכשיו בלוח זמנים cron ובסוכנים מותאמים מה־workspace. הדפדפן המובנה יכול לטעון אפליקציה שסוכן הריץ על מארח מרוחק, ושרתי MCP apps יכולים לרשום כלים שהמודל קורא להם.",
+      "source": "Visual Studio Code",
+      "publishedAt": "2026-11-04",
+      "category": "ai",
+      "url": "https://code.visualstudio.com/updates/v1_145"
     }
   ]
 }
