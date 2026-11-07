@@ -1,54 +1,53 @@
 {
-  "updatedAt": "2026-11-06T08:39:00+02:00",
+  "updatedAt": "2026-11-07T08:40:00+02:00",
   "articles": [
     {
-      "title": "Cursor: בניית אפליקציות חיות עם סוכן ענן — Postgres, אימות SSO ופרסום לקישור",
-      "summary": "ב־5 בנובמבר Cursor השיקה את Build Live Apps: סוכן ענן יכול לבנות אפליקציית ווב, להקים Postgres לפי הצורך, להגדיר אימות מאחורי Cursor SSO ולפרסם לדומיין שנבחר. לפני פרסום רצות בדיקות אבטחה דטרמיניסטיות וסוכניות; כלום לא עולה לאוויר בלי אישור מפורש. היכולת זמינה בכל תוכניות בתשלום עם cloud agents מופעלים; פריסה מ־Cursor Origin ו־GitHub, ותמיכה ב־GitLab עדיין לא קיימת.",
-      "source": "Cursor",
-      "publishedAt": "2026-11-05",
+      "title": "Cursor השיקה Voice Chat עם סוכנים: שיחת קול בזמן אמת ב־IDE, Agents Window, web ו־iOS",
+      "summary": "ב־6 בנובמבר פרסמה Cursor ביומן השינויים שניתן לשוחח עם הסוכנים בשיחת קול בזמן אמת: לתאר שינוי בקול, לשאול מה הסוכן עושה ולשמוע עדכוני התקדמות. Voice Chat זמין ב־Agents Window, ב־IDE, ב־web וב־Cursor ל־iOS, ורץ על Grok Voice; עם Privacy Mode מופעל נטען Zero Data Retention. זה נפרד מ־dictation (לשעבר Voice Mode) שהופך דיבור לטקסט בשורת הצ'אט.",
+      "source": "Cursor Changelog",
+      "publishedAt": "2026-11-06",
       "category": "ai",
-      "url": "https://cursor.com/changelog/build-live-apps"
+      "url": "https://cursor.com/changelog/voice-chat"
     },
     {
-      "title": "OpenAI משיקה את GPT-6 Cyber לסוכני סייבר; מסווג Critical במסגרת המוכנות",
-      "summary": "ב־5 בנובמבר OpenAI הציגה את GPT-6 Cyber, מודל לחיפוש ואימות פגיעויות תוך הישארות בגבולות שהחוקרים מגדירים. לפי החברה, הציון ב־ExploitGym עלה ל־48.5% מ־32.1% ב־GPT-5.6 Cyber, והמודל מסווג Critical בסייבר במסגרת Preparedness. בשלב זה הגישה דרך API ו־Codex לקבוצת לקוחות Daybreak Red מאושרים בלבד; Daybreak Blue ל־GPT-6 Astra מורחב בהדרגה.",
-      "source": "OpenAI",
-      "publishedAt": "2026-11-05",
+      "title": "Claude Code 2.1.319: משימות MCP ברקע, denyInsteadOfPrompting, ו־latency-optimize ל־API",
+      "summary": "גרסה 2.1.319 פורסמה ב־6 בנובמבר ב־GitHub. כששרת MCP מריץ קריאת כלי כמשימה, Claude Code מעביר אותה מיד לרקע בטרמינל ומחזיר את התוצאה כשהיא מסתיימת (ניתן לבטל עם CLAUDE_CODE_DISABLE_MCP_TASK_BACKGROUND). נוסף permissions.denyInsteadOfPrompting שדוחה קריאות שממתינות להרשאה במקום לעצור את התור, ופקודת /claude-api latency-optimize. Agent SDK TypeScript 0.3.319 מתיישר עם אותה גרסה ומוסיף תמיכת MCP task בסשני SDK.",
+      "source": "Anthropic (GitHub)",
+      "publishedAt": "2026-11-06",
       "category": "ai",
-      "url": "https://openai.com/index/introducing-gpt-6-cyber"
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319"
     },
     {
-      "title": "Scouter שבוע 44: 3,962 מודעות חדשות ו־12,974 משרות הייטק פתוחות בישראל",
-      "summary": "לפי מדד Scouter לשבוע 26 באוקטובר–1 בנובמבר (פורסם ב־2 בנובמבר, לא שוכתב), נספרו 3,962 מודעות הייטק ו־AI חדשות בישראל ו־12,974 משרות פתוחות אצל 1,900 מעסיקים בחלון נע של 30 יום. בפיתוח תוכנה 3,467 משרות פתוחות; ב־AI/ML ‏1,406. בראש המעסיקים: אלביט (521), מטריקס (510) ו־Speechify (500).",
-      "source": "Job Scouter",
-      "publishedAt": "2026-11-02",
-      "category": "jobs",
-      "url": "https://job-scouter.com/en/market/2026-W44"
-    },
-    {
-      "title": "Factory רוכשת את HumanLayer ותפתח את המוצר בקוד פתוח",
-      "summary": "ב־4 בנובמבר Factory הודיעה ש־HumanLayer מצטרפת אליה. הפלטפורמה הנוכחית תמשיך לפעול בתקופת מעבר, עם תמיכה בייצוא נתונים, מעבר ל־Factory או self-host של הקוד הפתוח. בטווח הקרוב מתוכננים ב־Factory פיצ'רים כמו משימות multiplayer ושיתוף פעולה על תוכניות ומסמכי עיצוב שסוכנים כותבים. פרטי העסקה לא פורסמו.",
-      "source": "Factory",
-      "publishedAt": "2026-11-04",
+      "title": "Codex CLI 0.167.0: מרכז סוכנים בטרמינל, מעבר בין backends ושמירת טיוטות",
+      "summary": "OpenAI פרסמה ב־6 בנובמבר את Codex 0.167.0 (תג rust-v0.167.0). הפיצ'ר הבולט הוא מרכז פקודות לסוכנים דרך codex agents --no-daemon, עם סימון תוצאות שלא נקראו בבורר הסשנים. אפשר לעבור בין backends מחוברים מהטרמינל ולשמור טיוטות במעבר, להציג תצוגות מקדימות של תמונות מקומיות, ולהגדיר Vertex AI דרך אשף gcp_setup_wizard תחת Sign in another way.",
+      "source": "OpenAI (GitHub Codex)",
+      "publishedAt": "2026-11-06",
       "category": "ai",
-      "url": "https://factory.com/news/humanlayer"
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0"
     },
     {
-      "title": "undici: פגיעות Moderate לחשיפת credentials בהפניה cross-origin עם headers כמערך tuples",
-      "summary": "ב־5 בנובמבר פורסם ייעוץ אבטחה ל־undici (ספריית ה־HTTP שמאחורי fetch ב־Node): כש־headers מועברים כמערך של זוגות [name, value], מנגנון ההפניות לא מסיר Authorization/Cookie בהפניה ל־origin אחר. גרסאות מתוקנות: 7.30.2 ו־8.12.4. חומרה Moderate (CVSS 3.1 ‏5.9). עקיפה: להעביר headers כאובייקט או כמערך שטוח.",
-      "source": "GitHub Advisory (nodejs/undici)",
-      "publishedAt": "2026-11-05",
-      "category": "engineering",
-      "url": "https://github.com/nodejs/undici/security/advisories/GHSA-9v6h-8rgp-m69f"
-    },
-    {
-      "title": "GitHub Actions: מ־2 בדצמבר pull_request_target ייחסם כברירת מחדל בריפו ציבוריים",
-      "summary": "ב־2 בנובמבר GitHub עדכנה שהאכיפה נדחתה ל־2 בדצמבר 2026: בריפוציטוריים ציבוריים אירועי pull_request_target ייחסמו כברירת מחדל אלא אם מדיניות Actions מתירה במפורש. מתוכננים brownouts ב־9 וב־16 בנובמבר בין 16:00–18:00 UTC. ריפו פרטיים ופנימיים לא מושפעים.",
+      "title": "GitHub Copilot code review: ניהול הגדרות ב־REST/GraphQL API וסקירת overview קומפקטית יותר",
+      "summary": "ב־6 בנובמבר הודיעה GitHub שאפשר לנהל הגדרות Copilot code review דרך REST ו־GraphQL, ממדיניות ארגון־על עד מאגר בודד. אפשר לזהות ביקורות של Copilot בשדות attribution, לראות את רמת ה־effort ואת מקורות ההערה (skills, MCP, custom instructions). ה־overview קומפקטי יותר, וביקורות Balanced effort משתמשות בשלושה מודלים עם מודל נוסף שממזג ממצאים. זמין ל־Pro, Pro+, Max, Business ו־Enterprise.",
       "source": "GitHub Changelog",
-      "publishedAt": "2026-11-02",
-      "eventAt": "2026-12-02",
+      "publishedAt": "2026-11-06",
+      "category": "ai",
+      "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/"
+    },
+    {
+      "title": "postgres.js 4.1.0: query_timeout, sql.batch, ותיקון PGSSLMODE שהתעלם מ־TLS",
+      "summary": "ב־5 בנובמבר יצאה postgres.js 4.1.0. נוספו query_timeout ו־cancel_timeout, ‏sql.batch לשליחת כמה שאילתות בסיבוב אחד עם Sync יחיד, ‏sql.identifier, ו־eager_types. תיקון חשוב: PGSSLMODE נקרא שוב — קודם היה מתעלם ממנו כך ש־verify-full יכול היה להתחבר בטקסט גלוי בלי שגיאה. גם תמיכת Node.js 18 חזרה (engines >=18). זה המשך ל־4.0.0 שכבר סוקר.",
+      "source": "postgres.js (GitHub)",
+      "publishedAt": "2026-11-05",
       "category": "engineering",
-      "url": "https://github.blog/changelog/2026-11-02-pull_request_target-blocked-by-default-december-2/"
+      "url": "https://github.com/porsager/postgres/releases/tag/v4.1.0"
+    },
+    {
+      "title": "Techwire: פיטורים בתוכנה מול גיוס בשבבים וסייבר — מדריך לשוק העבודה הישראלי בעידן ה־AI",
+      "summary": "כתבת מגזין מ־5 בנובמבר מסכמת את הפיצול: פיטורים בתוכנה/SaaS (אטרה ~10%, סולאראדג' ~200, פיירבלוקס ~7%, XTEND ~10%, XM Cyber אחרי עסקת CrowdStrike) מול גיוס ב־Tower (~150), נובה/קמטק ונבידיה ישראל. מצטטת ניתוח כלכליסט/רשות החדשנות: שיעור פיטורים בתוכנה 6.6% במחצית הראשונה מול 1.1% בחומרה. מדגישה להפריד בין משרות פנויות לפיטורים, ומזהירה מ־AI washing.",
+      "source": "Techwire",
+      "publishedAt": "2026-11-05",
+      "category": "jobs",
+      "url": "https://www.techwire.co.il/en/article/magazine-israeli-tech-jobs-ai-who-is-hired-who-is-fired"
     }
   ]
 }
