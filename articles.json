@@ -1,53 +1,37 @@
 {
-  "updatedAt": "2026-11-07T08:40:00+02:00",
+  "updatedAt": "2026-11-08T08:50:00+02:00",
   "articles": [
     {
-      "title": "Cursor השיקה Voice Chat עם סוכנים: שיחת קול בזמן אמת ב־IDE, Agents Window, web ו־iOS",
-      "summary": "ב־6 בנובמבר פרסמה Cursor ביומן השינויים שניתן לשוחח עם הסוכנים בשיחת קול בזמן אמת: לתאר שינוי בקול, לשאול מה הסוכן עושה ולשמוע עדכוני התקדמות. Voice Chat זמין ב־Agents Window, ב־IDE, ב־web וב־Cursor ל־iOS, ורץ על Grok Voice; עם Privacy Mode מופעל נטען Zero Data Retention. זה נפרד מ־dictation (לשעבר Voice Mode) שהופך דיבור לטקסט בשורת הצ'אט.",
-      "source": "Cursor Changelog",
-      "publishedAt": "2026-11-06",
-      "category": "ai",
-      "url": "https://cursor.com/changelog/voice-chat"
-    },
-    {
-      "title": "Claude Code 2.1.319: משימות MCP ברקע, denyInsteadOfPrompting, ו־latency-optimize ל־API",
-      "summary": "גרסה 2.1.319 פורסמה ב־6 בנובמבר ב־GitHub. כששרת MCP מריץ קריאת כלי כמשימה, Claude Code מעביר אותה מיד לרקע בטרמינל ומחזיר את התוצאה כשהיא מסתיימת (ניתן לבטל עם CLAUDE_CODE_DISABLE_MCP_TASK_BACKGROUND). נוסף permissions.denyInsteadOfPrompting שדוחה קריאות שממתינות להרשאה במקום לעצור את התור, ופקודת /claude-api latency-optimize. Agent SDK TypeScript 0.3.319 מתיישר עם אותה גרסה ומוסיף תמיכת MCP task בסשני SDK.",
-      "source": "Anthropic (GitHub)",
-      "publishedAt": "2026-11-06",
-      "category": "ai",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.319"
-    },
-    {
-      "title": "Codex CLI 0.167.0: מרכז סוכנים בטרמינל, מעבר בין backends ושמירת טיוטות",
-      "summary": "OpenAI פרסמה ב־6 בנובמבר את Codex 0.167.0 (תג rust-v0.167.0). הפיצ'ר הבולט הוא מרכז פקודות לסוכנים דרך codex agents --no-daemon, עם סימון תוצאות שלא נקראו בבורר הסשנים. אפשר לעבור בין backends מחוברים מהטרמינל ולשמור טיוטות במעבר, להציג תצוגות מקדימות של תמונות מקומיות, ולהגדיר Vertex AI דרך אשף gcp_setup_wizard תחת Sign in another way.",
-      "source": "OpenAI (GitHub Codex)",
-      "publishedAt": "2026-11-06",
-      "category": "ai",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.167.0"
-    },
-    {
-      "title": "GitHub Copilot code review: ניהול הגדרות ב־REST/GraphQL API וסקירת overview קומפקטית יותר",
-      "summary": "ב־6 בנובמבר הודיעה GitHub שאפשר לנהל הגדרות Copilot code review דרך REST ו־GraphQL, ממדיניות ארגון־על עד מאגר בודד. אפשר לזהות ביקורות של Copilot בשדות attribution, לראות את רמת ה־effort ואת מקורות ההערה (skills, MCP, custom instructions). ה־overview קומפקטי יותר, וביקורות Balanced effort משתמשות בשלושה מודלים עם מודל נוסף שממזג ממצאים. זמין ל־Pro, Pro+, Max, Business ו־Enterprise.",
+      "title": "@GitHub ב־Slack וב־Teams זמין לכלל המשתמשים, כולל Canvas לסקירה ב־Teams",
+      "summary": "ב־6 בנובמבר הודיעה GitHub ש־@GitHub ב־Slack וב־Microsoft Teams זמין לכלל המשתמשים: אפשר לחקור באגים, ליצור issues, ליישם שינויים ולפתוח pull requests מתוך השיחה. ב־Teams נוסף Canvas לסקירת תוכניות מימוש, שינויי קוד ותצוגות מקדימות לצד השיחה. @GitHub מזהה עכשיו את המאגר מתוך ההודעה ומפעיל סשן בלי לבחור אותו שוב, issues ו־PR שנוצרים כוללים שורת ייחוס לשיחה ולמשתמש, ותוקנה תקלה שמנעה מענה להודעות המשך.",
       "source": "GitHub Changelog",
       "publishedAt": "2026-11-06",
       "category": "ai",
-      "url": "https://github.blog/changelog/2026-11-06-copilot-code-review-api-management-and-review-overview-updates/"
+      "url": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/"
     },
     {
-      "title": "postgres.js 4.1.0: query_timeout, sql.batch, ותיקון PGSSLMODE שהתעלם מ־TLS",
-      "summary": "ב־5 בנובמבר יצאה postgres.js 4.1.0. נוספו query_timeout ו־cancel_timeout, ‏sql.batch לשליחת כמה שאילתות בסיבוב אחד עם Sync יחיד, ‏sql.identifier, ו־eager_types. תיקון חשוב: PGSSLMODE נקרא שוב — קודם היה מתעלם ממנו כך ש־verify-full יכול היה להתחבר בטקסט גלוי בלי שגיאה. גם תמיכת Node.js 18 חזרה (engines >=18). זה המשך ל־4.0.0 שכבר סוקר.",
-      "source": "postgres.js (GitHub)",
+      "title": "Vercel AI SDK 7.0.165: כתובות ספק עם פרטי גישה כבר לא מגיעות לטלמטריה לפני הסינון",
+      "summary": "ב־7 בנובמבר פורסם ai@7.0.165. עד התיקון, כתובות בקשה לספק עברו סינון ל־origin רק אחרי ש־executeLanguageModelCall חזר, כך שאינטגרציות טלמטריה ומנויים ל־Node tracing-channel יכלו לראות רכיבים רגישים בכתובת, כולל פרטי גישה ב־query, בזמן שתוצאת ה־API הציבורית כבר הייתה מסוננת. עכשיו הסינון מתבצע בתוך ה־callbacks של generateText ו־streamText לפני שהתוצאה מגיעה לטלמטריה. באותה גרסה גם הוסרו תזמוני מילים מתמלול מהטלמטריה כאשר recordOutputs כבוי. מחברי התיקון מציינים שמסלול WorkflowAgent הנפרד לא תוקן בשינוי הזה.",
+      "source": "Vercel AI SDK (GitHub)",
+      "publishedAt": "2026-11-07",
+      "category": "ai",
+      "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.165"
+    },
+    {
+      "title": "GitHub פתחה תצוגת Overview חדשה ל־pull request בתצוגה מקדימה ציבורית",
+      "summary": "ב־5 בנובמבר הציגה GitHub תצוגת Overview חדשה ל־pull request כתצוגה מקדימה ציבורית לבחירה, עם המשך פריסה לאורך סוף השבוע. בראש הדף מופיע סיכום קומפקטי של מוכנות למיזוג: בדיקות, תגובות, אישורים והפעולה הבאה, למשל עדכון הענף או מיזוג. אפשר לסנן שיחות פתוחות או תגובות שכתבת, למיין מהחדש לישן, להיעזר בסיכום פעילות בפינה, ולסמן טיוטה כמוכנה לסקירה או לסגור את ה־PR מהכותרת. מצטרפים דרך כפתור Try the Overview page בכותרת, ואפשר לחזור לתצוגה הקלאסית באותו תפריט.",
+      "source": "GitHub Changelog",
       "publishedAt": "2026-11-05",
       "category": "engineering",
-      "url": "https://github.com/porsager/postgres/releases/tag/v4.1.0"
+      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/"
     },
     {
-      "title": "Techwire: פיטורים בתוכנה מול גיוס בשבבים וסייבר — מדריך לשוק העבודה הישראלי בעידן ה־AI",
-      "summary": "כתבת מגזין מ־5 בנובמבר מסכמת את הפיצול: פיטורים בתוכנה/SaaS (אטרה ~10%, סולאראדג' ~200, פיירבלוקס ~7%, XTEND ~10%, XM Cyber אחרי עסקת CrowdStrike) מול גיוס ב־Tower (~150), נובה/קמטק ונבידיה ישראל. מצטטת ניתוח כלכליסט/רשות החדשנות: שיעור פיטורים בתוכנה 6.6% במחצית הראשונה מול 1.1% בחומרה. מדגישה להפריד בין משרות פנויות לפיטורים, ומזהירה מ־AI washing.",
-      "source": "Techwire",
+      "title": "כלכליסט: Bria.ai מפטרת כ־20 עובדים — כשליש מכוח האדם — ומרכזת את פיתוח המודל בישראל",
+      "summary": "ב־5 בנובמבר דיווח כלכליסט שחברת הבינה המלאכותית הישראלית Bria.ai מפטרת כ־20 עובדים מתוך כ־60, במהלך של ארגון מחדש וצמצום פעילות. לפי הדיווח עזב מנהל המחקר רון מוקדי, סמנכ״ל הטכנולוגיות מישה פיינשטיין נשאר ויוביל פיתוח ומחקר, וצוות הפיתוח הגלובלי של המודל צומצם כך שהפעילות תרוכז בצוות הישראלי. החברה, שמפתחת מודלים ופלטפורמה ליצירה ולעריכה של תמונות לעסקים על בסיס מאגרים ברישיון, גייסה לפי הדיווח כ־65 מיליון דולר עד כה. זה דיווח על פיטורים בחברה אחת, לא על מספר המשרות הפתוחות בשוק.",
+      "source": "כלכליסט",
       "publishedAt": "2026-11-05",
       "category": "jobs",
-      "url": "https://www.techwire.co.il/en/article/magazine-israeli-tech-jobs-ai-who-is-hired-who-is-fired"
+      "url": "https://www.calcalist.co.il/calcalistech/article/hjvr9e5pme"
     }
   ]
 }
