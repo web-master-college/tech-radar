@@ -1,37 +1,45 @@
 {
-  "updatedAt": "2026-11-08T08:50:00+02:00",
+  "updatedAt": "2026-11-09T08:55:00+02:00",
   "articles": [
     {
-      "title": "@GitHub ב־Slack וב־Teams זמין לכלל המשתמשים, כולל Canvas לסקירה ב־Teams",
-      "summary": "ב־6 בנובמבר הודיעה GitHub ש־@GitHub ב־Slack וב־Microsoft Teams זמין לכלל המשתמשים: אפשר לחקור באגים, ליצור issues, ליישם שינויים ולפתוח pull requests מתוך השיחה. ב־Teams נוסף Canvas לסקירת תוכניות מימוש, שינויי קוד ותצוגות מקדימות לצד השיחה. @GitHub מזהה עכשיו את המאגר מתוך ההודעה ומפעיל סשן בלי לבחור אותו שוב, issues ו־PR שנוצרים כוללים שורת ייחוס לשיחה ולמשתמש, ותוקנה תקלה שמנעה מענה להודעות המשך.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-11-06",
-      "category": "ai",
-      "url": "https://github.blog/changelog/2026-11-06-github-copilot-in-slack-and-teams-is-generally-available/"
-    },
-    {
-      "title": "Vercel AI SDK 7.0.165: כתובות ספק עם פרטי גישה כבר לא מגיעות לטלמטריה לפני הסינון",
-      "summary": "ב־7 בנובמבר פורסם ai@7.0.165. עד התיקון, כתובות בקשה לספק עברו סינון ל־origin רק אחרי ש־executeLanguageModelCall חזר, כך שאינטגרציות טלמטריה ומנויים ל־Node tracing-channel יכלו לראות רכיבים רגישים בכתובת, כולל פרטי גישה ב־query, בזמן שתוצאת ה־API הציבורית כבר הייתה מסוננת. עכשיו הסינון מתבצע בתוך ה־callbacks של generateText ו־streamText לפני שהתוצאה מגיעה לטלמטריה. באותה גרסה גם הוסרו תזמוני מילים מתמלול מהטלמטריה כאשר recordOutputs כבוי. מחברי התיקון מציינים שמסלול WorkflowAgent הנפרד לא תוקן בשינוי הזה.",
-      "source": "Vercel AI SDK (GitHub)",
-      "publishedAt": "2026-11-07",
-      "category": "ai",
-      "url": "https://github.com/vercel/ai/releases/tag/ai%407.0.165"
-    },
-    {
-      "title": "GitHub פתחה תצוגת Overview חדשה ל־pull request בתצוגה מקדימה ציבורית",
-      "summary": "ב־5 בנובמבר הציגה GitHub תצוגת Overview חדשה ל־pull request כתצוגה מקדימה ציבורית לבחירה, עם המשך פריסה לאורך סוף השבוע. בראש הדף מופיע סיכום קומפקטי של מוכנות למיזוג: בדיקות, תגובות, אישורים והפעולה הבאה, למשל עדכון הענף או מיזוג. אפשר לסנן שיחות פתוחות או תגובות שכתבת, למיין מהחדש לישן, להיעזר בסיכום פעילות בפינה, ולסמן טיוטה כמוכנה לסקירה או לסגור את ה־PR מהכותרת. מצטרפים דרך כפתור Try the Overview page בכותרת, ואפשר לחזור לתצוגה הקלאסית באותו תפריט.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-11-05",
+      "title": "Better Auth 1.7.16: תיקון ל־12 פרצות, כולל פרצה קריטית ב־@better-auth/expo",
+      "summary": "ב־3 בנובמבר פרסם Better Auth את גרסאות 1.7.16 ו־1.8.0-beta.5, שמתקנות 12 פרצות: אחת קריטית ב־Expo (שרת ההרשאה יכול לחתום על ערכים שלא הנפיק), שתיים בחומרה גבוהה (תפיסת מספר טלפון לפני אימות, וחשיפת הסוד של השרת ועקיפת 2FA ב־Electron) ועוד תשע בינוניות ונמוכות, למשל sessions שבוטלו ונשארים תקפים עם secondary storage או cookie cache. צריך לעדכן את כל חבילות @better-auth/* יחד, ובחלק מהמקרים גם להחליף סודות ולנקות נתונים קיימים.",
+      "source": "Better Auth",
+      "publishedAt": "2026-11-03",
       "category": "engineering",
-      "url": "https://github.blog/changelog/2026-11-05-new-pull-request-overview-page-in-public-preview/"
+      "url": "https://better-auth.com/blog/security-release-2026-11-03"
     },
     {
-      "title": "כלכליסט: Bria.ai מפטרת כ־20 עובדים — כשליש מכוח האדם — ומרכזת את פיתוח המודל בישראל",
-      "summary": "ב־5 בנובמבר דיווח כלכליסט שחברת הבינה המלאכותית הישראלית Bria.ai מפטרת כ־20 עובדים מתוך כ־60, במהלך של ארגון מחדש וצמצום פעילות. לפי הדיווח עזב מנהל המחקר רון מוקדי, סמנכ״ל הטכנולוגיות מישה פיינשטיין נשאר ויוביל פיתוח ומחקר, וצוות הפיתוח הגלובלי של המודל צומצם כך שהפעילות תרוכז בצוות הישראלי. החברה, שמפתחת מודלים ופלטפורמה ליצירה ולעריכה של תמונות לעסקים על בסיס מאגרים ברישיון, גייסה לפי הדיווח כ־65 מיליון דולר עד כה. זה דיווח על פיטורים בחברה אחת, לא על מספר המשרות הפתוחות בשוק.",
-      "source": "כלכליסט",
-      "publishedAt": "2026-11-05",
+      "title": "CompTIA: מקצועות ה־IT בארה\"ב הוסיפו כ־26 אלף משרות באוקטובר, והאבטלה בהם ירדה ל־2.8%",
+      "summary": "לפי ניתוח של CompTIA לנתוני הלשכה האמריקאית לסטטיסטיקת עבודה, באוקטובר 2026 נוספו כ־26 אלף מועסקים במקצועות IT ברחבי המשק וכ־7,200 בענף הטכנולוגיה עצמו, ושיעור האבטלה במקצועות IT ירד ל־2.8%. לפי נתוני Lightcast נוספו 290,892 מודעות דרושים חדשות (עלייה של 4.5% מספטמבר), מתוכן 51,944 למפתחי ומהנדסי תוכנה (עלייה של 6.3%). מדובר בנתוני ארה\"ב בלבד, ומודעות הן לא גיוסים בפועל.",
+      "source": "CompTIA (PR Newswire)",
+      "publishedAt": "2026-11-06",
       "category": "jobs",
-      "url": "https://www.calcalist.co.il/calcalistech/article/hjvr9e5pme"
+      "url": "https://www.prnewswire.com/news-releases/tech-employment-gains-momentum-in-october-comptia-analysis-finds-302932161.html"
+    },
+    {
+      "title": "Sonatype: קוד זדוני ב־12 גרסאות של 10 חבילות npm שנחטפו, בלי סקריפט התקנה",
+      "summary": "ב־4 בנובמבר דיווחה Sonatype על loader מוסתר ב־12 גרסאות של 10 חבילות npm שנחטפו, בהן cdeops 13.5.31, server-hemera-mongo וכמה חבילות תחת @adminide-stack. הקוד מאתר את כתובת שרת הפקודות דרך טרנזקציות Ethereum מארנק קבוע, ורץ כשהחבילה נטענת, כך ש־npm install --ignore-scripts לא היה עוצר אותו. Sonatype ממליצה לבדוק lockfiles ותלויות עקיפות, ואם הקוד רץ, להתייחס למכונה כפרוצה ולהחליף פרטי גישה.",
+      "source": "Sonatype",
+      "publishedAt": "2026-11-04",
+      "category": "engineering",
+      "url": "https://www.sonatype.com/blog/polinrider-loader-reappears-in-hijacked-npm-packages"
+    },
+    {
+      "title": "למ\"ס: השכר הממוצע בהייטק עלה ל־33,478 ש\"ח, ומספר משרות השכיר בענף ירד ל־394 אלף",
+      "summary": "לפי נתוני הלמ\"ס שהביא גלובס, השכר הממוצע בהייטק באוגוסט 2026 היה 33,478 ש\"ח, עלייה של 3.3% לעומת אוגוסט 2025. באותו חודש ירד מספר משרות השכיר בענף ל־394 אלף, ירידה של 0.7% מיולי ו־0.6% משנה קודמת, וחלק ההייטק מכלל המשרות במשק עומד על 9.5%. לפי פרשנות הכתבה, השילוב של פחות משרות ושכר גבוה יותר מרמז על העמקת הקושי של ג'וניורים.",
+      "source": "גלובס",
+      "publishedAt": "2026-11-04",
+      "category": "jobs",
+      "url": "https://www.globes.co.il/news/article.aspx?did=1001562006"
+    },
+    {
+      "title": "Claude Enterprise: מרכז אבטחה, inference hooks זמינים לכולם ושליטה מרכזית בגישה",
+      "summary": "Anthropic הוסיפה ל־Claude Enterprise מרכז אבטחה (בטא) שמשווה את ההגדרות של צ'אט, Cowork ו־Claude Code להגדרות המומלצות, ו־inference hooks שזמינים עכשיו לכולם: בדיקת prompts ובדיקת קריאות לכלים לפני שהן רצות, מול כלי ה־DLP של הארגון. נוספו גם קונסולת ניהול מרכזית, ניתוק משתמש מכל המכשירים דרך Admin API, וחסימת חשבונות Claude פרטיים ב־Claude Desktop במחשבים מנוהלים.",
+      "source": "Claude by Anthropic",
+      "publishedAt": "2026-11-05",
+      "category": "ai",
+      "url": "https://claude.com/resources/articles/claude-enterprise-security-updates"
     }
   ]
 }
