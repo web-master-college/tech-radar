@@ -1,45 +1,45 @@
 {
-  "updatedAt": "2026-11-09T08:55:00+02:00",
+  "updatedAt": "2026-11-10T08:50:00+02:00",
   "articles": [
     {
-      "title": "Better Auth 1.7.16: תיקון ל־12 פרצות, כולל פרצה קריטית ב־@better-auth/expo",
-      "summary": "ב־3 בנובמבר פרסם Better Auth את גרסאות 1.7.16 ו־1.8.0-beta.5, שמתקנות 12 פרצות: אחת קריטית ב־Expo (שרת ההרשאה יכול לחתום על ערכים שלא הנפיק), שתיים בחומרה גבוהה (תפיסת מספר טלפון לפני אימות, וחשיפת הסוד של השרת ועקיפת 2FA ב־Electron) ועוד תשע בינוניות ונמוכות, למשל sessions שבוטלו ונשארים תקפים עם secondary storage או cookie cache. צריך לעדכן את כל חבילות @better-auth/* יחד, ובחלק מהמקרים גם להחליף סודות ולנקות נתונים קיימים.",
-      "source": "Better Auth",
-      "publishedAt": "2026-11-03",
-      "category": "engineering",
-      "url": "https://better-auth.com/blog/security-release-2026-11-03"
-    },
-    {
-      "title": "CompTIA: מקצועות ה־IT בארה\"ב הוסיפו כ־26 אלף משרות באוקטובר, והאבטלה בהם ירדה ל־2.8%",
-      "summary": "לפי ניתוח של CompTIA לנתוני הלשכה האמריקאית לסטטיסטיקת עבודה, באוקטובר 2026 נוספו כ־26 אלף מועסקים במקצועות IT ברחבי המשק וכ־7,200 בענף הטכנולוגיה עצמו, ושיעור האבטלה במקצועות IT ירד ל־2.8%. לפי נתוני Lightcast נוספו 290,892 מודעות דרושים חדשות (עלייה של 4.5% מספטמבר), מתוכן 51,944 למפתחי ומהנדסי תוכנה (עלייה של 6.3%). מדובר בנתוני ארה\"ב בלבד, ומודעות הן לא גיוסים בפועל.",
-      "source": "CompTIA (PR Newswire)",
-      "publishedAt": "2026-11-06",
-      "category": "jobs",
-      "url": "https://www.prnewswire.com/news-releases/tech-employment-gains-momentum-in-october-comptia-analysis-finds-302932161.html"
-    },
-    {
-      "title": "Sonatype: קוד זדוני ב־12 גרסאות של 10 חבילות npm שנחטפו, בלי סקריפט התקנה",
-      "summary": "ב־4 בנובמבר דיווחה Sonatype על loader מוסתר ב־12 גרסאות של 10 חבילות npm שנחטפו, בהן cdeops 13.5.31, server-hemera-mongo וכמה חבילות תחת @adminide-stack. הקוד מאתר את כתובת שרת הפקודות דרך טרנזקציות Ethereum מארנק קבוע, ורץ כשהחבילה נטענת, כך ש־npm install --ignore-scripts לא היה עוצר אותו. Sonatype ממליצה לבדוק lockfiles ותלויות עקיפות, ואם הקוד רץ, להתייחס למכונה כפרוצה ולהחליף פרטי גישה.",
-      "source": "Sonatype",
-      "publishedAt": "2026-11-04",
-      "category": "engineering",
-      "url": "https://www.sonatype.com/blog/polinrider-loader-reappears-in-hijacked-npm-packages"
-    },
-    {
-      "title": "למ\"ס: השכר הממוצע בהייטק עלה ל־33,478 ש\"ח, ומספר משרות השכיר בענף ירד ל־394 אלף",
-      "summary": "לפי נתוני הלמ\"ס שהביא גלובס, השכר הממוצע בהייטק באוגוסט 2026 היה 33,478 ש\"ח, עלייה של 3.3% לעומת אוגוסט 2025. באותו חודש ירד מספר משרות השכיר בענף ל־394 אלף, ירידה של 0.7% מיולי ו־0.6% משנה קודמת, וחלק ההייטק מכלל המשרות במשק עומד על 9.5%. לפי פרשנות הכתבה, השילוב של פחות משרות ושכר גבוה יותר מרמז על העמקת הקושי של ג'וניורים.",
-      "source": "גלובס",
-      "publishedAt": "2026-11-04",
-      "category": "jobs",
-      "url": "https://www.globes.co.il/news/article.aspx?did=1001562006"
-    },
-    {
-      "title": "Claude Enterprise: מרכז אבטחה, inference hooks זמינים לכולם ושליטה מרכזית בגישה",
-      "summary": "Anthropic הוסיפה ל־Claude Enterprise מרכז אבטחה (בטא) שמשווה את ההגדרות של צ'אט, Cowork ו־Claude Code להגדרות המומלצות, ו־inference hooks שזמינים עכשיו לכולם: בדיקת prompts ובדיקת קריאות לכלים לפני שהן רצות, מול כלי ה־DLP של הארגון. נוספו גם קונסולת ניהול מרכזית, ניתוק משתמש מכל המכשירים דרך Admin API, וחסימת חשבונות Claude פרטיים ב־Claude Desktop במחשבים מנוהלים.",
-      "source": "Claude by Anthropic",
-      "publishedAt": "2026-11-05",
+      "title": "Anthropic השיקה את Claude Fable 5.2 ו־Mythos 5.2: שיפור בקוד, מחיר נמוך יותר וברירת מחדל חדשה ב־Claude Code",
+      "summary": "ב־9 בנובמבר הודיעה Anthropic על Fable 5.2 ו־Mythos 5.2 (אותו מודל בסיס; Mythos בלי חלק ממנגנוני ההגנה בסייבר וביולוגיה, ורק לארגונים מאושרים). לפי החברה הם מהירים עד 30% מגרסה 5.1 ועולים 8 דולר למיליון טוקני קלט ו־40 דולר למיליון טוקני פלט, ובמבחני הקוד שלה Fable 5.2 קיבל 49.1% ב־FrontierCode 2.0 ו־69.9% ב־FrontierSWE v2. Fable 5.2 זמין ב־API, ב־AWS, Google Cloud ו־Azure, והפך לברירת המחדל של Fable ב־Claude Code. אלה נתוני החברה עצמה, בלי בדיקה עצמאית בינתיים.",
+      "source": "Anthropic",
+      "publishedAt": "2026-11-09",
       "category": "ai",
-      "url": "https://claude.com/resources/articles/claude-enterprise-security-updates"
+      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+    },
+    {
+      "title": "Axonius מזמנת לשימוע כ־22% מעובדי הפיתוח בישראל במסגרת ארגון מחדש סביב AI",
+      "summary": "לפי Ctech, חברת הסייבר Axonius צפויה לצמצם 66 משרות בעולם (כ־9% מ־722 עובדים), מתוכן 46 במרכז הפיתוח בישראל, שבו מועסקים 207 עובדים. המנכ\"ל ג'ו דיימונד אמר שהחברה שינתה בחודשים האחרונים את דרך בניית התוכנה סביב AI ומתאימה את מבנה ארגון ההנדסה. זה סבב הקיצוץ השלישי בתוך פחות משנה, למרות שהחברה דיווחה במאי על ARR של יותר מ־200 מיליון דולר וצמיחה של 35%. מדובר בזימון לשימוע, לא בפיטורים סופיים.",
+      "source": "Ctech (כלכליסט)",
+      "publishedAt": "2026-11-09",
+      "category": "jobs",
+      "url": "https://www.calcalistech.com/ctechnews/article/9upwifo24"
+    },
+    {
+      "title": "Claude Code 2.1.321: תיקון לדליפת refresh tokens של MCP OAuth להוסט אחר בהפניה",
+      "summary": "בגרסה 2.1.321 של Claude Code, שפורסמה ב־9 בנובמבר, תוקנה תקלה שבה בקשות OAuth של שרתי MCP שלחו סודות כמו refresh tokens להוסט אחר כשהשרת ביצע הפניה (redirect). תוקנו גם מקרה שבו פקודת Bash לקריאה בלבד רצה מחוץ ל־sandbox בלי בקשת הרשאה, וכללי deny שלא חלו על קבצים שנכתבו בעזרת cp או mv לתיקייה. הגרסה גם הופכת את Fable 5.2 לברירת המחדל של Fable ומוסיפה ‎--settings ל־claude remote-control.",
+      "source": "Anthropic (GitHub Releases)",
+      "publishedAt": "2026-11-09",
+      "category": "ai",
+      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321"
+    },
+    {
+      "title": "GitHub secret scanning סורק עכשיו גם לוגים של GitHub Actions (תצוגה מקדימה)",
+      "summary": "ב־9 בנובמבר הודיעה GitHub שסריקת הסודות מזהה גם סודות בלוגים של הרצות GitHub Actions, בתצוגה מקדימה ציבורית. ההתראות מופיעות ברשימת התראות הסודות של הריפו עם קישור ללוג, ונשארות גם אחרי מחיקת הלוג. הפיצ'ר זמין רק ללקוחות GitHub Enterprise Cloud עם Secret Protection או Advanced Security, כבוי כברירת מחדל, לא סורק לוגים ישנים ולא מזהה תבניות כלליות או מותאמות, וגם לא שולח התראות בזמן התצוגה המקדימה.",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-09",
+      "category": "engineering",
+      "url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs"
+    },
+    {
+      "title": "AWS: AgentCore Runtime V2 עם cold start של כ־2 שניות, ומלאי SBOM ב־Security Hub בלי עלות נוספת",
+      "summary": "בסיכום השבועי של AWS מ־9 בנובמבר: גרסה V2 של Bedrock AgentCore Runtime משחררת זיכרון כשסשן לא פעיל ומשחזרת סביבה מ־snapshot, ולפי בדיקות הצוות שומרת על cold start של כ־2 שניות (P75) לאימג'ים של 200MB עד 2GB; מפעילים אותה עם platformVersion=V2. AWS Security Hub מציג עכשיו מלאי SBOM של כל החבילות המותקנות ב־EC2, ECR ו־Lambda, על בסיס Amazon Inspector, בלי עלות נוספת ב־Security Hub Essentials. עוד חדש: טעינת נתונים מ־S3 לטבלאות DynamoDB קיימות.",
+      "source": "AWS News Blog",
+      "publishedAt": "2026-11-09",
+      "category": "engineering",
+      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026"
     }
   ]
 }
