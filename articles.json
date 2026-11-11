@@ -1,45 +1,46 @@
 {
-  "updatedAt": "2026-11-10T08:50:00+02:00",
+  "updatedAt": "2026-11-11T08:55:00+02:00",
   "articles": [
     {
-      "title": "Anthropic השיקה את Claude Fable 5.2 ו־Mythos 5.2: שיפור בקוד, מחיר נמוך יותר וברירת מחדל חדשה ב־Claude Code",
-      "summary": "ב־9 בנובמבר הודיעה Anthropic על Fable 5.2 ו־Mythos 5.2 (אותו מודל בסיס; Mythos בלי חלק ממנגנוני ההגנה בסייבר וביולוגיה, ורק לארגונים מאושרים). לפי החברה הם מהירים עד 30% מגרסה 5.1 ועולים 8 דולר למיליון טוקני קלט ו־40 דולר למיליון טוקני פלט, ובמבחני הקוד שלה Fable 5.2 קיבל 49.1% ב־FrontierCode 2.0 ו־69.9% ב־FrontierSWE v2. Fable 5.2 זמין ב־API, ב־AWS, Google Cloud ו־Azure, והפך לברירת המחדל של Fable ב־Claude Code. אלה נתוני החברה עצמה, בלי בדיקה עצמאית בינתיים.",
-      "source": "Anthropic",
-      "publishedAt": "2026-11-09",
+      "title": "Gemini 4 Carbon זמין עכשיו לכולם ב־API וב־GitHub Copilot: המודל החזק של Google לסוכני קוד ארוכים",
+      "summary": "ב־10 בנובמבר פתחה Google את Gemini 4 Carbon, שעד עכשיו היה זמין רק למגיני סייבר במסגרת תוכנית Fairwind, לכל המפתחים בתשלום ב־Gemini API, ב־AI Studio וב־Gemini for business, במחיר היכרות של 2 דולר למיליון טוקני קלט ו־10 דולר למיליון טוקני פלט (כמו Argon). לפי Google, ‏Carbon מיועד למשימות קוד מורכבות ורב־שלביות ומשתמש ביותר טוקנים מ־Argon, ש'נשאר הבחירה המתאימה לרוב עבודת הנדסת התוכנה'. באותו יום הודיעה GitHub שהמודל זמין ב־Copilot למנויי Pro+‎, Max, Business ו־Enterprise, בתמחור לפי מחירון הספק, ו־Google הציגה תצוגה מקדימה של ‎/swarm ב־Antigravity. נתוני הביצועים הם של Google בלבד.",
+      "source": "Google (The Keyword) / GitHub Changelog",
+      "publishedAt": "2026-11-10",
       "category": "ai",
-      "url": "https://www.anthropic.com/claude-fable-and-mythos-5-2"
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
     },
     {
-      "title": "Axonius מזמנת לשימוע כ־22% מעובדי הפיתוח בישראל במסגרת ארגון מחדש סביב AI",
-      "summary": "לפי Ctech, חברת הסייבר Axonius צפויה לצמצם 66 משרות בעולם (כ־9% מ־722 עובדים), מתוכן 46 במרכז הפיתוח בישראל, שבו מועסקים 207 עובדים. המנכ\"ל ג'ו דיימונד אמר שהחברה שינתה בחודשים האחרונים את דרך בניית התוכנה סביב AI ומתאימה את מבנה ארגון ההנדסה. זה סבב הקיצוץ השלישי בתוך פחות משנה, למרות שהחברה דיווחה במאי על ARR של יותר מ־200 מיליון דולר וצמיחה של 35%. מדובר בזימון לשימוע, לא בפיטורים סופיים.",
-      "source": "Ctech (כלכליסט)",
-      "publishedAt": "2026-11-09",
+      "title": "Lenny's Newsletter: הביקוש למהנדסי תוכנה נעצר — משרות פתוחות עלו רק ב־2.5% בשנה האחרונה",
+      "summary": "בדוח שוק העבודה של Lenny Rachitsky מ־10 בנובמבר, על בסיס TrueUp (משרות פתוחות ביותר מ־9,000 חברות טק בעולם) ו־Live Data Technologies (גיוסים בפועל בארה\"ב), המשרות הפתוחות להנדסה עלו רק ב־2.5% בשנה האחרונה, אחרי 29% ב־2024 ו־15% ב־2025. חברות בארה\"ב גייסו כ־113 אלף מהנדסי תוכנה בין מאי 2025 לאפריל 2026, פחות ממחצית שיא 2022 (239 אלף). רק 14% מהמשרות הפתוחות להנדסה מציעות עבודה מרחוק, שיא שלילי; משרות Forward Deployed Engineer גדלו פי 4.6 ואבטחה היא מההתמחויות המהירות בצמיחה, בעוד הביקוש למובייל ופרונטאנד ירד כמעט בחצי. חלק מהדוח מאחורי חומת תשלום.",
+      "source": "Lenny's Newsletter",
+      "publishedAt": "2026-11-10",
       "category": "jobs",
-      "url": "https://www.calcalistech.com/ctechnews/article/9upwifo24"
+      "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late"
     },
     {
-      "title": "Claude Code 2.1.321: תיקון לדליפת refresh tokens של MCP OAuth להוסט אחר בהפניה",
-      "summary": "בגרסה 2.1.321 של Claude Code, שפורסמה ב־9 בנובמבר, תוקנה תקלה שבה בקשות OAuth של שרתי MCP שלחו סודות כמו refresh tokens להוסט אחר כשהשרת ביצע הפניה (redirect). תוקנו גם מקרה שבו פקודת Bash לקריאה בלבד רצה מחוץ ל־sandbox בלי בקשת הרשאה, וכללי deny שלא חלו על קבצים שנכתבו בעזרת cp או mv לתיקייה. הגרסה גם הופכת את Fable 5.2 לברירת המחדל של Fable ומוסיפה ‎--settings ל־claude remote-control.",
-      "source": "Anthropic (GitHub Releases)",
-      "publishedAt": "2026-11-09",
+      "title": "Cursor Projects הופך למרובה משתתפים: צוות שלם וסוכנים שלו בסביבה משותפת אחת",
+      "summary": "ב־10 בנובמבר הודיעה Cursor ש־Projects, שהושק בספטמבר לניהול צי סוכנים דרך coordinator אחד, תומך עכשיו בעבודת צוות: אפשר להזמין חברי צוות לפרויקט, עם הקשר, זיכרון ומסמכים משותפים (דרישות, דיאגרמות, מפרטים) ולוח משימות שמראה מי עובד על מה, מה עושים הסוכנים וה־PR של כל משימה. לפי Cursor, הסוכנים של חברי צוות שונים יכולים לתקשר ביניהם כדי לתאם סדר עבודה ולמנוע התנגשויות, למשל סביב שינוי סכמה. הפיצ'ר מתגלגל בבטא לכל המשתמשים.",
+      "source": "Cursor Blog",
+      "publishedAt": "2026-11-10",
       "category": "ai",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.321"
+      "url": "https://cursor.com/blog/projects-multiplayer"
     },
     {
-      "title": "GitHub secret scanning סורק עכשיו גם לוגים של GitHub Actions (תצוגה מקדימה)",
-      "summary": "ב־9 בנובמבר הודיעה GitHub שסריקת הסודות מזהה גם סודות בלוגים של הרצות GitHub Actions, בתצוגה מקדימה ציבורית. ההתראות מופיעות ברשימת התראות הסודות של הריפו עם קישור ללוג, ונשארות גם אחרי מחיקת הלוג. הפיצ'ר זמין רק ללקוחות GitHub Enterprise Cloud עם Secret Protection או Advanced Security, כבוי כברירת מחדל, לא סורק לוגים ישנים ולא מזהה תבניות כלליות או מותאמות, וגם לא שולח התראות בזמן התצוגה המקדימה.",
+      "title": "אינקרדיבילד צפויה לפטר כ־18% מעובדיה בעקבות הטמעת AI",
+      "summary": "לפי TheMarker, חברת כלי הפיתוח אינקרדיבילד צפויה לפטר כ־16 עובדים, כ־18% מכוח האדם שלה המונה 91 עובדים, כחלק משינוי ארגוני שלדבריה נובע מהטמעת תהליכי בינה מלאכותית. העובדים התבשרו ב־10 בנובמבר, והמושפעים צפויים להיות מוזמנים לשימועים. זה מצטרף לשורת קיצוצים בחברות תוכנה ישראליות בשבוע האחרון, ביניהן Axonius.",
+      "source": "TheMarker",
+      "publishedAt": "2026-11-10",
+      "category": "jobs",
+      "url": "https://www.themarker.com/technation/2026-11-10/ty-article/.highlight/000001a1-c5dd-d0f7-adfb-f5fd955f0000"
+    },
+    {
+      "title": "GitHub תכבה התראות Dependabot בריפוזיטוריז ללא פעילות שנה, החל מ־8 בדצמבר",
+      "summary": "ב־10 בנובמבר הודיעה GitHub שהחל מ־8 בדצמבר 2026 היא תכבה התראות Dependabot ברוב הריפוזיטוריז שלא הייתה בהם פעילות בשנה האחרונה; ההתראות הקיימות יועברו לארכיון ולא יימחקו. פעילות נחשבת push לכל branch או tag, יצירת הריפו או הפעלת ההתראות, וכל push מחזיר את ההתראות. ריפוזיטוריז עם security configuration שאוכפת Dependabot alerts לא יושפעו. השינוי חל על כל התוכניות ב־github.com, לא על GitHub Enterprise Server.",
       "source": "GitHub Changelog",
-      "publishedAt": "2026-11-09",
+      "publishedAt": "2026-11-10",
+      "eventAt": "2026-12-08",
       "category": "engineering",
-      "url": "https://github.blog/changelog/2026-11-09-secret-scanning-detects-secrets-in-github-actions-workflow-logs"
-    },
-    {
-      "title": "AWS: AgentCore Runtime V2 עם cold start של כ־2 שניות, ומלאי SBOM ב־Security Hub בלי עלות נוספת",
-      "summary": "בסיכום השבועי של AWS מ־9 בנובמבר: גרסה V2 של Bedrock AgentCore Runtime משחררת זיכרון כשסשן לא פעיל ומשחזרת סביבה מ־snapshot, ולפי בדיקות הצוות שומרת על cold start של כ־2 שניות (P75) לאימג'ים של 200MB עד 2GB; מפעילים אותה עם platformVersion=V2. AWS Security Hub מציג עכשיו מלאי SBOM של כל החבילות המותקנות ב־EC2, ECR ו־Lambda, על בסיס Amazon Inspector, בלי עלות נוספת ב־Security Hub Essentials. עוד חדש: טעינת נתונים מ־S3 לטבלאות DynamoDB קיימות.",
-      "source": "AWS News Blog",
-      "publishedAt": "2026-11-09",
-      "category": "engineering",
-      "url": "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-agentcore-runtime-v2-amazon-dynamodb-bulk-put-items-and-more-november-9-2026"
+      "url": "https://github.blog/changelog/2026-11-10-dependabot-alerts-will-pause-on-inactive-repositories/"
     }
   ]
 }
