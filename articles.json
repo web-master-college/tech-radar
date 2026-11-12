@@ -1,46 +1,29 @@
 {
-  "updatedAt": "2026-11-11T08:55:00+02:00",
+  "updatedAt": "2026-11-12T09:00:00+02:00",
   "articles": [
     {
-      "title": "Gemini 4 Carbon זמין עכשיו לכולם ב־API וב־GitHub Copilot: המודל החזק של Google לסוכני קוד ארוכים",
-      "summary": "ב־10 בנובמבר פתחה Google את Gemini 4 Carbon, שעד עכשיו היה זמין רק למגיני סייבר במסגרת תוכנית Fairwind, לכל המפתחים בתשלום ב־Gemini API, ב־AI Studio וב־Gemini for business, במחיר היכרות של 2 דולר למיליון טוקני קלט ו־10 דולר למיליון טוקני פלט (כמו Argon). לפי Google, ‏Carbon מיועד למשימות קוד מורכבות ורב־שלביות ומשתמש ביותר טוקנים מ־Argon, ש'נשאר הבחירה המתאימה לרוב עבודת הנדסת התוכנה'. באותו יום הודיעה GitHub שהמודל זמין ב־Copilot למנויי Pro+‎, Max, Business ו־Enterprise, בתמחור לפי מחירון הספק, ו־Google הציגה תצוגה מקדימה של ‎/swarm ב־Antigravity. נתוני הביצועים הם של Google בלבד.",
-      "source": "Google (The Keyword) / GitHub Changelog",
-      "publishedAt": "2026-11-10",
-      "category": "ai",
-      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/gemini-4-carbon-now-available/"
-    },
-    {
-      "title": "Lenny's Newsletter: הביקוש למהנדסי תוכנה נעצר — משרות פתוחות עלו רק ב־2.5% בשנה האחרונה",
-      "summary": "בדוח שוק העבודה של Lenny Rachitsky מ־10 בנובמבר, על בסיס TrueUp (משרות פתוחות ביותר מ־9,000 חברות טק בעולם) ו־Live Data Technologies (גיוסים בפועל בארה\"ב), המשרות הפתוחות להנדסה עלו רק ב־2.5% בשנה האחרונה, אחרי 29% ב־2024 ו־15% ב־2025. חברות בארה\"ב גייסו כ־113 אלף מהנדסי תוכנה בין מאי 2025 לאפריל 2026, פחות ממחצית שיא 2022 (239 אלף). רק 14% מהמשרות הפתוחות להנדסה מציעות עבודה מרחוק, שיא שלילי; משרות Forward Deployed Engineer גדלו פי 4.6 ואבטחה היא מההתמחויות המהירות בצמיחה, בעוד הביקוש למובייל ופרונטאנד ירד כמעט בחצי. חלק מהדוח מאחורי חומת תשלום.",
-      "source": "Lenny's Newsletter",
-      "publishedAt": "2026-11-10",
-      "category": "jobs",
-      "url": "https://www.lennysnewsletter.com/p/state-of-the-tech-job-market-late"
-    },
-    {
-      "title": "Cursor Projects הופך למרובה משתתפים: צוות שלם וסוכנים שלו בסביבה משותפת אחת",
-      "summary": "ב־10 בנובמבר הודיעה Cursor ש־Projects, שהושק בספטמבר לניהול צי סוכנים דרך coordinator אחד, תומך עכשיו בעבודת צוות: אפשר להזמין חברי צוות לפרויקט, עם הקשר, זיכרון ומסמכים משותפים (דרישות, דיאגרמות, מפרטים) ולוח משימות שמראה מי עובד על מה, מה עושים הסוכנים וה־PR של כל משימה. לפי Cursor, הסוכנים של חברי צוות שונים יכולים לתקשר ביניהם כדי לתאם סדר עבודה ולמנוע התנגשויות, למשל סביב שינוי סכמה. הפיצ'ר מתגלגל בבטא לכל המשתמשים.",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-11-10",
-      "category": "ai",
-      "url": "https://cursor.com/blog/projects-multiplayer"
-    },
-    {
-      "title": "אינקרדיבילד צפויה לפטר כ־18% מעובדיה בעקבות הטמעת AI",
-      "summary": "לפי TheMarker, חברת כלי הפיתוח אינקרדיבילד צפויה לפטר כ־16 עובדים, כ־18% מכוח האדם שלה המונה 91 עובדים, כחלק משינוי ארגוני שלדבריה נובע מהטמעת תהליכי בינה מלאכותית. העובדים התבשרו ב־10 בנובמבר, והמושפעים צפויים להיות מוזמנים לשימועים. זה מצטרף לשורת קיצוצים בחברות תוכנה ישראליות בשבוע האחרון, ביניהן Axonius.",
-      "source": "TheMarker",
-      "publishedAt": "2026-11-10",
-      "category": "jobs",
-      "url": "https://www.themarker.com/technation/2026-11-10/ty-article/.highlight/000001a1-c5dd-d0f7-adfb-f5fd955f0000"
-    },
-    {
-      "title": "GitHub תכבה התראות Dependabot בריפוזיטוריז ללא פעילות שנה, החל מ־8 בדצמבר",
-      "summary": "ב־10 בנובמבר הודיעה GitHub שהחל מ־8 בדצמבר 2026 היא תכבה התראות Dependabot ברוב הריפוזיטוריז שלא הייתה בהם פעילות בשנה האחרונה; ההתראות הקיימות יועברו לארכיון ולא יימחקו. פעילות נחשבת push לכל branch או tag, יצירת הריפו או הפעלת ההתראות, וכל push מחזיר את ההתראות. ריפוזיטוריז עם security configuration שאוכפת Dependabot alerts לא יושפעו. השינוי חל על כל התוכניות ב־github.com, לא על GitHub Enterprise Server.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-11-10",
-      "eventAt": "2026-12-08",
+      "title": "Node.js שחררה עדכוני אבטחה ל־22, 24 ו־26: חולשות HTTP/2 ו־TLS בחומרה גבוהה, כולל דליפת זיכרון של חיבורים אחרים",
+      "summary": "ב־11 בנובמבר שחרר פרויקט Node.js את הגרסאות 22.23.5, ‏24.22.3 ו־26.13.1, שמתקנות שורת חולשות, רובן ב־HTTP/2 וב־TLS, והחמורות שבהן מסווגות High. לפי ההודעה הרשמית, לקוח לא מאומת יכול להפיל שרת HTTP/2 רגיל, לגרום לדליפה קבועה של זיכרון ו־file descriptors, ובשרת HTTPS עם דפוס קוד מסוים (flushHeaders לפני סוף גוף הבקשה) גם לקרוא זיכרון של חיבורים אחרים, כולל מפתחות TLS פרטיים. העדכון כולל גם גרסאות חדשות של llhttp, ‏undici ו־sqlite. גרסאות שהגיעו לסוף חייהן מושפעות תמיד ולא יקבלו תיקון.",
+      "source": "Node.js Blog",
+      "publishedAt": "2026-11-11",
       "category": "engineering",
-      "url": "https://github.blog/changelog/2026-11-10-dependabot-alerts-will-pause-on-inactive-repositories/"
+      "url": "https://nodejs.org/en/blog/vulnerability/november-2026-security-releases"
+    },
+    {
+      "title": "JetBrains משיקה את Air בתוך IntelliJ ושאר ה־IDEs: מקום אחד להריץ, לעקוב ולעשות review לסוכני קוד",
+      "summary": "עם גרסה 2026.3 הכניסה JetBrains את Air לתוך ה־IDEs שלה: ממשק אחד שמנהל כמה סשנים מקבילים של סוכנים, כל אחד ב־Git worktree משלו, עם התראות כשסוכן צריך החלטה. Air עובד עם Junie, ‏Codex, ‏Claude Agent ו־GitHub Copilot וסוכנים נוספים דרך ACP, ולפי JetBrains לא נדרש מנוי JetBrains AI בתשלום. דרך שרת ה־MCP של ה־IDE הסוכנים יכולים להריץ inspections, ‏builds ושאילתות למסדי נתונים ולהשתמש ב־refactorings של ה־IDE, ובפאנל ה־review אפשר להשאיר Code Notes על שורות ספציפיות ולהחזיר אותן לסוכן.",
+      "source": "JetBrains AI Blog",
+      "publishedAt": "2026-11-11",
+      "category": "ai",
+      "url": "https://blog.jetbrains.com/ai/2026/11/air-in-jetbrains-ides-ga/"
+    },
+    {
+      "title": "AWS Emulator: אמולטור מקומי לשירותי AWS שנכתב כולו על ידי סוכני AI, בלי review אנושי",
+      "summary": "ב־11 בנובמבר שחררה AWS את AWS Emulator, אמולטור מקומי לשירותי AWS לבדיקת אפליקציות על המחשב, בקוד פתוח ברישיון CC0. לפי הפוסט של מהנדס ה־Sr. Principal מתיו גולדברג, כל הקוד נכתב על ידי אלפי סוכנים אוטונומיים בשלושה צוותים: אחד כותב בדיקות fidelity מול AWS האמיתי, אחד מאתר פערים ופותח issues, ואחד מתקן אותם; הצוות האנושי לא כתב ולא עבר על הקוד. כל שינוי עובר שער מיזוג שכולל קומפילציה, סוכני review לסטנדרטים ולאבטחה ובדיקה שלא נפגעה ההתאמה ל־AWS. הנתונים על היקף העבודה הם של AWS בלבד.",
+      "source": "About Amazon (AWS)",
+      "publishedAt": "2026-11-11",
+      "category": "ai",
+      "url": "https://www.aboutamazon.com/news/aws/how-autonomous-ai-agents-built-aws-emulator"
     }
   ]
 }
