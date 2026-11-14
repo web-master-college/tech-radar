@@ -1,37 +1,30 @@
 {
-  "updatedAt": "2026-11-13T09:00:00+02:00",
+  "updatedAt": "2026-11-14T08:55:00+02:00",
   "articles": [
     {
-      "title": "PostgreSQL 18.7, 17.12 ועוד: עדכון אבטחה שסוגר 52 חולשות, ו־PostgreSQL 14 מגיעה לסוף חייה",
-      "summary": "ב־12 בנובמבר שחרר פרויקט PostgreSQL את הגרסאות 18.7, ‏17.12, ‏16.16, ‏15.20 ו־14.25, שמתקנות 52 חולשות אבטחה ויותר מ־140 באגים. רבות מהחולשות מדורגות 8.8 ב־CVSS ומאפשרות הרצת קוד, בין השאר דרך ALTER ... SET DATA TYPE, ‏pg_restore ו־pg_dump. ההודעה הרשמית ממליצה במקרים מסוימים על REINDEX אחרי העדכון (אינדקסי GIN, אינדקסי GiST של pg_trgm, ושגיאות missing chunk number). זו הגרסה האחרונה של PostgreSQL 14, ו־PostgreSQL 19 צפויה לצאת ב־19 בנובמבר.",
-      "source": "PostgreSQL",
-      "publishedAt": "2026-11-12",
-      "category": "engineering",
-      "url": "https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/"
-    },
-    {
-      "title": "Google משיקה את Gemini 4 Hydrogen ואת Orchestrator ב־Antigravity: מודל מהיר לקוד שעובד בצמוד ל־Carbon",
-      "summary": "ב־12 בנובמבר השיקה Google את Gemini 4 Hydrogen, מודל מהיר לעבודת קוד יומיומית ולזרימות עבודה של סוכנים, זמין ב־Gemini API, ב־AI Studio וב־Antigravity למנויי Google AI Pro ו־Ultra בתשלום. במקביל נוספה ב־Antigravity האפשרות Orchestrator, שמעבירה את העבודה בתוך אותו סשן בין Gemini 4 Carbon לתכנון לבין Hydrogen לכתיבת קוד והרצת טסטים. לפי Google, ב־Terminal-Bench 4.1 הגיע Orchestrator לשיעור הצלחה קרוב ל־Carbon עם צריכת מכסה נמוכה בכ־24% וזמן ריצה קצר בכ־19%; אלה נתוני היצרן.",
-      "source": "Google Antigravity Blog",
-      "publishedAt": "2026-11-12",
+      "title": "GitHub Copilot תוריד ב־14 בדצמבר שישה מודלים, בהם Claude Fable 5, Gemini 4 Argon ו־Grok 4.6",
+      "summary": "GitHub הודיעה שב־14 בדצמבר 2026 יוסרו מכל חוויות Copilot (Chat, inline edits, מצבי ask ו־agent והשלמות קוד) המודלים Claude Fable 5, Claude Haiku 4.5, Gemini 3.8 Flash, Gemini 4 Argon, Grok 4.6 ו־Kimi K3. החלופות המוצעות הן Claude Fable 5.2, Claude Haiku 5.5, Gemini 4 Hydrogen, Gemini 4 Carbon ו־Grok 4.7, ול־Kimi K3 החלופה עוד לא הוכרזה. Claude Haiku 4.5 יישאר זמין למנויים פרטיים בתוכניות שנתיות. GitHub ממליצה לעדכן workflows ואינטגרציות לפני המועד.",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-13",
+      "eventAt": "2026-12-14",
       "category": "ai",
-      "url": "https://antigravity.google/blog/gemini-4-hydrogen-in-google-antigravity/"
+      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/"
     },
     {
-      "title": "Indeed Hiring Lab: משרות הטק בארה\"ב עולות שוב לעומת השנה שעברה, וצמיחת השכר בפיתוח תוכנה כמעט הוכפלה",
-      "summary": "בעדכון לרבעון השלישי של 2026 מדווח Indeed Hiring Lab שכל קטגוריות הטק בארה\"ב רשמו עלייה במודעות דרושים לעומת שנה קודם, בהובלת פיתוח תוכנה, אך כולן עדיין נמוכות בהרבה מרמות תחילת 2020. צמיחת השכר המפורסם בפיתוח תוכנה הגיעה ל־2.9% בספטמבר, לעומת 1.5% שנה קודם. מנגד, שיעור העזיבה מרצון בשירותים מקצועיים ועסקיים עמד על 2.1% בספטמבר, כמעט נקודת אחוז מתחת לממוצע 2019. הנתונים מתייחסים למודעות דרושים בארה\"ב בלבד, לא לגיוסים בפועל.",
-      "source": "Indeed Hiring Lab",
-      "publishedAt": "2026-11-12",
+      "title": "Codex CLI 0.169.0: כמה צ'אטים צדדיים בטאבים, ספקי מודלים מותאמים מהטרמינל, ו־codex exec מחמיר בתיקיות לא מהימנות",
+      "summary": "גרסה 0.169.0 של Codex מוסיפה לסביבת העבודה בטרמינל (אופציונלית) כמה צ'אטים צדדיים בטאבים, חיפוש משימות קודמות לפי שם, prompt או תיקייה, והוספה ועריכה של ספקי מודלים מותאמים ישירות מהטרמינל, כולל התחברות ב־device code דרך SSH. בתיקון אבטחתי, codex exec משאיר עכשיו את הגדרות הפרויקט ושרתי ה־MCP כבויים בתיקיות לא מהימנות גם עם --sandbox workspace-write, וכדי לסמן תיקייה כמהימנה יש להשתמש ב־--trust.",
+      "source": "GitHub (openai/codex)",
+      "publishedAt": "2026-11-13T08:37:05Z",
+      "category": "ai",
+      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0"
+    },
+    {
+      "title": "Scouter: ירידה של 4.5% במשרות ההייטק הפתוחות בישראל בשבוע 45, ומשרות Software Engineer ירדו ב־465",
+      "summary": "לפי הדוח השבועי של Scouter לשבוע 2–8 בנובמבר 2026, נספרו 2,410 מודעות דרושים חדשות בהייטק וב־AI בישראל ו־12,395 משרות פתוחות אצל 1,930 מעסיקים, 4.5% פחות משבוע קודם. התפקיד שירד הכי הרבה הוא Software Engineer (ירידה של 465 ל־1,431 משרות), ואחריו Android Developer ו־Team Lead (ירידה של 215 ל־434). הנתונים נאספים מלוחות דרושים ומאתרי קריירה בחלון מתגלגל של 30 יום, ומודדים מודעות פתוחות, לא גיוסים בפועל.",
+      "source": "Scouter (job-scouter.com)",
+      "publishedAt": "2026-11-09",
       "category": "jobs",
-      "url": "https://hiringlab.indeed.com/2026/11/12/2026-q3-us-tech-labor-market-update/"
-    },
-    {
-      "title": "Claude Code 2.1.323: מצב Code Mode ניסיוני שבו Claude כותב JavaScript כדי לקרוא לכלים, ושורת תיקוני הרשאות",
-      "summary": "גרסה 2.1.323 של Claude Code מוסיפה את Code Mode, אפשרות ניסיונית שיש להפעיל במפורש, שבה Claude כותב קוד JavaScript כדי לקרוא לכלים שלו, וארגונים יכולים לכבות אותה. הגרסה מוסיפה גם שדה engines בקובץ plugin.json להגבלת טווח הגרסאות של פלאגינים ובדיקת טיפוסים ל־hooks ב־TypeScript. לפי ה־changelog היא מתקנת כמה מקרים שבהם בדיקות ההרשאות של Bash דילגו על אישור, כולל rm שנבדק מהתיקייה הלא נכונה, וכן מצב שבו auto mode לא זמין התחיל במצב מתירני יותר.",
-      "source": "Claude Code (GitHub)",
-      "publishedAt": "2026-11-12",
-      "category": "ai",
-      "url": "https://github.com/anthropics/claude-code/releases/tag/v2.1.323"
+      "url": "https://job-scouter.com/en/market/2026-W45"
     }
   ]
 }
