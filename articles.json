@@ -1,30 +1,29 @@
 {
-  "updatedAt": "2026-11-14T08:55:00+02:00",
+  "updatedAt": "2026-11-15T08:50:00+02:00",
   "articles": [
     {
-      "title": "GitHub Copilot תוריד ב־14 בדצמבר שישה מודלים, בהם Claude Fable 5, Gemini 4 Argon ו־Grok 4.6",
-      "summary": "GitHub הודיעה שב־14 בדצמבר 2026 יוסרו מכל חוויות Copilot (Chat, inline edits, מצבי ask ו־agent והשלמות קוד) המודלים Claude Fable 5, Claude Haiku 4.5, Gemini 3.8 Flash, Gemini 4 Argon, Grok 4.6 ו־Kimi K3. החלופות המוצעות הן Claude Fable 5.2, Claude Haiku 5.5, Gemini 4 Hydrogen, Gemini 4 Carbon ו־Grok 4.7, ול־Kimi K3 החלופה עוד לא הוכרזה. Claude Haiku 4.5 יישאר זמין למנויים פרטיים בתוכניות שנתיות. GitHub ממליצה לעדכן workflows ואינטגרציות לפני המועד.",
-      "source": "GitHub Changelog",
+      "title": "Uncountable פיטרה 11 מהנדסים, כרבע מצוות הפיתוח, כדי להעביר תקציב משכר לכוח מחשוב לסוכני AI",
+      "summary": "ה־CTO של Uncountable כתב בעמוד רשמי שב־13 בנובמבר 2026 החברה פיטרה 11 מהנדסים, כרבע מצוות ההנדסה. לפי החברה, באוקטובר סוכנים כתבו 91% מה־PRs, ומוזגו 60,449 PRs בחודש עם זמן חציוני של 19 דקות מפתיחה למיזוג, לעומת 1,885 PRs בחציון של 16.5 שעות שנה קודם. החברה מסבירה שהצוואר הבקבוק עבר מזמן המהנדסים לכוח המחשוב של הסוכנים, ושהיא ממשיכה לגייס, אבל הרבה פחות מהמתוכנן ובסף גבוה.",
+      "source": "Uncountable Engineering",
       "publishedAt": "2026-11-13",
-      "eventAt": "2026-12-14",
-      "category": "ai",
-      "url": "https://github.blog/changelog/2026-11-13-upcoming-deprecation-of-selected-github-copilot-models-in-december/"
-    },
-    {
-      "title": "Codex CLI 0.169.0: כמה צ'אטים צדדיים בטאבים, ספקי מודלים מותאמים מהטרמינל, ו־codex exec מחמיר בתיקיות לא מהימנות",
-      "summary": "גרסה 0.169.0 של Codex מוסיפה לסביבת העבודה בטרמינל (אופציונלית) כמה צ'אטים צדדיים בטאבים, חיפוש משימות קודמות לפי שם, prompt או תיקייה, והוספה ועריכה של ספקי מודלים מותאמים ישירות מהטרמינל, כולל התחברות ב־device code דרך SSH. בתיקון אבטחתי, codex exec משאיר עכשיו את הגדרות הפרויקט ושרתי ה־MCP כבויים בתיקיות לא מהימנות גם עם --sandbox workspace-write, וכדי לסמן תיקייה כמהימנה יש להשתמש ב־--trust.",
-      "source": "GitHub (openai/codex)",
-      "publishedAt": "2026-11-13T08:37:05Z",
-      "category": "ai",
-      "url": "https://github.com/openai/codex/releases/tag/rust-v0.169.0"
-    },
-    {
-      "title": "Scouter: ירידה של 4.5% במשרות ההייטק הפתוחות בישראל בשבוע 45, ומשרות Software Engineer ירדו ב־465",
-      "summary": "לפי הדוח השבועי של Scouter לשבוע 2–8 בנובמבר 2026, נספרו 2,410 מודעות דרושים חדשות בהייטק וב־AI בישראל ו־12,395 משרות פתוחות אצל 1,930 מעסיקים, 4.5% פחות משבוע קודם. התפקיד שירד הכי הרבה הוא Software Engineer (ירידה של 465 ל־1,431 משרות), ואחריו Android Developer ו־Team Lead (ירידה של 215 ל־434). הנתונים נאספים מלוחות דרושים ומאתרי קריירה בחלון מתגלגל של 30 יום, ומודדים מודעות פתוחות, לא גיוסים בפועל.",
-      "source": "Scouter (job-scouter.com)",
-      "publishedAt": "2026-11-09",
       "category": "jobs",
-      "url": "https://job-scouter.com/en/market/2026-W45"
+      "url": "https://engineering.uncountable.com/read-this-first/"
+    },
+    {
+      "title": "פגיעות קריטית (CVSS 9.5) ב־React Server Components מאפשרת הרצת קוד מרחוק בלי הזדהות",
+      "summary": "צוות React פרסם את CVE-2026-126187 (GHSA-xqc2-xf4c-x3h3), פגיעות RCE קריטית בחבילות react-server-dom-webpack, react-server-dom-parcel ו־react-server-dom-turbopack בגרסאות 19.0.0–19.0.8, 19.1.0–19.1.9, 19.2.0–19.2.8 ו־19.3.0. התיקונים זמינים ב־19.0.9, 19.1.10, 19.2.9 ו־19.3.1. לפי ההודעה, הפגיעות נוגעת רק למקרים נדירים שבהם תשובה מעבירה כמה typed arrays וערך שבשליטת התוקף, ואפליקציות React בלי שרת או בלי framework שתומך ב־RSC לא מושפעות.",
+      "source": "GitHub Advisory Database (React)",
+      "publishedAt": "2026-11-10T22:44:12Z",
+      "category": "engineering",
+      "url": "https://github.com/advisories/GHSA-xqc2-xf4c-x3h3"
+    },
+    {
+      "title": "Google Antigravity משיקה Dynamic Workflows: הסוכן כותב סקריפט Python שמנהל צוות סוכנים במקביל",
+      "summary": "בגרסה 2.32.0 של אפליקציית Antigravity (13 בנובמבר 2026) נוספה הפקודה /run-workflow: הסוכן כותב סקריפט Python קצר שמריץ סוכנים במקביל (parallel) או בשלבים (pipeline), מציג אותו לאישור ומריץ אותו ברקע. כל סוכן עובד בשיחה נפרדת ומחזיר תוצאה מובנית לפי JSON Schema, ואפשר לשמור סקריפט שעבד כקובץ בפרויקט ולהריץ אותו שוב. לפי התיעוד, היכולת זמינה במנויי Google AI Pro ו־Ultra באפליקציה וב־CLI.",
+      "source": "Google Antigravity Docs",
+      "publishedAt": "2026-11-13",
+      "category": "ai",
+      "url": "https://antigravity.google/docs/dynamic-workflows/"
     }
   ]
 }
