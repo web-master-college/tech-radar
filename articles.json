@@ -1,39 +1,37 @@
 {
-  "updatedAt": "2026-11-16T08:55:00+02:00",
+  "updatedAt": "2026-11-17T09:00:00+02:00",
   "articles": [
     {
-      "title": "קמפיין wfx-loot: אלפי חשבונות GitHub חטופים מחדירים גונב סודות ל־GitHub Actions ולחבילות npm",
-      "summary": "לפי OX Security (12 בנובמבר 2026), תוקפים השתמשו ב־4,837 חשבונות GitHub חטופים כדי לפתוח יותר מ־66 אלף PRs בשם \"docs: dependency audit notes\" ולדחוף קוד זדוני ליותר מ־8,000 ריפוזיטוריז ציבוריים, דרך workflows של GitHub Actions ו־postinstall hooks של npm. הסקריפט גונב טוקנים של GitHub, AWS, Azure, GCP ו־npm ומפתחות API של ספקי AI, ואז עושה revert לקומיט ומוחק את ה־workflow run והלוגים; לפחות 1,806 ריפוזיטוריז שלחו סודות לתוקפים. החוקרים ממליצים לחפש PRs וקומיטים בשמות האלה מאז 10 בנובמבר, לבדוק פערים במספור ה־runs, ולסובב כל סוד שהיה נגיש ל־workflow שנפגע.",
-      "source": "OX Security",
-      "publishedAt": "2026-11-12",
-      "category": "engineering",
-      "url": "https://www.ox.security/blog/thousands-of-github-accounts-hijacked-with-wfx-loot-ci-secret-stealing-malware-via-github-actions-npm/"
-    },
-    {
-      "title": "Cursor חושפת את שורש הפריצה: מפתח שדלף אצל Fireworks הוביל לתוסף Claude Code זדוני ולחשיפת נתונים",
-      "summary": "בעדכון רשמי מ־13 בנובמבר 2026 Cursor מסבירה שתוקף השיג מפתח גישה שהונפק ל־Fireworks ונחשף אצלה, והעתיק מ־bucket משותף traces של סוכני קוד, בעיקר מ־2025, מסשנים שלא היו ב־Privacy Mode. בחלק מה־traces היו credentials שלא הוסתרו (פחות מ־0.01% מהלקוחות), ומשם התוקף הגיע לכלי SaaS פנימיים ולאישור שבעזרתו הציב ב־29 באוקטובר עותקים זדוניים של תוסף Claude Code (2.1.312 ו־2.1.313) ב־cache של המרקטפלייס, שעד 5,000 משתמשים אולי קיבלו. לפי Cursor האירוע נבלם (פעילות אחרונה ב־1 בנובמבר), כל ה־inference הועבר מ־Fireworks, וכל מי שנפגע קיבל הודעה ישירה.",
-      "source": "Cursor Blog",
-      "publishedAt": "2026-11-13",
-      "eventAt": "2026-10-29",
-      "category": "ai",
-      "url": "https://cursor.com/blog/security-incident-update"
-    },
-    {
-      "title": "נתוני שכר ADP: תעסוקת מפתחים בני 22–25 בארה\"ב ירדה בכמעט חמישית מאז נובמבר 2022, בזמן שמפתחים מעל גיל 30 צמחו",
-      "summary": "ניתוח של DataHub (15 בנובמבר 2026), שמבוסס על מדד Stanford מנתוני השכר של ADP, מודעות הדרושים של Indeed ונתוני הפד של ניו יורק, מראה שתעסוקת מפתחי תוכנה בני 22–25 בארה\"ב ירדה בכמעט חמישית מאז נובמבר 2022, בני 26–30 ירדו ב־4%, וכל קבוצות הגיל מעל 30 צמחו (בני 41–49 בכחמישית). מודעות הדרושים למפתחים עדיין נמוכות ב־18% מפברואר 2020, ולפי Indeed 71% מהעלייה במודעות בין מאי 2025 למאי 2026 היו למשרות בכירות. המחבר מדגיש שזה מדד תעסוקה בקרב לקוחות ADP ולא מדד גיוס, ושהנתונים לא מוכיחים שה־AI הוא הסיבה.",
-      "source": "DataHub",
-      "publishedAt": "2026-11-15",
+      "title": "גלובס: כמעט 2,000 מפוטרים בחברות ישראליות בתוך שישה שבועות, והיחס בין משרות פנויות למחפשי עבודה בהייטק נהיה שלילי",
+      "summary": "לפי גלובס (17 בנובמבר 2026), מתחילת אוקטובר פוטרו קרוב ל־2,000 עובדים בחברות ישראליות, בהן נייס (500 בעולם), אקסוניוס (66, רובם בישראל, במסגרת מעבר לשיטות עבודה מבוססות AI), אינוויז (20%), וסבבים חדשים בסלברייט ובאיטורו. לפי נתוני שירות התעסוקה שמובאים בכתבה, מספר המשרות הפנויות בהייטק לכל 100 דורשי עבודה ירד מ־135 בספטמבר 2023 ל־95 בספטמבר 2026. מנכ\"ל חברת ההשמה אתוסיה מתאר השטחה של דרג מנהלי הביניים וציפייה שמנהלים יכתבו קוד בעצמם.",
+      "source": "גלובס",
+      "publishedAt": "2026-11-17",
       "category": "jobs",
-      "url": "https://datahub.io/blog/junior-dev-hiring"
+      "url": "https://www.globes.co.il/news/article.aspx?did=1001563604"
     },
     {
-      "title": "AWS: תקלה של יותר משלוש שעות ב־US-EAST-1 פגעה בהתחברות דרך IAM Identity Center, בהרשמה וב־Network Load Balancers",
-      "summary": "לפי עדכוני AWS Support שצוטטו ב־Cyber Security News, ב־15 בנובמבר 2026 בין 3:05 ל־6:10 בבוקר שעון פסיפיק (13:05–16:10 שעון ישראל) היו באזור US-EAST-1 שגיאות הרשמה, תקלות אימות ובעיות קישוריות, כולל התחברות לקונסולה דרך IAM Identity Center ושירותים כמו Kiro ו־Amazon Connect. האימות חזר עד 5:20, אבל חלק מהלקוחות עם Network Load Balancers בתא אחד נשארו עם בעיות עד 6:21. AWS לא פרסמה סיבת שורש וממליצה לנסות שוב בקשות שנכשלו.",
-      "source": "Cyber Security News",
+      "title": "Microsoft Research משחררת את TokenEconomizer: תוסף קוד פתוח שמוזיל סוכני קוד ב־18–31% על ידי למידה מסשנים קודמים",
+      "summary": "בפוסט מ־16 בנובמבר 2026 Microsoft Research, UC Berkeley ו־Microsoft Security מציגים תוסף קוד פתוח שקורא את הלוגים של סשנים קודמים בריפו ומשתמש בשלושה מנגנונים: הערות קצרות על הריפו (micro-skills), הסרת כלים שלא נעשה בהם שימוש, והתערבות כשהסוכן נתקע בלולאת כשלונות. על 277 משימות SWE-Bench בחמישה צירופים של סוכן ומודל העלות הממוצעת ירדה ב־18.4%–30.9% בלי ירידה בהצלחה, ובמשימות web רציפות ב־16%–21%. התוסף לא משנה את הסוכן או את המודל, לא דורש מפתח API משלו, ושומר את מה שהוא לומד על המחשב המקומי.",
+      "source": "Microsoft Research",
       "publishedAt": "2026-11-16",
-      "eventAt": "2026-11-15",
+      "category": "ai",
+      "url": "https://www.microsoft.com/en-us/research/blog/tokeneconomizer-learning-from-experience-to-make-ai-coding-agents-more-efficient/"
+    },
+    {
+      "title": "JetBrains משיקה תוסף ניסיוני להרצת Codex ו־Claude Code בתוך בילדים של TeamCity",
+      "summary": "לפי הבלוג של JetBrains (16 בנובמבר 2026), תוסף AI Agents ל־TeamCity מתקין את Codex או Claude Code על סוכן הבילד, מעביר את פרטי הגישה לספק המודל רק למשך הבילד ומוחק אותם אחריו, ושומר ספירת טוקנים ו־trajectory מלא של הסוכן כקבצי HTML ו־JSON. ספקים נתמכים: JetBrains Air, OpenAI, Anthropic, LiteLLM ו־OpenRouter, והקריאה נעשית מצעד Command Line רגיל (למשל claude -p). JetBrains מזהירה שהקבצים עלולים להכיל פרומפטים וקוד מקור, ושהתוסף ניסיוני ועשוי להשתנות.",
+      "source": "JetBrains Blog",
+      "publishedAt": "2026-11-16",
+      "category": "ai",
+      "url": "https://blog.jetbrains.com/teamcity/2026/11/run-ai-agents-in-teamcity/"
+    },
+    {
+      "title": "ngrok משיקה שרת MCP רשמי לכל התוכניות, כולל החינמית: סוכן הקוד מנהל endpoints, בודק תעבורה ומאמת Traffic Policy",
+      "summary": "לפי הבלוג של ngrok (16 בנובמבר 2026), שרת ה־MCP זמין לכלל המשתמשים ומאפשר לסוכן קוד להציג ולהסביר endpoints, דומיינים ומשאבים פעילים, לנתח תעבורת HTTP ו־TCP מ־Traffic Inspector, לכתוב חוקי Traffic Policy ולבדוק אותם בכלי אימות לפני שמירה, ולחפש בתיעוד העדכני. השרת יכול לבצע כל מה שהתוכנית של המשתמש מאפשרת, כולל דיווח על מפתחות API וחברי צוות.",
+      "source": "ngrok Blog",
+      "publishedAt": "2026-11-16",
       "category": "engineering",
-      "url": "https://cybersecuritynews.com/aws-services-outage/"
+      "url": "https://ngrok.com/blog/mcp"
     }
   ]
 }
