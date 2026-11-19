@@ -1,45 +1,29 @@
 {
-  "updatedAt": "2026-11-18T09:05:00+02:00",
+  "updatedAt": "2026-11-19T08:55:00+02:00",
   "articles": [
     {
-      "title": "OpenAI משיקה את GPT-6.2 Astra ו־GPT-6.2 Sol ב־Codex וב־API: Sol מגיע לחצי נקודה מ־Astra במבחן קוד אמיתי בכחמישית מהעלות",
-      "summary": "לפי OpenAI (17 בנובמבר 2026), שני המודלים זמינים מהיום ב־ChatGPT Work, ב־Codex וב־API (gpt-6.2-astra ו־gpt-6.2-sol) ומסיימים משימות עם פחות טוקני פלט. במבחן FrontierCode 2.0 של Cognition, שבודק אם שינויים בקוד אמיתי עומדים בסטנדרט מיזוג של מתחזקים, Sol הגיע לטווח של 0.5 נקודות מ־Astra בכחמישית מהעלות (שניהם במאמץ מקסימלי). מחירי Astra ב־API נמוכים ב־20% מ־GPT-6 Astra ($8 לקלט, $0.40 לקלט שמור, $40 לפלט למיליון טוקנים), ו־Sol שומר על מחירי GPT-6.1 Sol. הנתונים הם של OpenAI עצמה, ועדיין אין בדיקה עצמאית.",
-      "source": "OpenAI",
-      "publishedAt": "2026-11-17",
+      "title": "Google משיקה את Gemini 4 Neon: מודל קוד מהיר שמגיע גם ל־GitHub Copilot, במחיר של $3/$15 למיליון טוקנים",
+      "summary": "לפי Google (18 בנובמבר 2026), Gemini 4 Neon ממוקם בין Carbon ל־Hydrogen, עם חלון הקשר של מיליון טוקנים ומחיר של $3 לקלט ($0.15 לקלט שמור) ו־$15 לפלט למיליון טוקנים. לפי Google הוא במקום הראשון ב־Artificial Analysis Coding Agent Index (58.6), עם 65.2% ב־Terminal-Bench 4.1 ו־46.2% ב־FrontierCode 2.0, וברמת החשיבה High עלות המשימה נמוכה ב־32% מ־Carbon. המודל זמין ב־Gemini API, ב־Antigravity למנויים בתשלום, ולפי GitHub גם ב־Copilot (Pro+, Max, Business ו־Enterprise) בהדרגה. מספרי הביצועים הם של Google, ועדיין אין בדיקה עצמאית רחבה.",
+      "source": "Google",
+      "publishedAt": "2026-11-18",
       "category": "ai",
-      "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol/"
+      "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-4-neon/"
     },
     {
-      "title": "הלמ\"ס: המשרות הפנויות למפתחי תוכנה בישראל ירדו אל מתחת ל־6,000, ירידה של 31.7% לעומת 2022",
-      "summary": "לפי סקר המשרות הפנויות של הלמ\"ס, כפי שדיווח כלכליסט (15 בנובמבר 2026), ממוצע המשרות הפנויות למפתחי תוכנה ירד מ־6,339 ביולי–ספטמבר ל־5,959 באוגוסט–אוקטובר (ירידה של 6%), 14.5% פחות מפברואר–אפריל ו־31.7% פחות מאוגוסט–אוקטובר 2022 (8,730). המשרות הפנויות למהנדסים, כולל מפתחים, ירדו ב־3% ל־11,213, וסך המשרות הפנויות במשק ירד ב־2% באוקטובר ל־143,770. מדובר במשרות פנויות, לא בגיוסים בפועל או בפיטורים, והכתבה מציינת שלא ברור אם הירידה החודשית במשק היא מגמה או תנודה עונתית.",
-      "source": "כלכליסט",
-      "publishedAt": "2026-11-15",
-      "category": "jobs",
-      "url": "https://www.calcalist.co.il/local_news/article/b1aefzwcfe"
-    },
-    {
-      "title": "PostgreSQL מתקנת 52 חולשות אבטחה בגרסאות 14–18, וגרסה 14 יוצאת מתמיכה",
-      "summary": "לפי הודעת PostgreSQL (12 בנובמבר 2026), גרסאות 18.7, 17.12, 16.16, 15.20 ו־14.25 מתקנות 52 חולשות ויותר מ־140 באגים, ובהן כמה חולשות הרצת קוד בדירוג CVSS 8.8 (למשל CVE-2026-6460) שדורשות משתמש עם הרשאות במסד. חלק מהתיקונים מחייבים צעדים אחרי העדכון, כמו בניית אינדקסים מחדש או גיבוי מלא חדש. 14.25 היא הגרסה האחרונה של PostgreSQL 14, וכעת אין לה עוד תיקוני אבטחה.",
-      "source": "PostgreSQL Global Development Group",
-      "publishedAt": "2026-11-12",
-      "category": "engineering",
-      "url": "https://www.postgresql.org/about/news/postgresql-187-1712-1616-1520-1425-and-19-rc-2-released-3442/"
-    },
-    {
-      "title": "GitHub Copilot code review בוחר לבד את עומק הסקירה לכל PR, ומזהה סודות חשופים לפני המיזוג",
-      "summary": "לפי GitHub (17 בנובמבר 2026), מצב Adaptive (public preview) בוחן את המורכבות והסיכון של כל pull request ובוחר בין Lite, Balanced ו־Max, בלי לחרוג מהרמה המקסימלית שהוגדרה לארגון או לריפו. זיהוי סודות בסקירה (public preview) משלב יותר מ־500 סוגי סודות בפורמט ידוע עם זיהוי מבוסס מודל לסודות בלי פורמט מוכר, ומופעל בהגדרות הריפו או הארגון. נוסף גם הקשר מריפוזיטוריז ציבוריים קשורים (preview לריפוזיטוריז ציבוריים בלבד). זמין בתוכניות Pro, Pro+, Max, Business ו־Enterprise.",
-      "source": "GitHub Changelog",
-      "publishedAt": "2026-11-17",
+      "title": "Microsoft משיקה את MAI Code 2 ו־MAI Code 2 Flash, מודלי קוד משלה ל־GitHub Copilot במחיר מבצע",
+      "summary": "לפי InfoWorld (18 בנובמבר 2026), שני המודלים הוצגו ב־Ignite 2026 ומיועדים למשימות קוד ארגוניות יומיומיות; Microsoft מציינת שהם עוד לא מכוונים לעבודה סוכנית ארוכה. לפי נתוני Microsoft, MAI Code 2 הגיע לממוצע של 63.2% בארבעה בנצ'מרקים, לעומת 64.1% ל־GPT-6.1 Sol ו־65.3% ל־Claude Opus 5.5. המחיר ב־Copilot הוא $0.50 לקלט ו־$2.50 לפלט למיליון טוקנים עד 17 במאי 2027, ואז הוא מוכפל. אנליסטים שצוטטו מזכירים שהשוואת העלויות נעשתה במחיר המבצע.",
+      "source": "InfoWorld",
+      "publishedAt": "2026-11-18",
       "category": "ai",
-      "url": "https://github.blog/changelog/2026-11-17-copilot-code-review-adaptive-effort-secret-detection-and-more/"
+      "url": "https://www.infoworld.com/article/4250152/microsoft-launches-mai-code-2-models-to-challenge-openai-and-anthropic-in-ai-coding.html"
     },
     {
-      "title": "AWS מאפשרת לסוכני קוד כמו Claude Code, Codex ו־Cursor לפתוח חשבון AWS חדש ולקבל הרשאות זמניות בלי לצאת מהסשן",
-      "summary": "לפי AWS (17 בנובמבר 2026), סביבת סוכן קוד עם תוסף AWS או AWS Agent Toolkit יכולה לפתוח את תהליך ההרשמה החדש בדפדפן, ובסיומו מוחזרות לסוכן הרשאות קצרות־מועד. הפרויקט הראשון מוגדר מראש עם Region ביתי, מנהל IAM roles והרשאות זמניות שמתחדשות אוטומטית, כדי שהסוכן יוכל להתחיל לפרוס מיד. ההודעה מכוונת למפתחים שעדיין אין להם חשבון AWS.",
-      "source": "AWS What's New",
+      "title": "GitHub מפרטת את Agent Host Protocol: תקן פתוח שמאפשר להמשיך סשן של סוכן קוד בין VS Code, אפליקציה, טלפון וענן",
+      "summary": "לפי בלוג ההנדסה של GitHub (17 בנובמבר 2026), AHP הוא פרוטוקול פתוח שמבוסס על ערוצים עם כתובת URI ועל state מבוסס reducer שהשרת הוא הסמכות עליו, כך שלקוח שמתנתק שולח שוב את הפעולות שבתור ומקבל את המצב המעודכן. VS Code (מימוש ב־TypeScript) ו־GitHub (מימוש ב־Rust) משתמשים בו כדי שסשנים מקומיים, בענן וב־Copilot app יהיו נגישים מכל לקוח. יש ספריות ב־TypeScript, Rust, Go, Kotlin, Swift ו־.NET, ואפשר להריץ host עצמאי עם הפקודה code agent host.",
+      "source": "The GitHub Blog",
       "publishedAt": "2026-11-17",
       "category": "engineering",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/agentic-account-creation/"
+      "url": "https://github.blog/engineering/engineering-principles/building-the-agent-host-protocol-for-sessions-that-continue-across-devices/"
     }
   ]
 }
