@@ -1,45 +1,53 @@
 {
-  "updatedAt": "2026-11-20T09:00:00+02:00",
+  "updatedAt": "2026-11-21T09:00:00+02:00",
   "articles": [
     {
-      "title": "שרתי ה־MCP הרשמיים תיקנו 8 חולשות ב־git, filesystem ו־everything: צריך לשדרג ידנית",
-      "summary": "לפי הודעת השחרור v2.5.0 של modelcontextprotocol/servers (18 בנובמבר 2026), תוקנו שמונה חולשות בשלושה שרתים. רובן ב־mcp-server-git, שבו הגדרות של ריפוזיטורי (hook של gc, promisor remote, filter/merge drivers ו־submodules) יכלו להריץ פקודות בהרשאות השרת, ו־index מזויף יכול היה לחשוף קבצים מחוץ לתיקיית העבודה. הגרסאות המתוקנות: mcp-server-git 2026.11.18, server-filesystem 2.4.0 ו־server-everything 2.3.1. מי שמשתמש בגרסה מתוארכת של server-filesystem צריך להתקין 2.4.0 במפורש, כי מנהלי חבילות לא יציעו אותה כשדרוג. לפי ההודעה, חלק מההגנות עדיין חלקיות (בדיקת ‎--repository אחרי כתיבה, ורשימות תיקיות ב־Windows).",
-      "source": "GitHub · modelcontextprotocol/servers",
+      "title": "PostgreSQL 19 יצאה: REPACK CONCURRENTLY בלי נעילות, INSERT ... ON CONFLICT DO SELECT ו־WAIT FOR LSN לקריאה מ־standby",
+      "summary": "לפי הודעת PostgreSQL Global Development Group (19 בנובמבר 2026), הפקודה החדשה REPACK מחליפה את VACUUM FULL ו־CLUSTER, ובמצב CONCURRENTLY מנקה bloat בלי לחסום קריאות וכתיבות. נוספו INSERT ... ON CONFLICT DO SELECT, שמחזיר ב־RETURNING את השורה הקיימת בתבנית get-or-create, ו־WAIT FOR LSN שמאפשר לקרוא מ־standby את מה שנכתב הרגע ב־primary. לפי ההודעה, שיפור בבדיקות foreign key האיץ הכנסות גדולות (bulk insert) כמעט פי 2 בבדיקות שנערכו. JIT כבוי עכשיו כברירת מחדל, אימות md5 מוציא אזהרה ותמיכת RADIUS הוסרה.",
+      "source": "PostgreSQL",
+      "publishedAt": "2026-11-19",
+      "category": "engineering",
+      "url": "https://www.postgresql.org/about/news/postgresql-19-released-3449/"
+    },
+    {
+      "title": "NGINX תיקנה חמש חולשות שמאפשרות הרצת קוד מרחוק בלי הזדהות, כולל באג ב־HTTP/2 שקיים מגרסה 1.9.5",
+      "summary": "לפי CERT-EU (18 בנובמבר 2026), F5 פרסמה עדכון לחמש חולשות ב־NGINX, כל אחת עם CVSS 8.1, שמאפשרות לתוקף לא מזוהה להריץ קוד בהרשאות תהליך ה־worker. החמורה שבהן, CVE-2026-123007, היא integer overflow ב־flow control של HTTP/2, והתנאי היחיד הוא HTTP/2 מופעל על פורט האזנה. לפי דף האבטחה של nginx.org, היא קיימת בגרסאות 1.9.5 עד 1.31.8, והגרסאות המתוקנות הן 1.31.9 ו־1.30.7. חוקרים הדגימו ניצול, אבל לפי CERT-EU עדיין לא דווח על ניצול בפועל. אם אי אפשר לעדכן מיד, כיבוי HTTP/2 חוסם שתיים מהחולשות.",
+      "source": "CERT-EU",
       "publishedAt": "2026-11-18",
       "category": "engineering",
-      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.5.0"
+      "url": "https://www.cert.europa.eu/publications/security-advisories/2026-022"
     },
     {
-      "title": "טיפלתי בסבב פיטורים רביעי: קרוב ל־25% מהעובדים, עשרות מהם בישראל; איטורו מפטרת כ־100",
-      "summary": "לפי TheMarker (19 בנובמבר 2026), חברת הפינטק טיפלתי אישרה פיטורים של עשרות עובדים בישראל, ולפי הדיווח השיעור הכולל קרוב ל־25%, מתוך יותר מ־900 עובדים בעולם, כ־300 מהם בישראל. לפי הכתבה, הסיבה היא התייעלות בעקבות שימוש ב־AI בכל מחלקות הארגון. בכותרת הכתבה מדווח גם שאיטורו מפטרת כ־100 עובדים. החברה סירבה לפרסם את השיעור הכולל בעצמה.",
-      "source": "TheMarker",
-      "publishedAt": "2026-11-19",
-      "category": "jobs",
-      "url": "https://www.themarker.com/technation/2026-11-19/ty-article-live/.premium/00000181-ce84-d7b6-a9df-cebff18b0000"
-    },
-    {
-      "title": "Eclipse Foundation משיקה את Enclave 1.0: סביבה מבודדת בקוד פתוח להרצת Claude Code, Codex ו־OpenCode",
-      "summary": "לפי הודעת Eclipse Foundation (19 בנובמבר 2026), Enclave הוא runtime ו־sandbox בקוד פתוח ונייטרלי לספקים, שמריץ כל סשן של סוכן קוד בקונטיינר מבודד עם גישה מוגדרת לקבצים, לרשת ולמשאבי פיתוח. הוא תומך היום ב־Claude Code, Codex, OpenCode וסוכנים נוספים, מאפשר להריץ כמה סוכנים במקביל ולחזור לסשנים קודמים, וכולל מנגנונים להגנה על מפתחות API וטוקני OAuth. הפרויקט התחיל ב־EclipseSource.",
-      "source": "Eclipse Foundation",
-      "publishedAt": "2026-11-19",
-      "category": "ai",
-      "url": "https://newsroom.eclipse.org/news/announcements/eclipse-foundation-launches-eclipse-enclave-10-bringing-security-and-choice"
-    },
-    {
-      "title": "OpenAI חושפת את Performance Factory: סוכני Codex שחוקרים ומתקנים רגרסיות ביצועים ב־ChatGPT",
-      "summary": "לפי OpenAI (19 בנובמבר 2026), מהנדסים מגדירים workflows וכותבים הוראות לסוכני Codex. ב־Regression Workflow, התראת ביצועים פותחת משימה, סוכן חוקר את ההאטה ומציע תיקון ל־review של מהנדס, ואחרי הפריסה סוכן אחר בודק שהביצועים חזרו לבסיס. לפי OpenAI, בקצת יותר משלושה חודשים ה־workflow עקב אחרי יותר מ־1,700 חקירות ומצא את שורש הבעיה ביותר מ־600 מקרים. אלה נתונים פנימיים של OpenAI.",
-      "source": "OpenAI",
-      "publishedAt": "2026-11-19",
-      "category": "ai",
-      "url": "https://openai.com/index/how-openai-performance-factory-keeps-chatgpt-fast/"
-    },
-    {
-      "title": "OpenAI: סוכני קוד משלימים לבד כמעט חצי ממשימות מחקר של 2–4 שעות, אבל ההצלחה לא אחידה",
-      "summary": "לפי דוח של OpenAI (18 בנובמבר 2026) שמבוסס על מדידות פנימיות, שיעור ההצלחה האוטונומי במשימות שמוערכות ב־2–4 שעות עבודה אנושית עלה מ־23% במרץ ל־46% באוקטובר, ובמשימות של 4–8 שעות מ־13% ל־35%. הפיזור גדול: 79% בניטור ריצות אימון, לעומת 25% בכתיבת קוד ל־inference ו־serving. באוקטובר, השימוש היומי של החוקר החציוני הגיע ל־$2,400 לפי מחירון ה־API. לפי OpenAI, בני אדם נשארים חלק מרכזי בתהליך.",
-      "source": "OpenAI",
+      "title": "Indeed Hiring Lab: 71% מהעלייה במשרות פיתוח התוכנה בארה\"ב הן משרות סניור, ו־37% כוללות AI בשם התפקיד",
+      "summary": "לפי דוח של Indeed Hiring Lab ו־Glassdoor (18 בנובמבר 2026), ההתאוששות במשרות פיתוח תוכנה בארה\"ב מגיעה בעיקר מתפקידים מנוסים ומתפקידי AI. 71% מהעלייה הם משרות סניור, ו־37% מהן מזכירות AI בשם התפקיד. מדד ה־AI של Indeed הוכפל בתוך שנה, מ־3.6% ל־7.2% מהמשרות. לפי הדוח, אין עדות לאובדן משרות רחב שנובע רק מ־AI, אבל רק 45% מהאזכורים של AI בביקורות Glassdoor חיוביים, לעומת 82% ב־2019.",
+      "source": "Indeed Hiring Lab",
       "publishedAt": "2026-11-18",
+      "category": "jobs",
+      "url": "https://hiringlab.indeed.com/2026/11/18/there-is-no-ai-jobpocalypse/"
+    },
+    {
+      "title": "Kiro יוצא כתוסף רשמי ל־VS Code: specs, workflows, זיכרון ו־MCP בתוך העורך",
+      "summary": "לפי הבלוג של Kiro (20 בנובמבר 2026), Kiro for VS Code זמין רשמית ל־macOS, Windows ו־Linux, דרך VS Code Marketplace ו־Open VSX. התוסף קורא את אותה תיקיית .kiro כמו Kiro IDE, כולל specs, steering, skills, hooks ושרתי MCP, וכולל workflows של כמה סוכנים, זיכרון בין סשנים ומצב approve for me. בתיקייה שלא סומנה כ־trusted, Kiro לא מפעיל את שרתי ה־MCP שהיא מגדירה. התוסף דורש VS Code 1.147 ומעלה, וכלול בכל תוכניות Kiro.",
+      "source": "Kiro",
+      "publishedAt": "2026-11-20",
       "category": "ai",
-      "url": "https://openai.com/index/research-acceleration-jagged-frontier/"
+      "url": "https://kiro.dev/blog/kiro-for-vs-code/"
+    },
+    {
+      "title": "Scouter שבוע 46: 11,337 משרות הייטק פתוחות בישראל, ירידה של כ־8.5% משבוע 45",
+      "summary": "לפי הדוח השבועי של Scouter לשבוע 9–15 בנובמבר 2026, נספרו 2,525 משרות הייטק ו־AI חדשות בישראל, ו־11,337 משרות פתוחות אצל 1,827 מעסיקים, לעומת 12,395 בדוח שבוע 45. פיתוח תוכנה הוא התחום הגדול ביותר עם 2,661 משרות פתוחות אצל 708 מעסיקים. רק 0.47% מהמשרות ציינו שכר, ומבין המשרות שציינו מקום עבודה, 37.9% מרוחקות ו־49.5% היברידיות. המעסיקים שמגייסים הכי הרבה הם Matrix, התעשייה האווירית ו־Elad Software.",
+      "source": "Scouter",
+      "publishedAt": "2026-11-16",
+      "category": "jobs",
+      "url": "https://job-scouter.com/en/market/2026-W46"
+    },
+    {
+      "title": "AWS Lambda תומכת ב־Node.js 26: ה־LTS החדש, עם Temporal API, ותמיכה באבטחה עד אפריל 2029",
+      "summary": "לפי הודעת AWS (20 בנובמבר 2026), Node.js 26 זמין ב־Lambda כ־runtime מנוהל ל־Web Functions ול־Event Functions, וכ־base image לקונטיינרים ב־Event Functions. לפי AWS, Node.js 26 הוא גרסת ה־LTS האחרונה, וצפוי לקבל תיקוני אבטחה ובאגים עד אפריל 2029. הוא כולל את Temporal API לטיפול בתאריכים ואזורי זמן, ועובד עם Powertools for AWS Lambda (TypeScript), SAM, CDK ו־CloudFormation.",
+      "source": "AWS",
+      "publishedAt": "2026-11-20",
+      "category": "engineering",
+      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-nodejs-26/"
     }
   ]
 }
