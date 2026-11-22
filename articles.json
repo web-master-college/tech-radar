@@ -1,53 +1,30 @@
 {
-  "updatedAt": "2026-11-21T09:00:00+02:00",
+  "updatedAt": "2026-11-22T09:00:00+02:00",
   "articles": [
     {
-      "title": "PostgreSQL 19 יצאה: REPACK CONCURRENTLY בלי נעילות, INSERT ... ON CONFLICT DO SELECT ו־WAIT FOR LSN לקריאה מ־standby",
-      "summary": "לפי הודעת PostgreSQL Global Development Group (19 בנובמבר 2026), הפקודה החדשה REPACK מחליפה את VACUUM FULL ו־CLUSTER, ובמצב CONCURRENTLY מנקה bloat בלי לחסום קריאות וכתיבות. נוספו INSERT ... ON CONFLICT DO SELECT, שמחזיר ב־RETURNING את השורה הקיימת בתבנית get-or-create, ו־WAIT FOR LSN שמאפשר לקרוא מ־standby את מה שנכתב הרגע ב־primary. לפי ההודעה, שיפור בבדיקות foreign key האיץ הכנסות גדולות (bulk insert) כמעט פי 2 בבדיקות שנערכו. JIT כבוי עכשיו כברירת מחדל, אימות md5 מוציא אזהרה ותמיכת RADIUS הוסרה.",
-      "source": "PostgreSQL",
-      "publishedAt": "2026-11-19",
+      "title": "NestJS 12.6 יצאה: הסקת טיפוס האפליקציה מה־adapter, graceful shutdown ל־WebSocket ושינויי התנהגות שכדאי לבדוק לפני שדרוג",
+      "summary": "לפי הודעת השחרור ב־GitHub (20 בנובמבר 2026), NestFactory.create() מסיק עכשיו את סוג האפליקציה מה־adapter, כך ש־FastifyAdapter מחזיר NestFastifyApplication בלי type argument. WsAdapter מקבל gracefulShutdown ו־gracePeriod, ובשרת gRPC קריאות שעדיין רצות אחרי gracePeriod (ברירת מחדל 10 שניות) מבוטלות עכשיו. בין שינויי ההתנהגות: logger: true במודול בדיקות כבר לא מכבה לוגים, ו־route conflict detection מזהה חפיפה בין hosts עם פרמטרים כמו :tenant.example.com לבין hosts קבועים.",
+      "source": "NestJS (GitHub)",
+      "publishedAt": "2026-11-20T12:51:21Z",
       "category": "engineering",
-      "url": "https://www.postgresql.org/about/news/postgresql-19-released-3449/"
+      "url": "https://github.com/nestjs/nest/releases/tag/v12.6.0"
     },
     {
-      "title": "NGINX תיקנה חמש חולשות שמאפשרות הרצת קוד מרחוק בלי הזדהות, כולל באג ב־HTTP/2 שקיים מגרסה 1.9.5",
-      "summary": "לפי CERT-EU (18 בנובמבר 2026), F5 פרסמה עדכון לחמש חולשות ב־NGINX, כל אחת עם CVSS 8.1, שמאפשרות לתוקף לא מזוהה להריץ קוד בהרשאות תהליך ה־worker. החמורה שבהן, CVE-2026-123007, היא integer overflow ב־flow control של HTTP/2, והתנאי היחיד הוא HTTP/2 מופעל על פורט האזנה. לפי דף האבטחה של nginx.org, היא קיימת בגרסאות 1.9.5 עד 1.31.8, והגרסאות המתוקנות הן 1.31.9 ו־1.30.7. חוקרים הדגימו ניצול, אבל לפי CERT-EU עדיין לא דווח על ניצול בפועל. אם אי אפשר לעדכן מיד, כיבוי HTTP/2 חוסם שתיים מהחולשות.",
-      "source": "CERT-EU",
-      "publishedAt": "2026-11-18",
-      "category": "engineering",
-      "url": "https://www.cert.europa.eu/publications/security-advisories/2026-022"
-    },
-    {
-      "title": "Indeed Hiring Lab: 71% מהעלייה במשרות פיתוח התוכנה בארה\"ב הן משרות סניור, ו־37% כוללות AI בשם התפקיד",
-      "summary": "לפי דוח של Indeed Hiring Lab ו־Glassdoor (18 בנובמבר 2026), ההתאוששות במשרות פיתוח תוכנה בארה\"ב מגיעה בעיקר מתפקידים מנוסים ומתפקידי AI. 71% מהעלייה הם משרות סניור, ו־37% מהן מזכירות AI בשם התפקיד. מדד ה־AI של Indeed הוכפל בתוך שנה, מ־3.6% ל־7.2% מהמשרות. לפי הדוח, אין עדות לאובדן משרות רחב שנובע רק מ־AI, אבל רק 45% מהאזכורים של AI בביקורות Glassdoor חיוביים, לעומת 82% ב־2019.",
-      "source": "Indeed Hiring Lab",
-      "publishedAt": "2026-11-18",
-      "category": "jobs",
-      "url": "https://hiringlab.indeed.com/2026/11/18/there-is-no-ai-jobpocalypse/"
-    },
-    {
-      "title": "Kiro יוצא כתוסף רשמי ל־VS Code: specs, workflows, זיכרון ו־MCP בתוך העורך",
-      "summary": "לפי הבלוג של Kiro (20 בנובמבר 2026), Kiro for VS Code זמין רשמית ל־macOS, Windows ו־Linux, דרך VS Code Marketplace ו־Open VSX. התוסף קורא את אותה תיקיית .kiro כמו Kiro IDE, כולל specs, steering, skills, hooks ושרתי MCP, וכולל workflows של כמה סוכנים, זיכרון בין סשנים ומצב approve for me. בתיקייה שלא סומנה כ־trusted, Kiro לא מפעיל את שרתי ה־MCP שהיא מגדירה. התוסף דורש VS Code 1.147 ומעלה, וכלול בכל תוכניות Kiro.",
-      "source": "Kiro",
+      "title": "Claude computer use נפתח בבטא לתוכניות Team ו־Enterprise: Claude רואה את המסך ועובד באפליקציות שהמשתמש מאשר",
+      "summary": "לפי הערות השחרור של Claude (20 בנובמבר 2026), computer use זמין בבטא לתוכניות Team ו־Enterprise ומתגלגל לארגונים בהדרגה, בחוויה המאוחדת החדשה של Claude Desktop, ומהווב והמובייל דרך מחשב שבו Claude Desktop פתוח. לפי מדריך ההגדרה, הפיצ'ר כבוי כברירת מחדל ומופעל על ידי בעלי הארגון. הוא לא עובד ב־Claude Code, ואין בו sandbox בין Claude לאפליקציות, כך שתוכן על המסך עלול לגרום לפעולות לא מכוונות.",
+      "source": "Claude Help Center",
       "publishedAt": "2026-11-20",
       "category": "ai",
-      "url": "https://kiro.dev/blog/kiro-for-vs-code/"
+      "url": "https://support.claude.com/en/articles/12138966-release-notes"
     },
     {
-      "title": "Scouter שבוע 46: 11,337 משרות הייטק פתוחות בישראל, ירידה של כ־8.5% משבוע 45",
-      "summary": "לפי הדוח השבועי של Scouter לשבוע 9–15 בנובמבר 2026, נספרו 2,525 משרות הייטק ו־AI חדשות בישראל, ו־11,337 משרות פתוחות אצל 1,827 מעסיקים, לעומת 12,395 בדוח שבוע 45. פיתוח תוכנה הוא התחום הגדול ביותר עם 2,661 משרות פתוחות אצל 708 מעסיקים. רק 0.47% מהמשרות ציינו שכר, ומבין המשרות שציינו מקום עבודה, 37.9% מרוחקות ו־49.5% היברידיות. המעסיקים שמגייסים הכי הרבה הם Matrix, התעשייה האווירית ו־Elad Software.",
-      "source": "Scouter",
-      "publishedAt": "2026-11-16",
-      "category": "jobs",
-      "url": "https://job-scouter.com/en/market/2026-W46"
-    },
-    {
-      "title": "AWS Lambda תומכת ב־Node.js 26: ה־LTS החדש, עם Temporal API, ותמיכה באבטחה עד אפריל 2029",
-      "summary": "לפי הודעת AWS (20 בנובמבר 2026), Node.js 26 זמין ב־Lambda כ־runtime מנוהל ל־Web Functions ול־Event Functions, וכ־base image לקונטיינרים ב־Event Functions. לפי AWS, Node.js 26 הוא גרסת ה־LTS האחרונה, וצפוי לקבל תיקוני אבטחה ובאגים עד אפריל 2029. הוא כולל את Temporal API לטיפול בתאריכים ואזורי זמן, ועובד עם Powertools for AWS Lambda (TypeScript), SAM, CDK ו־CloudFormation.",
-      "source": "AWS",
+      "title": "Anthropic השלימה את ההנפקה: כ־93.5 מיליארד דולר ברוטו, והמניה נסחרת בנאסד\"ק תחת הסימול ANT",
+      "summary": "לפי הודעת Anthropic (20 בנובמבר 2026), החברה השלימה הנפקה של 1.127 מיליארד מניות Class A במחיר 83 דולר למניה, כולל מימוש מלא של אופציית החתמים, בהיקף ברוטו של כ־93.5 מיליארד דולר, מתוכם כ־91.6 מיליארד לחברה. המסחר בנאסד\"ק החל ב־19 בנובמבר. במקביל נמכרו מניות Class N במחיר ההנפקה ל־AMD, Broadcom, Google, Micron, Microsoft, NVIDIA ו־TSMC.",
+      "source": "Anthropic",
       "publishedAt": "2026-11-20",
-      "category": "engineering",
-      "url": "https://aws.amazon.com/about-aws/whats-new/2026/11/aws-lambda-nodejs-26/"
+      "eventAt": "2026-11-19",
+      "category": "ai",
+      "url": "https://www.anthropic.com/news/ipo-close"
     }
   ]
 }
