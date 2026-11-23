@@ -1,30 +1,46 @@
 {
-  "updatedAt": "2026-11-22T09:00:00+02:00",
+  "updatedAt": "2026-11-23T09:00:00+02:00",
   "articles": [
     {
-      "title": "NestJS 12.6 יצאה: הסקת טיפוס האפליקציה מה־adapter, graceful shutdown ל־WebSocket ושינויי התנהגות שכדאי לבדוק לפני שדרוג",
-      "summary": "לפי הודעת השחרור ב־GitHub (20 בנובמבר 2026), NestFactory.create() מסיק עכשיו את סוג האפליקציה מה־adapter, כך ש־FastifyAdapter מחזיר NestFastifyApplication בלי type argument. WsAdapter מקבל gracefulShutdown ו־gracePeriod, ובשרת gRPC קריאות שעדיין רצות אחרי gracePeriod (ברירת מחדל 10 שניות) מבוטלות עכשיו. בין שינויי ההתנהגות: logger: true במודול בדיקות כבר לא מכבה לוגים, ו־route conflict detection מזהה חפיפה בין hosts עם פרמטרים כמו :tenant.example.com לבין hosts קבועים.",
-      "source": "NestJS (GitHub)",
-      "publishedAt": "2026-11-20T12:51:21Z",
+      "title": "Claude Code שמר סיסמאות וטוקנים בקובץ ההרשאות שלו, ואלפים מהם הגיעו לריפו ציבוריים",
+      "summary": "לפי InfoQ (22 בנובמבר 2026), שמסתמך על מחקר של Apiiro, כשמאשרים פקודה ב־Claude Code עם \"Yes, and don't ask again\" הפקודה כולה נשמרת ככלל הרשאה ב־.claude/settings.local.json, כולל סיסמאות וטוקנים שהופיעו בה. Apiiro מצאה 1,122 סודות בקבצים האלה ועוד 1,160 בהיסטוריית git, בקבצי settings.json משותפים ובתמלולי צ'אט, ב־63 ארגונים; GitGuardian מצאה 31,088 סודות בקובץ הזה ב־GitHub הציבורי, 5,343 מהם עדיין תקפים. ההמלצה: git rm --cached לקובץ, להוסיף אותו ל־.gitignore של הריפו ולהחליף כל סוד שהיה בו.",
+      "source": "InfoQ",
+      "publishedAt": "2026-11-22",
       "category": "engineering",
-      "url": "https://github.com/nestjs/nest/releases/tag/v12.6.0"
+      "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/"
     },
     {
-      "title": "Claude computer use נפתח בבטא לתוכניות Team ו־Enterprise: Claude רואה את המסך ועובד באפליקציות שהמשתמש מאשר",
-      "summary": "לפי הערות השחרור של Claude (20 בנובמבר 2026), computer use זמין בבטא לתוכניות Team ו־Enterprise ומתגלגל לארגונים בהדרגה, בחוויה המאוחדת החדשה של Claude Desktop, ומהווב והמובייל דרך מחשב שבו Claude Desktop פתוח. לפי מדריך ההגדרה, הפיצ'ר כבוי כברירת מחדל ומופעל על ידי בעלי הארגון. הוא לא עובד ב־Claude Code, ואין בו sandbox בין Claude לאפליקציות, כך שתוכן על המסך עלול לגרום לפעולות לא מכוונות.",
-      "source": "Claude Help Center",
-      "publishedAt": "2026-11-20",
+      "title": "SWE-CoWork: סוכני קוד עוברים כ־63% מהבדיקות, אבל משלימים פחות מ־8% מהמשימות בחברת תוכנה מדומה",
+      "summary": "לפי מאמר SWE-CoWork ב־arXiv (15 בנובמבר 2026) וסיקור של The Decoder (22 בנובמבר), הבנצ'מרק מציב סוכן בארגון מדומה עם 26 עמיתים, ב־101 משימות על 101 ריפו אמיתיים, והסוכן צריך לאסוף דרישות מעמיתים ומרשומות לפני שהוא כותב קוד. שני המודלים המובילים עוברים כ־63% מבדיקות ה־fail-to-pass אבל משלימים פחות מ־8% מהמשימות במלואן. 31% מהדרישות שהסוכנים דיווחו שהושלמו נכשלו בבדיקות.",
+      "source": "The Decoder",
+      "publishedAt": "2026-11-22",
+      "eventAt": "2026-11-15",
       "category": "ai",
-      "url": "https://support.claude.com/en/articles/12138966-release-notes"
+      "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/"
     },
     {
-      "title": "Anthropic השלימה את ההנפקה: כ־93.5 מיליארד דולר ברוטו, והמניה נסחרת בנאסד\"ק תחת הסימול ANT",
-      "summary": "לפי הודעת Anthropic (20 בנובמבר 2026), החברה השלימה הנפקה של 1.127 מיליארד מניות Class A במחיר 83 דולר למניה, כולל מימוש מלא של אופציית החתמים, בהיקף ברוטו של כ־93.5 מיליארד דולר, מתוכם כ־91.6 מיליארד לחברה. המסחר בנאסד\"ק החל ב־19 בנובמבר. במקביל נמכרו מניות Class N במחיר ההנפקה ל־AMD, Broadcom, Google, Micron, Microsoft, NVIDIA ו־TSMC.",
-      "source": "Anthropic",
-      "publishedAt": "2026-11-20",
-      "eventAt": "2026-11-19",
+      "title": "Gemini API משיק Tool Retrieval בפריוויו: הסוכן טוען את סכמת הכלי רק כשהוא צריך אותה",
+      "summary": "לפי הבלוג של Google (19 בנובמבר 2026), Tool Retrieval זמין בפריוויו ב־Gemini Interactions API. מוסיפים כלי tool_search ומסמנים defer_loading: true על כלים, והמודל רואה רק את השם והתיאור שלהם; כשהוא צריך כלי, ה־API טוען את הסכמה המלאה באותה בקשה. המטרה לפי Google: פחות טוקנים בקלט ובחירת כלים מדויקת יותר כשלסוכן יש עשרות או מאות כלים.",
+      "source": "Google",
+      "publishedAt": "2026-11-19",
       "category": "ai",
-      "url": "https://www.anthropic.com/news/ipo-close"
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+    },
+    {
+      "title": "בנק הפועלים מגייס לחטיבת הטכנולוגיה בקמפיין לינקדאין: כ־500 פניות ביומיים על כ־7 משרות",
+      "summary": "לפי גלובס (22 בנובמבר 2026), חטיבת הטכנולוגיה של בנק הפועלים העלתה קמפיין גיוס בלינקדאין בכיכובו של עומר קולי והקימה אתר משרות ייעודי, שבו פתוחות כרגע כ־7 משרות. לפי הבנק, בתוך יומיים התקבלו כ־500 פניות חדשות ממועמדים. הבנק מציג את החטיבה כמרכז פיתוח מהגדולים בישראל.",
+      "source": "גלובס",
+      "publishedAt": "2026-11-22",
+      "category": "jobs",
+      "url": "https://www.globes.co.il/news/article.aspx?did=1001564381"
+    },
+    {
+      "title": "המדען הראשי של OpenAI מציע perplexity כמדד משותף להתקדמות מודלים ולמגבלות פיתוח בתעשייה",
+      "summary": "לפי פוסט של יאקוב פחוצקי, המדען הראשי של OpenAI (22 בנובמבר 2026), החברה מפרסמת לראשונה מדידות perplexity פנימיות של pretraining ומציעה שמעבדות ישתמשו במדד הזה כבסיס משותף להשוואה ולתקני בטיחות. לפי הפוסט, המטרה היא שהתעשייה תסכים על קצב ומגבלות פיתוח עד שיכולות הניטור והבטיחות יעמדו באבני דרך מוגדרות.",
+      "source": "OpenAI",
+      "publishedAt": "2026-11-22",
+      "category": "ai",
+      "url": "https://openai.com/index/perplexity-and-intelligence/"
     }
   ]
 }
