@@ -1,46 +1,45 @@
 {
-  "updatedAt": "2026-11-23T09:00:00+02:00",
+  "updatedAt": "2026-11-24T09:00:00+02:00",
   "articles": [
     {
-      "title": "Claude Code שמר סיסמאות וטוקנים בקובץ ההרשאות שלו, ואלפים מהם הגיעו לריפו ציבוריים",
-      "summary": "לפי InfoQ (22 בנובמבר 2026), שמסתמך על מחקר של Apiiro, כשמאשרים פקודה ב־Claude Code עם \"Yes, and don't ask again\" הפקודה כולה נשמרת ככלל הרשאה ב־.claude/settings.local.json, כולל סיסמאות וטוקנים שהופיעו בה. Apiiro מצאה 1,122 סודות בקבצים האלה ועוד 1,160 בהיסטוריית git, בקבצי settings.json משותפים ובתמלולי צ'אט, ב־63 ארגונים; GitGuardian מצאה 31,088 סודות בקובץ הזה ב־GitHub הציבורי, 5,343 מהם עדיין תקפים. ההמלצה: git rm --cached לקובץ, להוסיף אותו ל־.gitignore של הריפו ולהחליף כל סוד שהיה בו.",
-      "source": "InfoQ",
-      "publishedAt": "2026-11-22",
-      "category": "engineering",
-      "url": "https://www.infoq.com/news/2026/11/claude-code-leaking-secrets/"
-    },
-    {
-      "title": "SWE-CoWork: סוכני קוד עוברים כ־63% מהבדיקות, אבל משלימים פחות מ־8% מהמשימות בחברת תוכנה מדומה",
-      "summary": "לפי מאמר SWE-CoWork ב־arXiv (15 בנובמבר 2026) וסיקור של The Decoder (22 בנובמבר), הבנצ'מרק מציב סוכן בארגון מדומה עם 26 עמיתים, ב־101 משימות על 101 ריפו אמיתיים, והסוכן צריך לאסוף דרישות מעמיתים ומרשומות לפני שהוא כותב קוד. שני המודלים המובילים עוברים כ־63% מבדיקות ה־fail-to-pass אבל משלימים פחות מ־8% מהמשימות במלואן. 31% מהדרישות שהסוכנים דיווחו שהושלמו נכשלו בבדיקות.",
-      "source": "The Decoder",
-      "publishedAt": "2026-11-22",
-      "eventAt": "2026-11-15",
+      "title": "Anthropic משיקה את Claude Ship: סוכנים שמתקנים PR־ים ואפילו מאשרים מיזוג לפי מדיניות של הצוות",
+      "summary": "לפי Anthropic (23 בנובמבר 2026), Claude Ship משלב את Code Review (זמין לכולם) עם שני סוכנים חדשים בבטא: PR Steward, שמתקן CI שנכשל, קונפליקטים והערות ריוויו אבל לא מאשר ולא ממזג, ו־Claude Approvals, שמאשר שינויים שגרתיים לפי קובץ מדיניות בריפו. מפתחים יכולים להריץ /ship מתוך Claude Code. השירות זמין בתוכניות Team ו־Enterprise לריפו ב־GitHub, מחויב לפי טוקנים, ו־Anthropic ממליצה להתחיל את מנגנון האישור במצב צפייה בלבד.",
+      "source": "Anthropic",
+      "publishedAt": "2026-11-23",
       "category": "ai",
-      "url": "https://the-decoder.com/ai-coding-agents-ace-isolated-tests-but-complete-fewer-than-one-in-ten-tasks-in-a-simulated-workplace/"
+      "url": "https://claude.com/resources/articles/introducing-claude-ship"
     },
     {
-      "title": "Gemini API משיק Tool Retrieval בפריוויו: הסוכן טוען את סכמת הכלי רק כשהוא צריך אותה",
-      "summary": "לפי הבלוג של Google (19 בנובמבר 2026), Tool Retrieval זמין בפריוויו ב־Gemini Interactions API. מוסיפים כלי tool_search ומסמנים defer_loading: true על כלים, והמודל רואה רק את השם והתיאור שלהם; כשהוא צריך כלי, ה־API טוען את הסכמה המלאה באותה בקשה. המטרה לפי Google: פחות טוקנים בקלט ובחירת כלים מדויקת יותר כשלסוכן יש עשרות או מאות כלים.",
+      "title": "Gemini API מוסיף file slicing: הסוכן מבקש רק את העמודים, התאים או קטעי הווידאו שהוא צריך",
+      "summary": "לפי הבלוג של Google (23 בנובמבר 2026), ה־Gemini API מאפשר עכשיו להעלות קובץ פעם אחת ל־Files API ולבקש בצד השרת רק טווח עמודים, טווח תאים בגיליון או קטע זמן בווידאו ובאודיו, ברזולוציה ובשכבות תוכן לבחירה. נוספה גם תמיכה מובנית בקבצי Office ו־OpenDocument, והסוכן יכול לבקש את החיתוך מתוך תגובת function. לפי Google, החיוב הוא רק על החלקים שהמודל בודק, והיכולת עובדת בכל מודלי Gemini 4.",
       "source": "Google",
-      "publishedAt": "2026-11-19",
+      "publishedAt": "2026-11-23",
       "category": "ai",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-api-tool-retrieval/"
+      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/"
     },
     {
-      "title": "בנק הפועלים מגייס לחטיבת הטכנולוגיה בקמפיין לינקדאין: כ־500 פניות ביומיים על כ־7 משרות",
-      "summary": "לפי גלובס (22 בנובמבר 2026), חטיבת הטכנולוגיה של בנק הפועלים העלתה קמפיין גיוס בלינקדאין בכיכובו של עומר קולי והקימה אתר משרות ייעודי, שבו פתוחות כרגע כ־7 משרות. לפי הבנק, בתוך יומיים התקבלו כ־500 פניות חדשות ממועמדים. הבנק מציג את החטיבה כמרכז פיתוח מהגדולים בישראל.",
-      "source": "גלובס",
-      "publishedAt": "2026-11-22",
-      "category": "jobs",
-      "url": "https://www.globes.co.il/news/article.aspx?did=1001564381"
-    },
-    {
-      "title": "המדען הראשי של OpenAI מציע perplexity כמדד משותף להתקדמות מודלים ולמגבלות פיתוח בתעשייה",
-      "summary": "לפי פוסט של יאקוב פחוצקי, המדען הראשי של OpenAI (22 בנובמבר 2026), החברה מפרסמת לראשונה מדידות perplexity פנימיות של pretraining ומציעה שמעבדות ישתמשו במדד הזה כבסיס משותף להשוואה ולתקני בטיחות. לפי הפוסט, המטרה היא שהתעשייה תסכים על קצב ומגבלות פיתוח עד שיכולות הניטור והבטיחות יעמדו באבני דרך מוגדרות.",
+      "title": "OpenAI ו־Cisco משחררות את Shirudo: הגנות eBPF זמניות לשרתי לינוקס רצים עד שהפאץ' מגיע",
+      "summary": "לפי OpenAI (23 בנובמבר 2026), Shirudo הוא runtime בקוד פתוח (BSD 2-Clause) שמפעיל \"מגנים\" מבוססי eBPF כדי לחסום נתיב קוד פגיע בלי לאתחל את השירות, אחרי שמפעיל אנושי מאשר אותם. המגנים חתומים קריפטוגרפית ונבדקים לפני טעינה, ו־TPM שומר רשומה של מה שנטען והוסר. לפי OpenAI, בבדיקה מבוקרת מגן ש־Codex יצר חסם ניסיון ניצול של Java4Shell נגד Elasticsearch רץ.",
       "source": "OpenAI",
-      "publishedAt": "2026-11-22",
-      "category": "ai",
-      "url": "https://openai.com/index/perplexity-and-intelligence/"
+      "publishedAt": "2026-11-23",
+      "category": "engineering",
+      "url": "https://openai.com/index/introducing-shirudo/"
+    },
+    {
+      "title": "כלכליסט: פיטורים \"בגלל AI\" בישראל עלולים להיפסל אם השימוע וההסבה לא נעשו כדין",
+      "summary": "במאמר דעה בכלכליסט (23 בנובמבר 2026) כותבות פרופ' שלומית יניסקי רביד ועו\"ד סיוון סבן הכהן שלמעסיק מותר לפטר מטעמי התייעלות טכנולוגית, אבל רק בשימוע אמיתי ובתום לב. לדעתן פיטורים כאלה עלולים להיפסל בבית הדין בחמישה מצבים, בהם שימוע עם החלטה סגורה מראש, אי־בדיקה של הסבה או הכשרה, אפליה, שימוש ב־AI כתירוץ לפטר עובד מוגן ועקיפת ועד העובדים. הכותבות מציינות שבישראל עדיין אין פסיקה בנושא, ומביאות פסק דין מסין שבו עובד שתפקידו הועבר ל־AI ניצח בערעור.",
+      "source": "כלכליסט",
+      "publishedAt": "2026-11-23",
+      "category": "jobs",
+      "url": "https://www.calcalist.co.il/local_news/article/skt2k9b1xl"
+    },
+    {
+      "title": "GitHub מוסיף סטטוסים לאיסיו ולוחות בריפו בפריוויו, עם עדכון אוטומטי מ־PR־ים ומסוכנים",
+      "summary": "לפי ה־changelog של GitHub (23 בנובמבר 2026), לאיסיו יש עכשיו סטטוסים כמו Backlog, Todo, In progress ו־In review, וריפו יכול להציג אותם כלוח. הסטטוס מתעדכן אוטומטית: קישור PR טיוטה מעביר ל־In progress, PR פתוח ל־In review, והקצאה לסוכן מעבירה ל־In progress. סוכנים ואוטומציות יכולים לקרוא ולעדכן סטטוס דרך GraphQL, REST ושרת ה־MCP של GitHub.",
+      "source": "GitHub",
+      "publishedAt": "2026-11-23",
+      "category": "engineering",
+      "url": "https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview/"
     }
   ]
 }
