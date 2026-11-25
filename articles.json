@@ -1,45 +1,45 @@
 {
-  "updatedAt": "2026-11-24T09:10:00+02:00",
+  "updatedAt": "2026-11-25T09:00:00+02:00",
   "articles": [
     {
-      "title": "Anthropic משיקה את Claude Ship: סוכנים שמתקנים PR־ים ואפילו מאשרים מיזוג לפי מדיניות של הצוות",
-      "summary": "לפי Anthropic (23 בנובמבר 2026), Claude Ship משלב את Code Review (זמין לכולם) עם שני סוכנים חדשים בבטא: PR Steward, שמתקן CI שנכשל, קונפליקטים והערות ריוויו אבל לא מאשר ולא ממזג, ו־Claude Approvals, שמאשר שינויים שגרתיים לפי קובץ מדיניות בריפו. מפתחים יכולים להריץ /ship מתוך Claude Code. השירות זמין בתוכניות Team ו־Enterprise לריפו ב־GitHub, מחויב לפי טוקנים, ו־Anthropic ממליצה להתחיל את מנגנון האישור במצב צפייה בלבד.",
+      "title": "Google משחררת ל־GA שרתי MCP רשמיים ו־CLI ל־Workspace, ומפברואר 2027 סוכני AI יחויבו לגשת לנתונים דרך MCP",
+      "summary": "לפי Google (24 בנובמבר 2026), שרתי ה־MCP של Workspace, שמנוהלים על ידי Google, זמינים לכולם עם כלים מוכנים ל־Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat ו־Tasks, ולצידם Workspace CLI לסוכנים שרצים בטרמינל, עם skills ארוזים והתחברות בהרשאות מצומצמות. ל־APIs נקבעו שתי רמות שימוש: Standard ללא עלות עם מכסות מפורסמות, ו־Scaled שמחייבת מ־1 באפריל 2027 על שימוש מעבר להקצאה היומית החינמית. Google דורשת שסוכני AI ייגשו לנתוני Workspace דרך MCP ולא ישירות דרך ה־REST APIs, והאכיפה הטכנית מתחילה ב־1 בפברואר 2027.",
+      "source": "Google Workspace Updates",
+      "publishedAt": "2026-11-24",
+      "category": "ai",
+      "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+    },
+    {
+      "title": "Anthropic: שרתי MCP יכולים עכשיו לשלוח skills יחד עם הכלים, ו־Tasks ו־Elicitation זמינים לכולם",
+      "summary": "לפי Anthropic (24 בנובמבר 2026), Skills over MCP נכנס לבטא ציבורית ב־Claude וב־Claude Code: שרת MCP מפרסם skills לצד הכלים, ו־Claude טוען אותם רק כשצריך. Tasks, שמאפשר לשרת להריץ עבודה ארוכה ברקע בזמן ש־Claude ממשיך, ו־Elicitation, שמאפשר לשרת לעצור ולבקש אישור מהמשתמש, זמינים לכולם בתוכניות Pro, Max ו־Ultra ומתגלגלים ל־Team ו־Enterprise; File Uploads יגיע בקרוב. לפי החברה, אלה חלק מהמפרט הפתוח של MCP ומההרחבות שלו, ול־MCP יש יותר מ־700 מיליון הורדות SDK בחודש.",
       "source": "Anthropic",
-      "publishedAt": "2026-11-23",
+      "publishedAt": "2026-11-24",
       "category": "ai",
-      "url": "https://claude.com/resources/articles/introducing-claude-ship"
+      "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
     },
     {
-      "title": "Gemini API מוסיף file slicing: הסוכן מבקש רק את העמודים, התאים או קטעי הווידאו שהוא צריך",
-      "summary": "לפי הבלוג של Google (23 בנובמבר 2026), ה־Gemini API מאפשר עכשיו להעלות קובץ פעם אחת ל־Files API ולבקש בצד השרת רק טווח עמודים, טווח תאים בגיליון או קטע זמן בווידאו ובאודיו, ברזולוציה ובשכבות תוכן לבחירה. נוספה גם תמיכה מובנית בקבצי Office ו־OpenDocument, והסוכן יכול לבקש את החיתוך מתוך תגובת function. לפי Google, החיוב הוא רק על החלקים שהמודל בודק, והיכולת עובדת בכל מודלי Gemini 4.",
-      "source": "Google",
-      "publishedAt": "2026-11-23",
-      "category": "ai",
-      "url": "https://blog.google/innovation-and-ai/technology/developers-tools/file-slicing-controls/"
-    },
-    {
-      "title": "OpenAI ו־Cisco משחררות את Shirudo: הגנות eBPF זמניות לשרתי לינוקס רצים עד שהפאץ' מגיע",
-      "summary": "לפי OpenAI (23 בנובמבר 2026), Shirudo הוא runtime בקוד פתוח (BSD 2-Clause) שמפעיל \"מגנים\" מבוססי eBPF כדי לחסום נתיב קוד פגיע בלי לאתחל את השירות, אחרי שמפעיל אנושי מאשר אותם. המגנים חתומים קריפטוגרפית ונבדקים לפני טעינה, ו־TPM שומר רשומה של מה שנטען והוסר. לפי OpenAI, בבדיקה מבוקרת מגן ש־Codex יצר חסם ניסיון ניצול של Java4Shell נגד Elasticsearch רץ.",
-      "source": "OpenAI",
+      "title": "Netflix ב־QCon: כך התאים צוות Commerce את תהליך הפיתוח לסוכני קוד, עם 45 ADR־ים, סוכן ריוויו ו־GraphRAG דרך כלי MCP אחד",
+      "summary": "לפי InfoQ (23 בנובמבר 2026), Mark Khuzam מ־Netflix סיפר שהצוות כתב 45 רשומות החלטות ארכיטקטורה (ADR) \"לאנשים ולסוכנים\", ושקובץ AGENTS.md משמש כמפתח למסמכים. סוכן ריוויו בודק כל PR מול ה־ADR־ים ומפרסם רק חסמים מאומתים עם ראיה ותיקון, אבל אין מיזוג אוטומטי והמהנדסים אחראים לקוד. הקונטקסט בין שירותים מוגש מגרף GraphRAG לכל דומיין, מוצמד לקומיטים, דרך כלי MCP יחיד שמשרת את Claude Code, Cursor, Codex ו־CI. לפי ההרצאה, מספר ה־PR־ים עלה ב־32% בשנה, וה־NPS של המפתחים עלה מ־3- ל־25+.",
+      "source": "InfoQ",
       "publishedAt": "2026-11-23",
       "category": "engineering",
-      "url": "https://openai.com/index/introducing-shirudo/"
+      "url": "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/"
     },
     {
-      "title": "כלכליסט: פיטורים \"בגלל AI\" בישראל עלולים להיפסל אם השימוע וההסבה לא נעשו כדין",
-      "summary": "במאמר דעה בכלכליסט (23 בנובמבר 2026) כותבות פרופ' שלומית יניסקי רביד ועו\"ד סיוון סבן הכהן שלמעסיק מותר לפטר מטעמי התייעלות טכנולוגית, אבל רק בשימוע אמיתי ובתום לב. לדעתן פיטורים כאלה עלולים להיפסל בבית הדין בחמישה מצבים, בהם שימוע עם החלטה סגורה מראש, אי־בדיקה של הסבה או הכשרה, אפליה, שימוש ב־AI כתירוץ לפטר עובד מוגן ועקיפת ועד העובדים. הכותבות מציינות שבישראל עדיין אין פסיקה בנושא, ומביאות פסק דין מסין שבו עובד שתפקידו הועבר ל־AI ניצח בערעור.",
-      "source": "כלכליסט",
-      "publishedAt": "2026-11-23",
+      "title": "Indeed Hiring Lab: משרות פיתוח התוכנה בארה\"ב עלו ב־23.4% בשנה, ומדד המשרות הגיע לשיא מאז אפריל 2025",
+      "summary": "לפי תמונת המצב של Indeed Hiring Lab לנובמבר (24 בנובמבר 2026), מדד המשרות של Indeed עמד על 106.2 ב־13 בנובמבר, עלייה של 5.1% בשנה והרמה הגבוהה ביותר מאז אפריל 2025, ומשרות פיתוח התוכנה עלו ב־23.4% לעומת השנה שעברה. עם זאת, מדד המשרות החדשות (עד 7 ימים באתר) נמוך יותר, 93.3, ולפי Indeed ייתכן שמשרות לוקחות יותר זמן להתמלא. מדובר בנתוני ארה\"ב בלבד.",
+      "source": "Indeed Hiring Lab",
+      "publishedAt": "2026-11-24",
       "category": "jobs",
-      "url": "https://www.calcalist.co.il/local_news/article/skt2k9b1xl"
+      "url": "https://hiringlab.indeed.com/2026/11/24/us-labor-market-snapshot-november-2026/"
     },
     {
-      "title": "GitHub מוסיף סטטוסים לאיסיו ולוחות בריפו בפריוויו, עם עדכון אוטומטי מ־PR־ים ומסוכנים",
-      "summary": "לפי ה־changelog של GitHub (23 בנובמבר 2026), לאיסיו יש עכשיו סטטוסים כמו Backlog, Todo, In progress ו־In review, וריפו יכול להציג אותם כלוח. הסטטוס מתעדכן אוטומטית: קישור PR טיוטה מעביר ל־In progress, PR פתוח ל־In review, והקצאה לסוכן מעבירה ל־In progress. סוכנים ואוטומציות יכולים לקרוא ולעדכן סטטוס דרך GraphQL, REST ושרת ה־MCP של GitHub.",
-      "source": "GitHub",
-      "publishedAt": "2026-11-23",
-      "category": "engineering",
-      "url": "https://github.blog/changelog/2026-11-23-issue-statuses-and-repository-boards-are-in-public-preview/"
+      "title": "Claude מאפשר להתקין Artifacts כאפליקציות Mac ו־Windows, עם הרשאות לפי אפליקציה",
+      "summary": "לפי Anthropic (24 בנובמבר 2026), התכונה Install as app מתגלגלת בבטא ב־Claude ל־Mac ול־Windows: artifact הופך לאפליקציה עם אייקון וחלון משלה, יכול להשתמש ב־Claude ובקונקטורים, ומתעדכן כשה־artifact נערך. יש שלוש רמות הרשאה: ברירת מחדל ברמת דפדפן, הרשאות אפליקציה כמו התראות וקיצורי מקלדת גלובליים, וגישה מלאה למחשב שניתנת רק לאפליקציות שיצרת או, ב־Team ו־Enterprise, שנוצרו בארגון. האישור חל רק על הגרסה הנוכחית, ו־Claude מבקש שוב אחרי כל עדכון.",
+      "source": "Anthropic",
+      "publishedAt": "2026-11-24",
+      "category": "ai",
+      "url": "https://claude.com/resources/articles/install-as-app"
     }
   ]
 }
