@@ -1,45 +1,38 @@
 {
-  "updatedAt": "2026-11-25T09:00:00+02:00",
+  "updatedAt": "2026-11-26T09:00:00+02:00",
   "articles": [
     {
-      "title": "Google משחררת ל־GA שרתי MCP רשמיים ו־CLI ל־Workspace, ומפברואר 2027 סוכני AI יחויבו לגשת לנתונים דרך MCP",
-      "summary": "לפי Google (24 בנובמבר 2026), שרתי ה־MCP של Workspace, שמנוהלים על ידי Google, זמינים לכולם עם כלים מוכנים ל־Gmail, Drive, Docs, Sheets, Slides, Calendar, Chat ו־Tasks, ולצידם Workspace CLI לסוכנים שרצים בטרמינל, עם skills ארוזים והתחברות בהרשאות מצומצמות. ל־APIs נקבעו שתי רמות שימוש: Standard ללא עלות עם מכסות מפורסמות, ו־Scaled שמחייבת מ־1 באפריל 2027 על שימוש מעבר להקצאה היומית החינמית. Google דורשת שסוכני AI ייגשו לנתוני Workspace דרך MCP ולא ישירות דרך ה־REST APIs, והאכיפה הטכנית מתחילה ב־1 בפברואר 2027.",
-      "source": "Google Workspace Updates",
-      "publishedAt": "2026-11-24",
+      "title": "OpenAI מתחילה לאחד את Chat ו־Work ב־ChatGPT עם מונה שימוש אחד, ומשתמשים כבדים עלולים להגיע למגבלה מהר יותר",
+      "summary": "לפי TechCrunch (25 בנובמבר 2026), OpenAI החלה לגלגל לקבוצה קטנה של מנויי Pro חוויה מאוחדת של Chat ו־Work, שבה שניהם חולקים מונה שימוש אחד. דובר החברה אמר שרוב המשתמשים לא צפויים לראות איפוסים תכופים יותר, אך חלק קטן מהמשתמשים הכבדים ביותר עלול להגיע למגבלה מוקדם יותר; שיחות במודל Instant נשארות ללא הגבלה ולא נספרות. לפי דף התמיכה של OpenAI, המגבלות המשותפות יתרחבו בדצמבר.",
+      "source": "TechCrunch",
+      "publishedAt": "2026-11-25",
       "category": "ai",
-      "url": "https://workspaceupdates.googleblog.com/2026/11/mcp-servers-cli-standardized-usage-tiers-now-available.html"
+      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
     },
     {
-      "title": "Anthropic: שרתי MCP יכולים עכשיו לשלוח skills יחד עם הכלים, ו־Tasks ו־Elicitation זמינים לכולם",
-      "summary": "לפי Anthropic (24 בנובמבר 2026), Skills over MCP נכנס לבטא ציבורית ב־Claude וב־Claude Code: שרת MCP מפרסם skills לצד הכלים, ו־Claude טוען אותם רק כשצריך. Tasks, שמאפשר לשרת להריץ עבודה ארוכה ברקע בזמן ש־Claude ממשיך, ו־Elicitation, שמאפשר לשרת לעצור ולבקש אישור מהמשתמש, זמינים לכולם בתוכניות Pro, Max ו־Ultra ומתגלגלים ל־Team ו־Enterprise; File Uploads יגיע בקרוב. לפי החברה, אלה חלק מהמפרט הפתוח של MCP ומההרחבות שלו, ול־MCP יש יותר מ־700 מיליון הורדות SDK בחודש.",
-      "source": "Anthropic",
+      "title": "Cognition משחררת את SWE-2.1: קפיצה בבנצ'מרקים של קוד, גרסת Cyber ל־Devin Security וגרסת Ultrafast מהירה פי 10",
+      "summary": "לפי Cognition (24 בנובמבר 2026), SWE-2.1 אומן ב־RL על בסיס Kimi K3, ובטבלאות של החברה הוא עולה מ־24.2 ל־50.0 ב־Terminal-Bench 4.1 ומ־24.1 ל־41.3 ב־FrontierCode 2.0, אך עדיין מאחורי Claude Opus 5.5, GPT-6.2 Sol ו־Gemini 4 Neon ברוב המדדים שפורסמו. החברה משיקה גם SWE-2.1 Cyber עם מגבלות מקילות יותר ל־Devin Security, ו־SWE-2.1 Ultrafast בשיתוף Cerebras במהירות של פי 10. התוצאות הן מדידות של החברה עצמה.",
+      "source": "Cognition",
       "publishedAt": "2026-11-24",
       "category": "ai",
-      "url": "https://claude.com/resources/articles/skills-over-mcp-tasks-and-more"
+      "url": "https://cognition.com/blog/swe-2-1"
     },
     {
-      "title": "Netflix ב־QCon: כך התאים צוות Commerce את תהליך הפיתוח לסוכני קוד, עם 45 ADR־ים, סוכן ריוויו ו־GraphRAG דרך כלי MCP אחד",
-      "summary": "לפי InfoQ (23 בנובמבר 2026), Mark Khuzam מ־Netflix סיפר שהצוות כתב 45 רשומות החלטות ארכיטקטורה (ADR) \"לאנשים ולסוכנים\", ושקובץ AGENTS.md משמש כמפתח למסמכים. סוכן ריוויו בודק כל PR מול ה־ADR־ים ומפרסם רק חסמים מאומתים עם ראיה ותיקון, אבל אין מיזוג אוטומטי והמהנדסים אחראים לקוד. הקונטקסט בין שירותים מוגש מגרף GraphRAG לכל דומיין, מוצמד לקומיטים, דרך כלי MCP יחיד שמשרת את Claude Code, Cursor, Codex ו־CI. לפי ההרצאה, מספר ה־PR־ים עלה ב־32% בשנה, וה־NPS של המפתחים עלה מ־3- ל־25+.",
-      "source": "InfoQ",
-      "publishedAt": "2026-11-23",
+      "title": "GitHub: מ־30 בדצמבר, Copilot code review יחויב כברירת מחדל על הארגון ולא על רישיון המשתמש",
+      "summary": "לפי GitHub (25 בנובמבר 2026), בארגונים עם Copilot Business או Enterprise שלא בחרו הגדרת חיוב, סקירות קוד של Copilot שמבצעים חברים עם רישיון יחויבו החל מ־30 בדצמבר 2026 על הארגון שמחזיק בריפו, במקום על מכסת ה־Copilot של המשתמש. מי שרוצה להשאיר את המצב הקיים צריך לבחור Member בהגדרות המדיניות לפני כן. חיוב ארגוני דורש AI Credits בתשלום ועשוי להגדיל הוצאות.",
+      "source": "GitHub Changelog",
+      "publishedAt": "2026-11-25",
+      "eventAt": "2026-12-30",
       "category": "engineering",
-      "url": "https://www.infoq.com/news/2026/11/netflix-sdlc-ai-coding-agents/"
+      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/"
     },
     {
-      "title": "Indeed Hiring Lab: משרות פיתוח התוכנה בארה\"ב עלו ב־23.4% בשנה, ומדד המשרות הגיע לשיא מאז אפריל 2025",
-      "summary": "לפי תמונת המצב של Indeed Hiring Lab לנובמבר (24 בנובמבר 2026), מדד המשרות של Indeed עמד על 106.2 ב־13 בנובמבר, עלייה של 5.1% בשנה והרמה הגבוהה ביותר מאז אפריל 2025, ומשרות פיתוח התוכנה עלו ב־23.4% לעומת השנה שעברה. עם זאת, מדד המשרות החדשות (עד 7 ימים באתר) נמוך יותר, 93.3, ולפי Indeed ייתכן שמשרות לוקחות יותר זמן להתמלא. מדובר בנתוני ארה\"ב בלבד.",
-      "source": "Indeed Hiring Lab",
-      "publishedAt": "2026-11-24",
-      "category": "jobs",
-      "url": "https://hiringlab.indeed.com/2026/11/24/us-labor-market-snapshot-november-2026/"
-    },
-    {
-      "title": "Claude מאפשר להתקין Artifacts כאפליקציות Mac ו־Windows, עם הרשאות לפי אפליקציה",
-      "summary": "לפי Anthropic (24 בנובמבר 2026), התכונה Install as app מתגלגלת בבטא ב־Claude ל־Mac ול־Windows: artifact הופך לאפליקציה עם אייקון וחלון משלה, יכול להשתמש ב־Claude ובקונקטורים, ומתעדכן כשה־artifact נערך. יש שלוש רמות הרשאה: ברירת מחדל ברמת דפדפן, הרשאות אפליקציה כמו התראות וקיצורי מקלדת גלובליים, וגישה מלאה למחשב שניתנת רק לאפליקציות שיצרת או, ב־Team ו־Enterprise, שנוצרו בארגון. האישור חל רק על הגרסה הנוכחית, ו־Claude מבקש שוב אחרי כל עדכון.",
-      "source": "Anthropic",
-      "publishedAt": "2026-11-24",
+      "title": "OpenAI מתחילה לבדוק Private Inference: הגנה על פרומפטים ותשובות של עסקים בזמן עיבוד באמצעות confidential computing",
+      "summary": "לפי The Next Web (25 בנובמבר 2026), OpenAI החלה לבדוק עם קבוצה קטנה של לקוחות עסקיים את Private Inference, פיצ'ר בשלב alpha שמריץ את העיבוד על חומרה מבודדת עם בקרות שניתן לאמת. זה החלק השני בחבילת Private Intelligence של החברה, לצד Private Safety Processing, ולפי הדיווח אין עדיין תאריך להרחבה. בדף המוצר של OpenAI הפיצ'ר מסומן כ־API Preview ו־Alpha.",
+      "source": "The Next Web",
+      "publishedAt": "2026-11-25",
       "category": "ai",
-      "url": "https://claude.com/resources/articles/install-as-app"
+      "url": "https://thenextweb.com/news/openai-private-inference-testing-customers"
     }
   ]
 }
