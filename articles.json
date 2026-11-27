@@ -1,38 +1,29 @@
 {
-  "updatedAt": "2026-11-26T09:00:00+02:00",
+  "updatedAt": "2026-11-27T09:00:00+02:00",
   "articles": [
     {
-      "title": "OpenAI מתחילה לאחד את Chat ו־Work ב־ChatGPT עם מונה שימוש אחד, ומשתמשים כבדים עלולים להגיע למגבלה מהר יותר",
-      "summary": "לפי TechCrunch (25 בנובמבר 2026), OpenAI החלה לגלגל לקבוצה קטנה של מנויי Pro חוויה מאוחדת של Chat ו־Work, שבה שניהם חולקים מונה שימוש אחד. דובר החברה אמר שרוב המשתמשים לא צפויים לראות איפוסים תכופים יותר, אך חלק קטן מהמשתמשים הכבדים ביותר עלול להגיע למגבלה מוקדם יותר; שיחות במודל Instant נשארות ללא הגבלה ולא נספרות. לפי דף התמיכה של OpenAI, המגבלות המשותפות יתרחבו בדצמבר.",
-      "source": "TechCrunch",
-      "publishedAt": "2026-11-25",
-      "category": "ai",
-      "url": "https://techcrunch.com/2026/11/25/openai-says-heavy-chatgpt-users-may-hit-limits-sooner-as-it-merges-chat-and-work/"
+      "title": "SAP שוקלת לקצץ לפחות 10,000 משרות במסגרת ארגון מחדש סביב AI, כולל בפיתוח ובמוצר",
+      "summary": "לפי Bloomberg, כפי שדווח ב־CNA וב־Reuters ב־26 בנובמבר 2026, SAP שוקלת לקצץ לפחות 10,000 משרות, לפחות 9% מכוח האדם שלה בעולם, וההיקף הסופי עשוי להשתנות אחרי משא ומתן עם נציגות העובדים. SAP מסרה ל־CNA שהיא בוחנת כל הזמן את מבנה הארגון לנוכח AI, אבל לא התקבלו החלטות על צעדים נוספים, והיא לא מגיבה לספקולציות. אם התוכנית תצא לפועל, זה יהיה סבב הפיטורים הגדול השני של החברה בתוך כשנתיים, אחרי 10,000 משרות ב־2024.",
+      "source": "CNA (Reuters)",
+      "publishedAt": "2026-11-27T00:33:00+08:00",
+      "category": "jobs",
+      "url": "https://www.channelnewsasia.com/business/sap-job-cuts-ai-restructuring-6585781"
     },
     {
-      "title": "Cognition משחררת את SWE-2.1: קפיצה בבנצ'מרקים של קוד, גרסת Cyber ל־Devin Security וגרסת Ultrafast מהירה פי 10",
-      "summary": "לפי Cognition (24 בנובמבר 2026), SWE-2.1 אומן ב־RL על בסיס Kimi K3, ובטבלאות של החברה הוא עולה מ־24.2 ל־50.0 ב־Terminal-Bench 4.1 ומ־24.1 ל־41.3 ב־FrontierCode 2.0, אך עדיין מאחורי Claude Opus 5.5, GPT-6.2 Sol ו־Gemini 4 Neon ברוב המדדים שפורסמו. החברה משיקה גם SWE-2.1 Cyber עם מגבלות מקילות יותר ל־Devin Security, ו־SWE-2.1 Ultrafast בשיתוף Cerebras במהירות של פי 10. התוצאות הן מדידות של החברה עצמה.",
-      "source": "Cognition",
-      "publishedAt": "2026-11-24",
+      "title": "OpenAI תיקנה טעות חיוב ב־GPT-6.2: מגבלות השימוש ב־Astra יתמלאו מהר יותר ב־40% וב־Sol ב־25%",
+      "summary": "לפי Decrypt (26 בנובמבר 2026), תיבו סוטיו מ־OpenAI כתב ב־X שטעות חיוב בהשקת GPT-6.2 נתנה לרוב המנויים הנחה לא מכוונת בשימוש ב־Astra וב־Sol, ושהיא תוקנה. לדבריו, בהשוואה לשבוע שעבר משתמשים יגיעו למגבלה מהר יותר ב־40% ב־GPT-6.2 Astra וב־25% ב־Sol, ולפי Decrypt המנויים יקבלו איפוס שימוש חד־פעמי. התיקון מגיע בזמן ש־OpenAI מתחילה לאחד את מכסות Chat ו־Work.",
+      "source": "Decrypt",
+      "publishedAt": "2026-11-26",
       "category": "ai",
-      "url": "https://cognition.com/blog/swe-2-1"
+      "url": "https://decrypt.co/384053/openai-fixes-chatgpt-billing-error-promises-to-make-it-40-worse"
     },
     {
-      "title": "GitHub: מ־30 בדצמבר, Copilot code review יחויב כברירת מחדל על הארגון ולא על רישיון המשתמש",
-      "summary": "לפי GitHub (25 בנובמבר 2026), בארגונים עם Copilot Business או Enterprise שלא בחרו הגדרת חיוב, סקירות קוד של Copilot שמבצעים חברים עם רישיון יחויבו החל מ־30 בדצמבר 2026 על הארגון שמחזיק בריפו, במקום על מכסת ה־Copilot של המשתמש. מי שרוצה להשאיר את המצב הקיים צריך לבחור Member בהגדרות המדיניות לפני כן. חיוב ארגוני דורש AI Credits בתשלום ועשוי להגדיל הוצאות.",
-      "source": "GitHub Changelog",
+      "title": "Pydantic משחררת את Pax: סוכן קוד בטרמינל שבו הכול plugin, יחד עם בטא של Pydantic AI Harness",
+      "summary": "לפי Pydantic (25 בנובמבר 2026), Pax (pydantic-ai-pax) הוא סוכן הקוד הרשמי של Pydantic AI לטרמינל. הוא בנוי על Harness SDK, עובד עם כל מודל, ואפשר להדליק ולכבות בו כ־plugins את סוכן הקוד, ה־sandbox, MCP ו־Logfire, או להחליף את הסוכן בסוכן Pydantic AI משלכם עם --agent. Pydantic AI Harness צפוי להגיע ל־1.0 בעוד כחודש. לפי מדידה של החברה ב־Harness-Bench, Pax עלה פחות מחצי מ־Codex על GPT-6.2 Sol.",
+      "source": "Pydantic",
       "publishedAt": "2026-11-25",
-      "eventAt": "2026-12-30",
       "category": "engineering",
-      "url": "https://github.blog/changelog/2026-11-25-copilot-code-review-billing-will-default-to-the-organization/"
-    },
-    {
-      "title": "OpenAI מתחילה לבדוק Private Inference: הגנה על פרומפטים ותשובות של עסקים בזמן עיבוד באמצעות confidential computing",
-      "summary": "לפי The Next Web (25 בנובמבר 2026), OpenAI החלה לבדוק עם קבוצה קטנה של לקוחות עסקיים את Private Inference, פיצ'ר בשלב alpha שמריץ את העיבוד על חומרה מבודדת עם בקרות שניתן לאמת. זה החלק השני בחבילת Private Intelligence של החברה, לצד Private Safety Processing, ולפי הדיווח אין עדיין תאריך להרחבה. בדף המוצר של OpenAI הפיצ'ר מסומן כ־API Preview ו־Alpha.",
-      "source": "The Next Web",
-      "publishedAt": "2026-11-25",
-      "category": "ai",
-      "url": "https://thenextweb.com/news/openai-private-inference-testing-customers"
+      "url": "https://pydantic.dev/articles/pax-harness-beta"
     }
   ]
 }
