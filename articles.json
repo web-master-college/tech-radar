@@ -1,29 +1,45 @@
 {
-  "updatedAt": "2026-11-27T09:10:00+02:00",
+  "updatedAt": "2026-11-28T09:00:00+02:00",
   "articles": [
     {
-      "title": "SAP שוקלת לקצץ לפחות 10,000 משרות במסגרת ארגון מחדש סביב AI, כולל בפיתוח ובמוצר",
-      "summary": "לפי Bloomberg, כפי שדווח ב־CNA וב־Reuters ב־26 בנובמבר 2026, SAP שוקלת לקצץ לפחות 10,000 משרות, לפחות 9% מכוח האדם שלה בעולם, וההיקף הסופי עשוי להשתנות אחרי משא ומתן עם נציגות העובדים. SAP מסרה ל־CNA שהיא בוחנת כל הזמן את מבנה הארגון לנוכח AI, אבל לא התקבלו החלטות על צעדים נוספים, והיא לא מגיבה לספקולציות. אם התוכנית תצא לפועל, זה יהיה סבב הפיטורים הגדול השני של החברה בתוך כשנתיים, אחרי 10,000 משרות ב־2024.",
-      "source": "CNA (Reuters)",
-      "publishedAt": "2026-11-27T00:33:00+08:00",
-      "category": "jobs",
-      "url": "https://www.channelnewsasia.com/business/sap-job-cuts-ai-restructuring-6585781"
-    },
-    {
-      "title": "OpenAI תיקנה טעות חיוב ב־GPT-6.2: מגבלות השימוש ב־Astra יתמלאו מהר יותר ב־40% וב־Sol ב־25%",
-      "summary": "לפי Decrypt (26 בנובמבר 2026), תיבו סוטיו מ־OpenAI כתב ב־X שטעות חיוב בהשקת GPT-6.2 נתנה לרוב המנויים הנחה לא מכוונת בשימוש ב־Astra וב־Sol, ושהיא תוקנה. לדבריו, בהשוואה לשבוע שעבר משתמשים יגיעו למגבלה מהר יותר ב־40% ב־GPT-6.2 Astra וב־25% ב־Sol, ולפי Decrypt המנויים יקבלו איפוס שימוש חד־פעמי. התיקון מגיע בזמן ש־OpenAI מתחילה לאחד את מכסות Chat ו־Work.",
-      "source": "Decrypt",
-      "publishedAt": "2026-11-26",
+      "title": "שרתי ה־MCP הרשמיים תיקנו שמונה חולשות נוספות ב־git, memory ו־fetch: צריך לשדרג ידנית",
+      "summary": "לפי הערות השחרור של modelcontextprotocol/servers v2.6.0 (27 בנובמבר 2026), הגרסה מתקנת שמונה חולשות בשלושה שרתים ומשלימה שני תיקונים ש־v2.5.0 השאירה פתוחים. בין השאר, mcp-server-git יכול היה להריץ דרך Git LFS תוכניות שהוגדרו ב־.git/config של הריפו, גם בכלים לקריאה בלבד כמו git_status, ו־git_remote יכול היה להחזיר credential. יש לשדרג את mcp-server-git ו־mcp-server-fetch ל־2026.11.27, את server-memory ל־2.2.2, וב־Windows גם את server-filesystem ל־2.4.1.",
+      "source": "GitHub (modelcontextprotocol/servers)",
+      "publishedAt": "2026-11-27T09:51:35Z",
       "category": "ai",
-      "url": "https://decrypt.co/384053/openai-fixes-chatgpt-billing-error-promises-to-make-it-40-worse"
+      "url": "https://github.com/modelcontextprotocol/servers/releases/tag/v2.6.0"
     },
     {
-      "title": "Pydantic משחררת את Pax: סוכן קוד בטרמינל שבו הכול plugin, יחד עם בטא של Pydantic AI Harness",
-      "summary": "לפי Pydantic (25 בנובמבר 2026), Pax (pydantic-ai-pax) הוא סוכן הקוד הרשמי של Pydantic AI לטרמינל. הוא בנוי על Harness SDK, עובד עם כל מודל, ואפשר להדליק ולכבות בו כ־plugins את סוכן הקוד, ה־sandbox, MCP ו־Logfire, או להחליף את הסוכן בסוכן Pydantic AI משלכם עם --agent. Pydantic AI Harness צפוי להגיע ל־1.0 בעוד כחודש. לפי מדידה של החברה ב־Harness-Bench, Pax עלה פחות מחצי מ־Codex על GPT-6.2 Sol.",
-      "source": "Pydantic",
+      "title": "SAP מאשרת תקיפת סייבר: לפי דיווחים, תוקפים גנבו טוקנים של עובדים ב־GitHub, העתיקו קוד ושינו אותו",
+      "summary": "לפי SecurityWeek ו־The Record (27 בנובמבר 2026), SAP אישרה שהיא חוקרת אירוע סייבר ומסרה שלא מצאה עדות לגישה לא מורשית לנתונים העסקיים של לקוחות. לפי Der Spiegel, התוקפים השיגו טוקני הזדהות של עובדים ב־GitHub, והשתמשו בהם כדי להעתיק קוד מקור ולשנות אותו. לפי Handelsblatt, החברה הגבילה את הגישה ל־GitHub, עצרה תהליכי פיתוח אוטומטיים והחליפה מפתחות חתימה. עדיין לא ברור אם נחשף קוד קנייני ואם קוד ששונה הגיע ללקוחות.",
+      "source": "SecurityWeek",
+      "publishedAt": "2026-11-27T02:36:00-05:00",
+      "category": "engineering",
+      "url": "https://www.securityweek.com/sap-confirms-cyberattack-source-code-reportedly-compromised/"
+    },
+    {
+      "title": "JobFinder: בנובמבר עד כה היו בממוצע 17,210 משרות פתוחות ביום בישראל, עלייה של 8% מאוקטובר",
+      "summary": "לפי דוח נובמבר 2026 של JobFinder (נתונים מ־1 עד 28 בנובמבר, החודש עוד לא הסתיים), הממוצע היומי של משרות פתוחות בלוחות שהוא עוקב אחריהם, בהייטק ובמגזר הציבורי, עמד על 17,210, עלייה של 8% לעומת אוקטובר. R&D / Engineering היא הקבוצה הגדולה ביותר, עם 27.3% מהמשרות. 12.6% מהמשרות מוגדרות Senior ו־6.1% Staff / lead, ורק 3.0% מהמשרות הן Remote.",
+      "source": "JobFinder",
+      "publishedAt": "2026-11-28",
+      "category": "jobs",
+      "url": "https://jobfinderdata.com/report/2026-11/"
+    },
+    {
+      "title": "Anthropic העבירה את Messages API מ־Python ל־Rust בעזרת Claude: כ־70% פחות CPU לכל בקשה",
+      "summary": "לפי Anthropic (25 בנובמבר 2026), Claude כתב בתוך כשבוע גרסה ראשונה של נתיב הבקשה המרכזי ב־Rust, אבל הקושי האמיתי היה לוודא שהגרסה החדשה זהה ל־API שרץ בפרודקשן. החברה השתמשה בתעבורת הפרודקשן עצמה כדי להשוות בין שתי הגרסאות, מצאה את ההבדלים ושלחה סוכנים לתקן אותם. התוצאה, לפי החברה: כ־70% פחות CPU לכל בקשה וזמן חציוני עד הטוקן הראשון קצר בכ־20%, בלי להוריד את השירות ובלי להקפיא פיתוח.",
+      "source": "Anthropic",
       "publishedAt": "2026-11-25",
       "category": "engineering",
-      "url": "https://pydantic.dev/articles/pax-harness-beta"
+      "url": "https://www.anthropic.com/research/migrating-api-to-rust"
+    },
+    {
+      "title": "מחקר של Microsoft: רוב העריכות העודפות של סוכני קוד הן בדיקות ותיעוד, אבל כ־11% מהקוד עדיין מיותר",
+      "summary": "לפי מאמר של חוקרי Microsoft ב־arXiv (25 בנובמבר 2026), נבדקו 7,660 ריצות מוצלחות של GitHub Copilot CLI עם 18 מודלים על SWE-bench Verified ו־DeepSWE. ב־SWE-bench Verified, רוב השינויים העודפים בהשוואה לפאצ'ים של מפתחים היו הוספת בדיקות (61%) ותיעוד (13%), אבל בממוצע כ־11% מיחידות הקוד בפאצ' של הסוכן לא נחוצות. לפי המאמר, ניקוי לפי הבדלים בבדיקות הסיר יותר קוד מיותר מאשר לבקש מהסוכן לבדוק את ה־diff של עצמו (67% לעומת 36% recall).",
+      "source": "arXiv (Microsoft)",
+      "publishedAt": "2026-11-25",
+      "category": "ai",
+      "url": "https://arxiv.org/abs/2611.34875"
     }
   ]
 }
